@@ -359,3 +359,4 @@
 {"id":"P0359","book_id":"hongloumeng","name":"娇杏之子","aliases":["贾雨村与娇杏之子"],"group":"外部人物","tier":"次要","entity_type":"人物","status":"draft","first_chapter":2,"mention_chapters":[2]}
 {"id":"P0360","book_id":"hongloumeng","name":"林如海早夭之子","aliases":[],"group":"林家","tier":"次要","entity_type":"人物","status":"draft","first_chapter":2,"mention_chapters":[2]}
 {"id":"P0361","book_id":"hongloumeng","name":"张如圭","aliases":[],"group":"外部人物","tier":"次要","entity_type":"人物","status":"draft","first_chapter":3,"mention_chapters":[3]}
+{"id":"P0362","book_id":"hongloumeng","name":"兼美","aliases":["可卿（梦中乳名）"],"group":"神话与叙事","tier":"次要","entity_type":"梦境人物","status":"draft","first_chapter":5,"mention_chapters":[5]}

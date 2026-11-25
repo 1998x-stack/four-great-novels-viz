@@ -1,0 +1,16 @@
+{
+  "book_id": "shuihuzhuan",
+  "chapter": 117,
+  "title": "第一百一十七回  睦州城箭射邓元觉 乌龙岭神助宋公明",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "line_start": 13813,
+  "line_end": 13852,
+  "review_status": "draft",
+  "extraction": {
+    "source": "水浒传_V2/章回索引.json",
+    "event_count": 2,
+    "lexical_character_count": 42,
+    "candidate_count": 18,
+    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  }
+}

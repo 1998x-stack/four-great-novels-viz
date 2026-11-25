@@ -1,0 +1,16 @@
+{
+  "book_id": "shuihuzhuan",
+  "chapter": 34,
+  "title": "第三十四回　石将军村店寄书　小李广梁山射雁",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "line_start": 9353,
+  "line_end": 9408,
+  "review_status": "draft",
+  "extraction": {
+    "source": "水浒传_V2/章回索引.json",
+    "event_count": 2,
+    "lexical_character_count": 33,
+    "candidate_count": 18,
+    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  }
+}

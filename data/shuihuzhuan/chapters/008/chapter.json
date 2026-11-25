@@ -1,0 +1,16 @@
+{
+  "book_id": "shuihuzhuan",
+  "chapter": 8,
+  "title": "第八回　柴进门招天下客　林冲棒打洪教头",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "line_start": 3399,
+  "line_end": 3830,
+  "review_status": "draft",
+  "extraction": {
+    "source": "水浒传_V2/章回索引.json",
+    "event_count": 3,
+    "lexical_character_count": 8,
+    "candidate_count": 7,
+    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  }
+}

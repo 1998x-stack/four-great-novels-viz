@@ -1,0 +1,16 @@
+{
+  "book_id": "shuihuzhuan",
+  "chapter": 43,
+  "title": "第四十三回　锦豹子小径逢戴宗　病关索长街遇石秀",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "line_start": 9707,
+  "line_end": 9716,
+  "review_status": "draft",
+  "extraction": {
+    "source": "水浒传_V2/章回索引.json",
+    "event_count": 4,
+    "lexical_character_count": 33,
+    "candidate_count": 17,
+    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  }
+}

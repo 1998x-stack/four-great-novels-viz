@@ -1,0 +1,16 @@
+{
+  "book_id": "shuihuzhuan",
+  "chapter": 68,
+  "title": "第六十八回　东平府误陷九纹龙　宋公明义释双枪将",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "line_start": 10209,
+  "line_end": 10290,
+  "review_status": "draft",
+  "extraction": {
+    "source": "水浒传_V2/章回索引.json",
+    "event_count": 3,
+    "lexical_character_count": 60,
+    "candidate_count": 14,
+    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "book_id": "shuihuzhuan",
+  "chapter": 50,
+  "title": "第五十回　插翅虎枷打白秀英　美髯公误失小衙内",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "line_start": 9775,
+  "line_end": 9806,
+  "review_status": "draft",
+  "extraction": {
+    "source": "水浒传_V2/章回索引.json",
+    "event_count": 4,
+    "lexical_character_count": 62,
+    "candidate_count": 18,
+    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  }
+}

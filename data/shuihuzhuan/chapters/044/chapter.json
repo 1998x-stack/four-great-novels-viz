@@ -1,0 +1,16 @@
+{
+  "book_id": "shuihuzhuan",
+  "chapter": 44,
+  "title": "第四十四回　杨雄醉骂潘巧云　石秀智杀裴如海",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "line_start": 9717,
+  "line_end": 9726,
+  "review_status": "draft",
+  "extraction": {
+    "source": "水浒传_V2/章回索引.json",
+    "event_count": 4,
+    "lexical_character_count": 7,
+    "candidate_count": 5,
+    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  }
+}

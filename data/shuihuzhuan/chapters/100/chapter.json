@@ -1,0 +1,16 @@
+{
+  "book_id": "shuihuzhuan",
+  "chapter": 100,
+  "title": "第一百回　张清琼英双建功　陈观宋江同奏捷",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "line_start": 12729,
+  "line_end": 12786,
+  "review_status": "draft",
+  "extraction": {
+    "source": "水浒传_V2/章回索引.json",
+    "event_count": 3,
+    "lexical_character_count": 84,
+    "candidate_count": 18,
+    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  }
+}

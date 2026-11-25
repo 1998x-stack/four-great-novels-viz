@@ -55,3 +55,7 @@
 梦境、判词、仙曲与现实剧情应分开，使用 `event_type=symbolic_foreshadowing` 表示预示，实际经历仍存 `plot`。判词未直接指名时，不可把传统归属人物放进 `participants`，而应使用 `depicted_people_ids` 和 `interpretation_status`；只有真正参与该事件的人才列入 `participants`。网页单独展示这些解释性角色，不把他们显示为参与故事或直接关系。证据等级 `anchored_paragraph` 只是原文定位，必须经过独立语义核验后才能升为 `reviewed`。
 
 `source.excerpt` 记录原文段落的起始摘录，并以 `line_start` / `line_end` 回溯指定附件底本；若摘录为节选，不能假称包含了全部段落。涉及当事人指控、流言或医者论述，应注明转述者、叙事层级，不将指控或医者观点当作已查实事实。原文中有明显文字识别损坏的字，不应在数据里自行偷偷修复。
+
+## 所附底本不完整时的处理（第十八回案例）
+
+原文缺章、缺段、截断时不能从回目、常识或其他版本默默补齐段落证据。无法逐段确认的旧条目保留 ID，并标记 `event_type=legacy_unverified`、`review_required=true`，`source.evidence_level=chapter_only`，将 `source.excerpt` 设为 `null`，在 `source.match_status` 说明缺失原因。禁止将其标为 `anchored_paragraph` 或 `reviewed`。如后续补充不同底本，应登记新 `edition_id` 并保留旧版定位，避免跨版本行号混淆。

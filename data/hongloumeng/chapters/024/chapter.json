@@ -6,5 +6,12 @@
   "lexical_character_count": 40,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "previous_event_count": 6,
+    "event_count": 22,
+    "method": "人物资助、求差、私情初见与丫鬟竞争独立记载",
+    "review_note": "原文未明确手帕交付发生在本回，相关事件留待26/27回"
+  }
 }

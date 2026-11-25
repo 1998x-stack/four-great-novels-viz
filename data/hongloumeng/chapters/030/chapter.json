@@ -6,5 +6,12 @@
   "lexical_character_count": 18,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "previous_event_count": 1,
+    "event_count": 18,
+    "method": "宝黛和解、宝钗借戏词回击、金钏逐出、划蔷、误踢袭人逐段分解",
+    "review_note": "前回争执过程在所附本子缺失，回目判定划蔷女子为龄官应按解释标注"
+  }
 }

@@ -8,8 +8,13 @@
   "edition_id": "hongloumeng:attachment-v1",
   "review_status": "draft",
   "enrichment": {
-    "received_from_chapter15": [
+    "status": "paragraph_anchored",
+    "previous_event_count": 3,
+    "event_count": 20,
+    "received_from_chapter_15": [
       "E0254"
-    ]
+    ],
+    "method": "宫廷晋封、省亲营造及临终故事拆分",
+    "review_note": "秦钟鬼判叙事标记为神幻描写；金哥死亡结果已从第15回迁到本回"
   }
 }

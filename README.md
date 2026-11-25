@@ -6,35 +6,60 @@
 
 | 书籍 | ID | 人物 | 关系 | 事件关联记录 | 章回 |
 |---|---|---:|---:|---:|---:|
-| 红楼梦 | hongloumeng | 364 | 517 | 641 | 120 |
+| 红楼梦 | hongloumeng | 372 | 873 | 956 | 120 |
 | 三国演义 | sanguoyanyi | 0 | 0 | 0 | 待录入 |
-| 水浒传 | shuihuzhuan | 495 | 855 | 869 | 楔子+120回（1–30回段落锚定草稿） |
-| 西游记 | xiyouji | 310 | 322 | 456 | 100 回 + 附录 |
+| 水浒传 | shuihuzhuan | 495 | 855 | 869 | 楔子 + 120 回（1–30回细化草稿） |
+| 西游记 | xiyouji | 325 | 482 | 706 | 100 回 + 附录 |
 
 红楼梦由既有 V2 数据迁移；水浒传由对话中的 V2 逐回数据迁移（360 个独立事件 ID，另有 1,689 条待核线索）。数据按书籍隔离，后续新增三国演义、西游记不会破坏已有格式。全部数据为待校勘草稿，人物候选不保证穷尽。原文定位并不等于语义审核。原始附件未提交，版本指纹见 data/catalog.json。
 
-## 逐回复核进度（V3 前十回批次）
+## 逐回复核进度（V3 前三十回批次）
 
-**《红楼梦》第 1–10 回已完成逐段增补。** 全书当前 364 位人物/人物候选、517 条关系、641 条事件记录；第 1–10 回合计 277 条，已附段落定位，**不是人工审校通过**。原有 120 回目录均保留，其余 **110 回仍主要是 V2 初稿**。
+截至 2026-11-25，《红楼梦》**第 001–030 回已经逐回增补**，全书目前有 **372 人物/人物候选、873 条人物关系、956 条事件关联记录**。前 30 回共 **650 条事件**，其中 **648 条有本附件的段落定位**，2 条因附带底本缺段保留待核。**段落定位不等于文学事实已人工终审**。其余 **90 回**仍主要保留较粗的 V2 初稿。
 
-| 章回 | V2 原事件数 | V3 当前事件数 | 校勘状态 |
+| 章回 | V2 原始事件数 | V3 当前事件数 | 校勘状态 |
 |---|---:|---:|---|
-| [001](data/hongloumeng/chapters/001/events.jsonl) | 16 | 26 | 段落定位、待人工终审 |
-| [002](data/hongloumeng/chapters/002/events.jsonl) | 38 | 53 | 段落定位、待人工终审 |
-| [003](data/hongloumeng/chapters/003/events.jsonl) | 12 | 38 | 段落定位、待人工终审 |
-| [004](data/hongloumeng/chapters/004/events.jsonl) | 14 | 24 | 段落定位、待人工终审 |
-| [005](data/hongloumeng/chapters/005/events.jsonl) | 2 | 33 | 段落定位、待人工终审 |
-| [006](data/hongloumeng/chapters/006/events.jsonl) | 15 | 27 | 段落定位、待人工终审 |
-| [007](data/hongloumeng/chapters/007/events.jsonl) | 9 | 25 | 段落定位、待人工终审 |
-| [008](data/hongloumeng/chapters/008/events.jsonl) | 3 | 19 | 段落定位、待人工终审 |
-| [009](data/hongloumeng/chapters/009/events.jsonl) | 6 | 17 | 段落定位、待人工终审 |
-| [010](data/hongloumeng/chapters/010/events.jsonl) | 2 | 15 | 段落定位、待人工终审 |
+| [001](data/hongloumeng/chapters/001/events.jsonl) | 16 | 26 | 已定位段落，待人工校勘 |
+| [002](data/hongloumeng/chapters/002/events.jsonl) | 38 | 53 | 已定位段落，待人工校勘 |
+| [003](data/hongloumeng/chapters/003/events.jsonl) | 12 | 38 | 已定位段落，待人工校勘 |
+| [004](data/hongloumeng/chapters/004/events.jsonl) | 14 | 24 | 已定位段落，待人工校勘 |
+| [005](data/hongloumeng/chapters/005/events.jsonl) | 2 | 33 | 已定位段落，待人工校勘 |
+| [006](data/hongloumeng/chapters/006/events.jsonl) | 15 | 27 | 已定位段落，待人工校勘 |
+| [007](data/hongloumeng/chapters/007/events.jsonl) | 9 | 25 | 已定位段落，待人工校勘 |
+| [008](data/hongloumeng/chapters/008/events.jsonl) | 3 | 19 | 已定位段落，待人工校勘 |
+| [009](data/hongloumeng/chapters/009/events.jsonl) | 6 | 17 | 已定位段落，待人工校勘 |
+| [010](data/hongloumeng/chapters/010/events.jsonl) | 2 | 15 | 已定位段落，待人工校勘 |
+| [011](data/hongloumeng/chapters/011/events.jsonl) | 1 | 14 | 已定位段落，待人工校勘 |
+| [012](data/hongloumeng/chapters/012/events.jsonl) | 3 | 14 | 已定位段落，待人工校勘 |
+| [013](data/hongloumeng/chapters/013/events.jsonl) | 4 | 15 | 已定位段落，待人工校勘 |
+| [014](data/hongloumeng/chapters/014/events.jsonl) | 1 | 20 | 已定位段落，待人工校勘 |
+| [015](data/hongloumeng/chapters/015/events.jsonl) | 3 | 14 | 已定位段落，待人工校勘 |
+| [016](data/hongloumeng/chapters/016/events.jsonl) | 3 | 20 | 已定位段落，待人工校勘 |
+| [017](data/hongloumeng/chapters/017/events.jsonl) | 3 | 18 | 已定位段落，待人工校勘 |
+| [018](data/hongloumeng/chapters/018/events.jsonl) | 5 | 21 | 20 条段落定位，1 条待补原文 |
+| [019](data/hongloumeng/chapters/019/events.jsonl) | 2 | 25 | 已定位段落，待人工校勘 |
+| [020](data/hongloumeng/chapters/020/events.jsonl) | 4 | 17 | 已定位段落，待人工校勘 |
+| [021](data/hongloumeng/chapters/021/events.jsonl) | 2 | 18 | 段落定位，待人工校勘 |
+| [022](data/hongloumeng/chapters/022/events.jsonl) | 1 | 24 | 段落定位，待人工校勘 |
+| [023](data/hongloumeng/chapters/023/events.jsonl) | 4 | 19 | 段落定位，待人工校勘 |
+| [024](data/hongloumeng/chapters/024/events.jsonl) | 6 | 22 | 段落定位，待人工校勘 |
+| [025](data/hongloumeng/chapters/025/events.jsonl) | 5 | 20 | 段落定位，待人工校勘 |
+| [026](data/hongloumeng/chapters/026/events.jsonl) | 3 | 22 | 段落定位，待人工校勘 |
+| [027](data/hongloumeng/chapters/027/events.jsonl) | 3 | 18 | 段落定位，待人工校勘 |
+| [028](data/hongloumeng/chapters/028/events.jsonl) | 3 | 21 | 段落定位，待人工校勘 |
+| [029](data/hongloumeng/chapters/029/events.jsonl) | 1 | 13 | 12条有段落定位，1条待补正文 |
+| [030](data/hongloumeng/chapters/030/events.jsonl) | 1 | 18 | 段落定位，待人工校勘 |
 
-第七回的 `E0231`（秦业抱养可儿）原归章回错误，现已迁至第八回，保留原 ID；表中 V2 原事件数仍按迁移前计算。第八回 `E0246` 将误写的“酥酪”改为附件实际叙述的“枫露茶”。
+本批次（021–030）合计 **195 条事件**，新增 **166 条**全书事件记录；194 条已附段落级证据、1 条待补底本；新增 **3 个人物实体/候选**（云儿、清虚观未具名小道士、靛儿）和 **193 条人物关系**。本批保留旧 ID 并继续按回独立提交。
 
-**事件规范：** `event_type` 表示剧情、往事转述、对话、人物背景、梦境及象征预示；`sequence` 表示当回显示排序，非史实时间线；`source.evidence_level=anchored_paragraph` 表示人工智能辅助定位到原文段落，**不表示语义人工复核**。第五回判词另用 `depicted_people_ids` 标识传统解释的候选关联人物，`interpretation_status` 标明非原文直接指名，不能当作现实情节或人物亲历。
+### 源文缺段与解释性身份的处理
 
-下一批次可继续第 011–020 回，须延用稳定人物、关系、事件 ID；如出现既有章回归属错误，应在同一 Git 提交内完成旧章删除与新章添加，保证全库引用唯一。
+- **E0062 / 第十八回**：所附底本在元妃题诗段落截断，无法确认旧记录中“黛玉代作《杏帘在望》”的具体文本；保留 `legacy_unverified` / `chapter_only`。
+- **E0064 / 第二十九回**：所附底本于清虚观归玉后即结束，不包含宝黛为玉争执的完整过程；虽然第三十回开头回顾此前角口，但不能伪造第二十九回的出处。保留 `legacy_unverified` / `chapter_only`，`review_required=true`。
+- **第三十回龄官划蔷**：回目直接写“龄官划蔷”，所核对的正文该段仅写一名戏班女子。事件附 `identity_evidence=chapter_title` 与 `interpretation_status`，不声称正文直接称名。
+- 戏文、灯谜、诗歌、梦境、人物玩笑、魇魔法及转述各保留 `event_type`，不得据此认定现实中的关系或历史事件。
+
+下一批可以继续第 031–040 回。详细规则见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 ## 目录
 
@@ -59,6 +84,16 @@ assets/               # 静态可视化
 index.html            # GitHub Pages 入口
 CONTRIBUTING.md        # 章回增量录入指南
 ```
+
+## 网站界面与交互（2026-11-25）
+
+首页采用“沉浸式封面 → 四书选择 → 数据工作台”结构，保留原有原文证据、章回事件、人物搜索、关系筛选和 SVG 缩放/拖拽功能。
+
+- `assets/visual.css`：深色墨韵、书籍封面卡片、响应式工作台，以及滚动入场/图谱节点动效。
+- `assets/visual.js`：Canvas 星点网络、图谱连线流光、卡片悬停、滚动进度和“播放章回”控制。
+- 播放章回每 6 秒推进一回，支持暂停和手动切回；浏览器在后台时会自动停止播放。
+- 动效遵循 `prefers-reduced-motion`，手机端限制星点数量与图谱动效开销。
+- `assets/app.js` 仍负责知识图谱核心数据和证据逻辑；新增的动效只作视觉增强，不改变数据审核等级或语义。
 
 ## 本地预览及校验
 
@@ -128,6 +163,27 @@ book_id 与本地 ID 组成全局唯一键，例如 hongloumeng:P0001。关系�
 
 增补批次清单：[001–010](data/xiyouji/enrichment-batches/001-010.json)；在线切换：`?book=xiyouji&chapter=1`。
 
+
+## 《西游记》第二批：第 11—20 回（2026-11-25）
+
+在首批前十回和附录的基础上，本批逐章逐回新增 **250 条事件、160 条剧情语义关系、15 个实体档案**；累计 **325 个实体、482 条关系、706 个事件**。前期 873 条共现候选仍独立保存，不算正式语义关系。
+
+| 回目 | 新增事件 | 重点 |
+|---|---:|---|
+| 第 11 回 | 26 | 太宗还魂、阴司还债、刘全进瓜与水陆大会 |
+| 第 12 回 | 26 | 玄奘身世、观音显化、唐王诏选取经人 |
+| 第 13 回 | 22 | 双叉岭遇险、太白金星解救、刘伯钦护送 |
+| 第 14 回 | 27 | 两界山收猴、打虎、六贼争执与紧箍 |
+| 第 15 回 | 25 | 鹰愁涧白龙吞马、观音点化、白龙化马 |
+| 第 16 回 | 27 | 观音禅院借宿、金池长老与袈裟失窃 |
+| 第 17 回 | 27 | 寻黑熊精、悟空求观音、仙丹设伏收妖 |
+| 第 18 回 | 16 | 高老庄招婿、天蓬旧事、悟空探云栈洞 |
+| 第 19 回 | 26 | 猪刚鬣皈依为八戒、浮屠山乌巢传心经 |
+| 第 20 回 | 28 | 黄风岭王家投宿、虎先锋掳师、八戒除虎 |
+
+新事件使用稳定 `E111xx—E120xx` 编号，原文出处标有 `edition_id`、`line_start`、`line_end`、`anchor_text` 和 `source_sha256`，原有 P/R/E 编号全部保留。**机器辅助逐行定位不等于人工故事核验**；新增关系、人物和事件仍为 draft。详见 [第二批清单](data/xiyouji/enrichment-batches/011-020.json)。
+
+
 ## 《水浒传》第一批逐回增补（第1–10回）
 
 保留原有 43 条事件，新增 145 条具备原文段落定位的独立事件；**合计前十回188条**。每条新增事件有 `title`、`event_type`、`location`、`causes`、`outcomes`、`story_arc` 和 `source`。这些是模型辅助整理、原文定位，不是人工逐条审核。
@@ -146,6 +202,7 @@ book_id 与本地 ID 组成全局唯一键，例如 hongloumeng:P0001。关系�
 | 010 | 2 | 16 | 18 |
 
 进度明细见 [`data/shuihuzhuan/reports/chapters-001-010.json`](data/shuihuzhuan/reports/chapters-001-010.json)。第11–120回仍保留现有初稿，待下一批处理。
+
 
 ## 《水浒传》逐回细化批次：第11–30回（2026-11-25）
 

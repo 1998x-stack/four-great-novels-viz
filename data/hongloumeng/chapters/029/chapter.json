@@ -6,5 +6,15 @@
   "lexical_character_count": 48,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "partial_source_truncated",
+    "previous_event_count": 1,
+    "event_count": 13,
+    "unverified_event_ids": [
+      "E0064"
+    ],
+    "method": "现存清虚观礼仪、张道士提亲与道士还玉逐段定位",
+    "review_note": "后续争执发生经过未在此底本本回出现，旧V2条目保留待补原文"
+  }
 }

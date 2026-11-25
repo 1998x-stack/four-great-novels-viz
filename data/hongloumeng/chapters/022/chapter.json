@@ -6,5 +6,12 @@
   "lexical_character_count": 19,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "previous_event_count": 1,
+    "event_count": 24,
+    "method": "依据对应底本逐段增补，保留旧ID，区分人物对白、戏曲、情绪与实际情节",
+    "review_note": "原文定位不等于人工文学校勘；象征词章不当作已发生情节"
+  }
 }

@@ -1,0 +1,53 @@
+{
+  "batch_id": "xiyouji-ch011-020-v3",
+  "book_id": "xiyouji",
+  "created_on": "2026-11-25",
+  "edition_id": "xiyouji:attachment-v1",
+  "source_sha256": "3f2bf2164ee63ad7ce3ef88c830e88e860f47719740b13e6c4a1fe4d3be09b80",
+  "chapters": [
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20
+  ],
+  "added_events": 250,
+  "added_relations": 160,
+  "added_people": 15,
+  "added_events_by_chapter": {
+    "011": 26,
+    "012": 26,
+    "013": 22,
+    "014": 27,
+    "015": 25,
+    "016": 27,
+    "017": 27,
+    "018": 16,
+    "019": 26,
+    "020": 28
+  },
+  "added_person_ids": [
+    "P0311",
+    "P0325"
+  ],
+  "added_relation_ids": [
+    "R0323",
+    "R0482"
+  ],
+  "new_event_id_policy": "E111xx—E120xx (chapter number plus stable local sequence, existing IDs unchanged)",
+  "totals_after": {
+    "people": 325,
+    "relations": 482,
+    "events": 706,
+    "pending_cooccurrence_candidates": 873
+  },
+  "review_status": "draft",
+  "evidence_level_for_new_events": "anchored_paragraph",
+  "method": "Exact source anchor match, chapter-level narrative decomposition; AI assisted; NOT human semantic review",
+  "next_batch_recommendation": "chapters 021–030"
+}

@@ -365,3 +365,8 @@
 {"id":"P0365","book_id":"hongloumeng","name":"二丫头","aliases":[],"group":"外部人物","tier":"次要","entity_type":"人物","status":"draft","first_chapter":15}
 {"id":"P0366","book_id":"hongloumeng","name":"来旺","aliases":[],"group":"外部人物","tier":"次要","entity_type":"人物","status":"draft","first_chapter":15}
 {"id":"P0367","book_id":"hongloumeng","name":"云光","aliases":[],"group":"外部人物","tier":"次要","entity_type":"人物","status":"draft","first_chapter":15}
+{"id":"P0368","book_id":"hongloumeng","name":"赵嬷嬷","aliases":[],"group":"外部人物","tier":"次要","entity_type":"人物","status":"draft","first_chapter":16}
+{"id":"P0369","book_id":"hongloumeng","name":"赵天梁","aliases":[],"group":"外部人物","tier":"次要","entity_type":"人物","status":"draft","first_chapter":16}
+{"id":"P0370","book_id":"hongloumeng","name":"云儿","aliases":[],"group":"锦香院","tier":"次要","entity_type":"人物","status":"draft","first_chapter":28,"mention_chapters":[28]}
+{"id":"P0371","book_id":"hongloumeng","name":"清虚观小道士","aliases":["未具名小道士（第29回）"],"group":"清虚观","tier":"次要","entity_type":"匿名人物","status":"draft","first_chapter":29,"mention_chapters":[29]}
+{"id":"P0372","book_id":"hongloumeng","name":"靛儿","aliases":[],"group":"大观园丫鬟","tier":"次要","entity_type":"人物","status":"draft","first_chapter":30,"mention_chapters":[30]}

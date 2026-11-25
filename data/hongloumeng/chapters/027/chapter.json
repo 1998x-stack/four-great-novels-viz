@@ -6,5 +6,12 @@
   "lexical_character_count": 34,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "previous_event_count": 3,
+    "event_count": 18,
+    "method": "扑蝶与窃听、替传帕、凤姐相中小红、黛玉葬花分别记录",
+    "review_note": "小红误以为黛玉偷听，并非黛玉确实在亭中"
+  }
 }

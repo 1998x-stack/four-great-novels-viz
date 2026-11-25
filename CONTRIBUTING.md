@@ -56,6 +56,15 @@
 
 `source.excerpt` 记录原文段落的起始摘录，并以 `line_start` / `line_end` 回溯指定附件底本；若摘录为节选，不能假称包含了全部段落。涉及当事人指控、流言或医者论述，应注明转述者、叙事层级，不将指控或医者观点当作已查实事实。原文中有明显文字识别损坏的字，不应在数据里自行偷偷修复。
 
+## 所附底本不完整时的处理（第十八回案例）
+
+原文缺章、缺段、截断时不能从回目、常识或其他版本默默补齐段落证据。无法逐段确认的旧条目保留 ID，并标记 `event_type=legacy_unverified`、`review_required=true`，`source.evidence_level=chapter_only`，将 `source.excerpt` 设为 `null`，在 `source.match_status` 说明缺失原因。禁止将其标为 `anchored_paragraph` 或 `reviewed`。如后续补充不同底本，应登记新 `edition_id` 并保留旧版定位，避免跨版本行号混淆。
+
+## 021–030 回增补中的证据边界
+
+本项目以本仓库 catalog 指定的附件底本为默认来源。若回内正文缺失（如第29回），须给未经本底本确认的旧事件设置 `review_required=true`、`event_type=legacy_unverified`、`source.evidence_level=chapter_only`、`source.excerpt=null`，不能为其虚构行号、补写引文。若某人物仅由回目而非本段正文确定（如第30回“龄官划蔷”），应注明 `identity_evidence=chapter_title` 并使用 `interpretation_status` 解释推断边界。完整人物终审仍需要单独核验。
+
+
 ## 第一批逐回精标字段（Schema v3 兼容扩展）
 
 逐回事件可增加 `title`、`event_type`（如 rescue、conspiracy、trial、escape）、`location`、`causes[]`、`outcomes[]`、`story_arc`。`source` 包含底本、行号和摘录，`evidence_level=anchored_paragraph` 仅表示定位过文本，不能标为 reviewed。添加同一人物对的多条关系时，必须复用已有三元组 ID；一个事件可关联多个关系 ID，人物 ID 不可更换。

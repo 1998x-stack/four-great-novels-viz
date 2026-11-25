@@ -1,0 +1,109 @@
+{
+  "batch_id": "sanguoyanyi-ch022-041-pass1",
+  "chapter_range": [
+    22,
+    41
+  ],
+  "chapters_touched": 20,
+  "added_events": 100,
+  "added_people": 7,
+  "added_relations": 86,
+  "people_added": [
+    "董贵妃",
+    "甄氏",
+    "司马徽",
+    "王植",
+    "胡班",
+    "宋忠",
+    "糜夫人"
+  ],
+  "status": "partial_paragraph_anchored",
+  "edition_id": "sanguoyanyi:attachment-v1",
+  "source_sha256": "48922aa73c07e0b9c6e23a9cf5cf61f1779dd33e11947a1eaac364f1c50f65c4",
+  "legacy_events_preserved": true,
+  "review_required": true,
+  "human_review_complete": false,
+  "notes": "每回5个重点剧情，附用户上传《三国演义》TXT的具体原文行号与子串。机器辅助叙事结构化，不代表全回覆盖或人工终审。单福按原有徐庶别名处理。",
+  "chapters": [
+    {
+      "chapter": 22,
+      "added_events": 5
+    },
+    {
+      "chapter": 23,
+      "added_events": 5
+    },
+    {
+      "chapter": 24,
+      "added_events": 5
+    },
+    {
+      "chapter": 25,
+      "added_events": 5
+    },
+    {
+      "chapter": 26,
+      "added_events": 5
+    },
+    {
+      "chapter": 27,
+      "added_events": 5
+    },
+    {
+      "chapter": 28,
+      "added_events": 5
+    },
+    {
+      "chapter": 29,
+      "added_events": 5
+    },
+    {
+      "chapter": 30,
+      "added_events": 5
+    },
+    {
+      "chapter": 31,
+      "added_events": 5
+    },
+    {
+      "chapter": 32,
+      "added_events": 5
+    },
+    {
+      "chapter": 33,
+      "added_events": 5
+    },
+    {
+      "chapter": 34,
+      "added_events": 5
+    },
+    {
+      "chapter": 35,
+      "added_events": 5
+    },
+    {
+      "chapter": 36,
+      "added_events": 5
+    },
+    {
+      "chapter": 37,
+      "added_events": 5
+    },
+    {
+      "chapter": 38,
+      "added_events": 5
+    },
+    {
+      "chapter": 39,
+      "added_events": 5
+    },
+    {
+      "chapter": 40,
+      "added_events": 5
+    },
+    {
+      "chapter": 41,
+      "added_events": 5
+    }
+  ]
+}

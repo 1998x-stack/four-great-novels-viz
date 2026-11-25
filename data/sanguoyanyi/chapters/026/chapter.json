@@ -6,5 +6,13 @@
   "line_start": 915,
   "line_end": 936,
   "review_status": "draft",
-  "event_count": 4
+  "event_count": 10,
+  "enrichment": {
+    "status": "partial_paragraph_anchored",
+    "previous_events": 5,
+    "new_events": 5,
+    "total_events": 10,
+    "review_required": true,
+    "review_note": "本回首轮增加5处段落锚定重点剧情；并非全回穷尽、未人工语义终审"
+  }
 }

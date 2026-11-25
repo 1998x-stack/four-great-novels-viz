@@ -6,5 +6,13 @@
   "line_start": 997,
   "line_end": 1024,
   "review_status": "draft",
-  "event_count": 3
+  "event_count": 10,
+  "enrichment": {
+    "status": "partial_paragraph_anchored",
+    "previous_events": 5,
+    "new_events": 5,
+    "total_events": 10,
+    "review_required": true,
+    "review_note": "首轮5处原文重点场景，不代表全回穷尽或人工审核"
+  }
 }

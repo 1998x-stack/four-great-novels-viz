@@ -1,0 +1,11 @@
+{
+  "batch": "sanguoyanyi-002-021-pass1",
+  "source_sha256": "48922aa73c07e0b9c6e23a9cf5cf61f1779dd33e11947a1eaac364f1c50f65c4",
+  "chapter_range": [
+    2,
+    21
+  ],
+  "status": "source-verbatim-anchor-verified-local",
+  "review_required": true,
+  "format": "chapter|line|title|participants_comma|verbatim_anchor|optional_relation_triplet"
+}

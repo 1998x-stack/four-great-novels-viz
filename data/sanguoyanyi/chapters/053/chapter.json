@@ -6,5 +6,13 @@
   "line_start": 1633,
   "line_end": 1660,
   "review_status": "draft",
-  "event_count": 9
+  "event_count": 18,
+  "enrichment": {
+    "status": "partial_paragraph_anchored",
+    "previous_events": 13,
+    "new_events": 5,
+    "total_events": 18,
+    "review_required": true,
+    "review_note": "五处重点原文段落锚点，并非穷尽全回及人工终审"
+  }
 }

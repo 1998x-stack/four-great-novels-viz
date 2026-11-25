@@ -289,3 +289,68 @@ footer a{color:#bbc9c3}footer small{display:block;font:9px Georgia,serif;letter-
 /* On narrow layouts keep the ornamental orbit subordinate to the title. */
 @media(max-width:850px){.hero-art{animation:none;opacity:.42}}
 @media(max-width:620px){.hero-art{animation:none;opacity:.26}}
+
+/* Force-directed graph: interactive, spatially balanced instead of ring-based. */
+#graph .force-edge-layer,#graph .force-node-layer{pointer-events:none}
+#graph .force-edge-hit,#graph .force-node{pointer-events:auto}
+#graph .force-edge-line{
+  stroke:#7eacaa;stroke-opacity:.24;stroke-width:1.05;
+  stroke-linecap:round;transition:stroke .22s,stroke-opacity .22s,filter .22s
+}
+#graph .force-edge-line.is-muted{stroke-opacity:.045}
+#graph .force-edge-line.is-neighbour{
+  stroke:#d6ba81;stroke-opacity:.78;stroke-width:1.7;
+  filter:drop-shadow(0 0 3px rgba(228,188,117,.45))
+}
+#graph .force-edge-line.is-selected{
+  stroke:#ffda91;stroke-opacity:1;stroke-width:2.4;
+  stroke-dasharray:11 8;animation:graph-flow 9s linear infinite;
+  filter:drop-shadow(0 0 5px rgba(241,193,103,.8))
+}
+#graph .force-edge-hit{cursor:pointer}
+#graph .force-edge-hit:focus-visible{stroke:rgba(230,200,143,.3)}
+#graph .force-node{
+  opacity:1!important;animation:none!important;cursor:grab;
+  transition:filter .23s,opacity .23s
+}
+#graph .force-node:active,#graph.is-grabbing .force-node.is-dragging{cursor:grabbing}
+#graph .force-node.is-muted{opacity:.14!important;filter:saturate(.35)}
+#graph .force-node.is-neighbour{filter:drop-shadow(0 0 5px rgba(224,189,128,.35))}
+#graph .force-node.is-hovered,#graph .force-node.is-dragging{
+  filter:drop-shadow(0 0 10px rgba(255,220,160,.8))
+}
+#graph .force-node.is-selected .force-node-body{stroke:#ffd89e;filter:drop-shadow(0 0 8px #e8bd7a)}
+#graph .force-node .force-node-body{transition:stroke .2s,stroke-width .2s}
+#graph .force-node-label{
+  font:500 11px/1.2 "Noto Sans SC","Microsoft YaHei",sans-serif;
+  fill:#f1f5eb;stroke:#0b1720;stroke-width:3.5;
+  paint-order:stroke;stroke-linejoin:round;pointer-events:none;
+  opacity:.95;transition:opacity .15s,fill .15s
+}
+#graph .force-node-label.is-quiet{opacity:0}
+#graph .force-node.is-neighbour .force-node-label,
+#graph .force-node.is-hovered .force-node-label,
+#graph .force-node.is-dragging .force-node-label,
+#graph .force-node.is-selected .force-node-label{opacity:1;fill:#fce2a7}
+#graph .force-node.is-muted .force-node-label{opacity:0}
+#graph .force-node.is-hovered .force-node-body{stroke:#ffdfad;stroke-width:2.5}
+.graph-head .controls{flex-wrap:wrap;justify-content:flex-end}
+.graph-head .controls #relayout{
+  min-width:70px;padding:3px 9px;
+  color:#f0d6a4;border-color:#8d7957;background:#312c26;
+  letter-spacing:.5px
+}
+.graph-head .controls #relayout:hover{color:#08131a;background:#e0c189}
+.graph-head #graphTitle{flex:1 1 auto;min-width:140px}
+#graph .node-halo{pointer-events:none}
+@keyframes graph-flow{to{stroke-dashoffset:-190}}
+@media(max-width:620px){
+ .graph-head .controls{gap:3px}
+ .graph-head .controls button{min-width:26px;font-size:11px}
+ .graph-head #graphTitle{font-size:11px;min-width:110px}
+ #graph .force-node-label{font-size:10px}
+}
+@media(prefers-reduced-motion:reduce){
+ #graph .force-edge-line.is-selected{animation:none;stroke-dasharray:none}
+ #graph .force-node,#graph .force-node-label{transition:none!important}
+}

@@ -553,3 +553,6 @@
 {"id":"P0553","book_id":"sanguoyanyi","name":"胡班","aliases":[],"group":"东汉末年","status":"draft","first_chapter":27,"record_note":"《三国演义》002–041回重点剧情增补人物；待原文消歧复核"}
 {"id":"P0554","book_id":"sanguoyanyi","name":"宋忠","aliases":[],"group":"东汉末年","status":"draft","first_chapter":40,"record_note":"《三国演义》002–041回重点剧情增补人物；待原文消歧复核"}
 {"id":"P0555","book_id":"sanguoyanyi","name":"糜夫人","aliases":["糜氏"],"group":"东汉末年","status":"draft","first_chapter":28,"record_note":"《三国演义》002–041回重点剧情增补人物；待原文消歧复核"}
+{"id":"P0556","book_id":"sanguoyanyi","name":"刘贤","aliases":[],"group":"荆南四郡","status":"draft","first_chapter":52,"record_note":"第042–061回原文重点事件新增人物；机器辅助待人工语义终审"}
+{"id":"P0557","book_id":"sanguoyanyi","name":"邢道荣","aliases":[],"group":"荆南四郡","status":"draft","first_chapter":52,"record_note":"第042–061回原文重点事件新增人物；机器辅助待人工语义终审"}
+{"id":"P0558","book_id":"sanguoyanyi","name":"钟进","aliases":[],"group":"曹魏与雍凉人物","status":"draft","first_chapter":58,"record_note":"第042–061回原文重点事件新增人物；机器辅助待人工语义终审"}

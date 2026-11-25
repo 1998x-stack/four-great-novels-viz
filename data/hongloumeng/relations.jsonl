@@ -665,3 +665,16 @@
 {"book_id":"hongloumeng","relation_id":"R0665","subject_id":"P0005","predicate":"戏谑金玉","object_id":"P0001","category":"交游与诗社","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0666","subject_id":"P0001","predicate":"编故事逗乐","object_id":"P0005","category":"交游与诗社","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0667","subject_id":"P0019","predicate":"调侃诗事","object_id":"P0001","category":"交游与诗社","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0668","subject_id":"P0005","predicate":"提醒房中争执","object_id":"P0001","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0669","subject_id":"P0057","predicate":"责骂","object_id":"P0014","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0670","subject_id":"P0001","predicate":"辩护","object_id":"P0014","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0671","subject_id":"P0013","predicate":"劝退","object_id":"P0057","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0672","subject_id":"P0001","predicate":"照顾病者","object_id":"P0014","category":"主仆与职务","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0673","subject_id":"P0066","predicate":"留守照顾","object_id":"P0014","category":"主仆与职务","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0674","subject_id":"P0023","predicate":"讥讽梳头","object_id":"P0066","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0675","subject_id":"P0023","predicate":"争嘴","object_id":"P0066","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0676","subject_id":"P0013","predicate":"资助并管教","object_id":"P0101","category":"亲缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0677","subject_id":"P0001","predicate":"迎见","object_id":"P0028","category":"交游与诗社","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0678","subject_id":"P0001","predicate":"追去劝慰","object_id":"P0005","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0679","subject_id":"P0001","predicate":"剖明心意","object_id":"P0005","category":"交游与诗社","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0680","subject_id":"P0028","predicate":"言语还击","object_id":"P0005","category":"交游与诗社","direction":"subject_to_object"}

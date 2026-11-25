@@ -6,5 +6,12 @@
   "lexical_character_count": 27,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "previous_event_count": 4,
+    "event_count": 17,
+    "method": "嫉语、房内照护、贾环棋局、宝黛和解逐段拆分",
+    "review_note": "E0120原误记骰子，文本实为赶围棋；湘云所言婚事为戏谑，不当作婚约"
+  }
 }

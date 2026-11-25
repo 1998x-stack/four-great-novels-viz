@@ -108,6 +108,38 @@
     "interpretation_status": {
       "type": "string",
       "minLength": 1
+    },
+    "title": {
+      "type": "string",
+      "minLength": 1
+    },
+    "location": {
+      "type": "string",
+      "minLength": 1
+    },
+    "story_arc": {
+      "type": "string",
+      "minLength": 1
+    },
+    "causes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "outcomes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "review_status": {
+      "enum": [
+        "draft",
+        "reviewed"
+      ]
     }
   },
   "required": [

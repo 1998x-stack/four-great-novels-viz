@@ -63,3 +63,10 @@
 ## 021–030 回增补中的证据边界
 
 本项目以本仓库 catalog 指定的附件底本为默认来源。若回内正文缺失（如第29回），须给未经本底本确认的旧事件设置 `review_required=true`、`event_type=legacy_unverified`、`source.evidence_level=chapter_only`、`source.excerpt=null`，不能为其虚构行号、补写引文。若某人物仅由回目而非本段正文确定（如第30回“龄官划蔷”），应注明 `identity_evidence=chapter_title` 并使用 `interpretation_status` 解释推断边界。完整人物终审仍需要单独核验。
+
+
+## 第一批逐回精标字段（Schema v3 兼容扩展）
+
+逐回事件可增加 `title`、`event_type`（如 rescue、conspiracy、trial、escape）、`location`、`causes[]`、`outcomes[]`、`story_arc`。`source` 包含底本、行号和摘录，`evidence_level=anchored_paragraph` 仅表示定位过文本，不能标为 reviewed。添加同一人物对的多条关系时，必须复用已有三元组 ID；一个事件可关联多个关系 ID，人物 ID 不可更换。
+
+每批应更新该十回 `chapter.json.enrichment` 中的数量与复核记录，同时生成批次报告。仅在有人逐条阅读证据并核验关系、事件参与者和因果时才允许标记 `reviewed`。

@@ -2,3 +2,5 @@
 .chapter-nav{font-size:12px;white-space:nowrap}.chapter-title{font-size:12px;color:var(--muted);flex:1 1 210px;max-width:480px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}@media(max-width:640px){.chapter-nav{padding:8px 7px}.chapter-title{order:4;flex-basis:100%}}
 
 #candidates{padding:4px 9px;font-size:12px;white-space:nowrap}.panelhead:has(#candidates){flex-wrap:wrap}
+
+.event h5{font-size:13px;line-height:1.5;margin:5px 0 3px;color:var(--green)}.event .event-extra{margin:3px 0;line-height:1.6;color:var(--ink)}

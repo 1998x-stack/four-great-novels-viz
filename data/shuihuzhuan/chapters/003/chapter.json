@@ -6,11 +6,17 @@
   "line_start": 1235,
   "line_end": 1898,
   "review_status": "draft",
-  "extraction": {
-    "source": "水浒传_V2/章回索引.json",
-    "event_count": 3,
-    "lexical_character_count": 6,
-    "candidate_count": 6,
-    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "method": "逐段情节归纳 + 以附件原文核对关键词所在段落（模型辅助）",
+    "review_note": "非人工终审；段落锚定并不能证明每个推断关系无误",
+    "total_events": 16,
+    "added_events": 13,
+    "legacy_events_preserved": 3,
+    "candidate_review": "未处理，候选另存"
+  },
+  "source": {
+    "filename": "水浒传.txt",
+    "edition_id": "shuihuzhuan:attachment-v1"
   }
 }

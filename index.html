@@ -8,6 +8,7 @@
   <title>四大名著 · 浮世群像｜人物关系交互图谱</title>
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/visual.css">
+  <script defer src="assets/force-graph.js"></script>
   <script defer src="assets/app.js"></script>
   <script defer src="assets/visual.js"></script>
 </head>
@@ -95,7 +96,7 @@
           <div id="peopleList" class="scroll"></div>
         </aside>
         <section class="panel graph">
-          <div class="panelhead graph-head"><h3 id="graphTitle">关系图谱</h3><div class="controls"><button id="minus" type="button" aria-label="缩小" title="缩小">−</button><button id="plus" type="button" aria-label="放大" title="放大">＋</button><button id="reset" type="button">复位</button></div></div>
+          <div class="panelhead graph-head"><h3 id="graphTitle">关系图谱</h3><div class="controls"><button id="minus" type="button" aria-label="缩小" title="缩小">−</button><button id="plus" type="button" aria-label="放大" title="放大">＋</button><button id="reset" type="button" title="复原画布缩放与位置">视图复位</button><button id="relayout" type="button" title="重新进行力导向排布">重新排布 ⟳</button></div></div>
           <div class="canvas">
             <div class="graph-grid" aria-hidden="true"></div>
             <svg id="graph" viewBox="0 0 900 620" role="group" aria-label="人物关系交互图"></svg>
@@ -108,7 +109,7 @@
             <span id="playLabel" class="play-label">按回目观察人物关系的变化</span>
           </div>
           <div class="legend" id="legend"></div>
-          <p class="tip">点击人物可查看关系；点击连线可追溯事件与原文。拖动空白区域平移图谱，滚轮或 ＋/− 调整缩放。</p>
+          <p class="tip">点击人物可查看关系；点击连线可追溯事件与原文。拖拽人物节点即可重排，松手后自动平衡；拖动画布空白处平移，滚轮缩放，也可点击「重新排布」。</p>
         </section>
         <aside class="panel detail">
           <div class="panelhead"><h3><span class="panel-index">B /</span> 人物与故事</h3><div class="detail-actions"><button id="timeline" type="button">章回事件</button><button id="candidates" type="button" title="仅为待复核的同段称谓线索">待核线索</button></div></div>

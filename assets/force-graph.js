@@ -176,6 +176,12 @@ window.NovelGraph = (() => {
       const budget=n<=34?n:n<=85?35:n<=180?28:23;
       const featured=new Set(ranked.slice(0,budget).map(v=>v.id));
       const palette=config.palette;
+      const radiusOf=(degree,focused)=>{
+        const base=n>140?5:n>50?6.5:8;
+        const bonus=Math.min(n>140?7:5,Math.log2(degree+1)*1.25);
+        return focused?Math.max(15,base+bonus+1):base+bonus;
+      };
+      this.radiusOf=radiusOf;
       const centerShift=hash(this.bookId||"novels")%250;
       const sorted=[...config.nodes].sort((a,b)=>a.id.localeCompare(b.id));
       sorted.forEach((entry,i)=>{
@@ -184,9 +190,10 @@ window.NovelGraph = (() => {
         const x=prev?.x??(85+halton(seed,2)*730);
         const y=prev?.y??(65+halton(seed,3)*490);
         const selected=entry.id===config.focusId;
-        const radius=selected?13:n>140?5.5:n>50?7:9;
+        const degree=degrees.get(entry.id)||0;
+        const radius=radiusOf(degree,selected);
         const node={
-          ...entry,x,y,vx:0,vy:0,radius,degree:degrees.get(entry.id)||0,
+          ...entry,x,y,vx:0,vy:0,radius,degree,
           featured:featured.has(entry.id),selected,elem:null,text:null,body:null
         };
         this.nodes.push(node);this.byId.set(node.id,node);
@@ -271,7 +278,7 @@ window.NovelGraph = (() => {
       this.config=config;
       for(const n of this.nodes){
         n.selected=n.id===config.focusId;
-        n.radius=n.selected?13:this.nodes.length>140?5.5:this.nodes.length>50?7:9;
+        n.radius=this.radiusOf(n.degree,n.selected);
         n.body.setAttribute("r",String(n.radius));
         n.body.setAttribute("stroke",n.selected?"#f1d39b":"#d2e2dc");
         n.body.setAttribute("stroke-width",n.selected?"2.5":"1");

@@ -129,6 +129,7 @@ window.NovelGraph = (() => {
       this.nodes=[];
       this.byId=new Map();
       this.edges=[];
+      this.springs=[];
       this.raf=0;
       this.drag=null;
       this.alpha=.95;
@@ -146,7 +147,9 @@ window.NovelGraph = (() => {
         this.observer.observe(this.svg);
       }
       if(prefersReduced.matches){
-        for(let k=0;k<120;k++)this.tick();
+        // No animated transitions for reduced-motion users; a brief static solve.
+        const steps=this.nodes.length>180?36:70;
+        for(let k=0;k<steps;k++)this.tick();
         this.draw();
       }else this.run();
     }
@@ -157,9 +160,16 @@ window.NovelGraph = (() => {
     setup(config){
       const n=config.nodes.length;
       const degrees=new Map(config.nodes.map(v=>[v.id,0]));
+      // Multiple narrative predicates between two people are rendered separately,
+      // but share just one physical spring (otherwise parallel edges collapse clusters).
+      const forcePairs=new Set();
       for(const r of config.links){
+        const key=[r.subject_id,r.object_id].sort().join("|");
+        if(forcePairs.has(key))continue;
+        forcePairs.add(key);
         if(degrees.has(r.subject_id))degrees.set(r.subject_id,degrees.get(r.subject_id)+1);
-        if(degrees.has(r.object_id))degrees.set(r.object_id,degrees.get(r.object_id)+1);
+        if(degrees.has(r.object_id)&&r.object_id!==r.subject_id)
+          degrees.set(r.object_id,degrees.get(r.object_id)+1);
       }
       const ranked=[...config.nodes].sort((a,b)=>
         (degrees.get(b.id)||0)-(degrees.get(a.id)||0)||a.id.localeCompare(b.id));
@@ -198,7 +208,9 @@ window.NovelGraph = (() => {
         pairCount.set(key,(pairCount.get(key)||0)+1);
         active.push({source:a,target:b,relation:r,key});
       }
+      const springPairs=new Set();
       for(const item of active){
+        if(!springPairs.has(item.key)){springPairs.add(item.key);this.springs.push(item)}
         const i=pairIndex.get(item.key)||0;pairIndex.set(item.key,i+1);
         const total=pairCount.get(item.key);
         item.offset=(i-(total-1)/2)*Math.min(15,48/Math.max(1,total));
@@ -344,7 +356,7 @@ window.NovelGraph = (() => {
       const power=(n>175?1220:n>60?1440:1700)*a;
       for(const node of this.nodes)applyRepulsion(node,tree,power);
       const rest=n>170?63:n>75?90:n>25?112:156;
-      for(const edge of this.edges){
+      for(const edge of this.springs){
         const u=edge.source,v=edge.target;
         if(u===v)continue;
         const dx=v.x-u.x,dy=v.y-u.y,dist=Math.hypot(dx,dy)||.01;
@@ -408,9 +420,13 @@ window.NovelGraph = (() => {
         this.raf=0;
         if(!this.active)return;
         if(this.visible||this.drag){
-          const passes=this.iterations<50?3:this.iterations<120?2:1;
+          const size=this.nodes.length;
+          const passes=size>170?1:this.iterations<50?3:this.iterations<120?2:1;
           for(let j=0;j<passes;j++)this.tick();
-          this.draw();
+          const now=Date.now();
+          if(size<170||now-this.lastDraw>=28||this.alpha<=.016){
+            this.draw();this.lastDraw=now;
+          }
         }
         if(this.alpha>.016||this.drag)this.run();
       });

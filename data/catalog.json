@@ -1,0 +1,29 @@
+{
+  "schema_version": "3.0.0",
+  "books": [
+    {
+      "id": "hongloumeng",
+      "title": "红楼梦",
+      "status": "draft",
+      "edition_id": "hongloumeng:attachment-v1",
+      "expected_chapters": 120,
+      "source_filename": "红楼梦.txt",
+      "source_sha256": "5eca888fb54188d644df70fa555dd3c9cbdd3a8d7b3034fb59f7a81e16f05dc7"
+    },
+    {
+      "id": "sanguoyanyi",
+      "title": "三国演义",
+      "status": "planned"
+    },
+    {
+      "id": "shuihuzhuan",
+      "title": "水浒传",
+      "status": "planned"
+    },
+    {
+      "id": "xiyouji",
+      "title": "西游记",
+      "status": "planned"
+    }
+  ]
+}

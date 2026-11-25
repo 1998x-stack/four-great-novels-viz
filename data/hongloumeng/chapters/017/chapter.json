@@ -6,5 +6,12 @@
   "lexical_character_count": 14,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "previous_event_count": 3,
+    "event_count": 18,
+    "method": "逐景建立园林题额事件并配原文行",
+    "review_note": "本附件第17回主要描写试才题额；省亲本身见第18回"
+  }
 }

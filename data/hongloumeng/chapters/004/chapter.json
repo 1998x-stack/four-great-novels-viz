@@ -6,5 +6,12 @@
   "lexical_character_count": 22,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "previous_event_count": 14,
+    "event_count": 24,
+    "method": "逐段核对并细分旧事件",
+    "review_note": "机器辅助提取，仍需人工审校；背景/转述与剧情已分型"
+  }
 }

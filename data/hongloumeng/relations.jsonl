@@ -433,3 +433,10 @@
 {"book_id":"hongloumeng","relation_id":"R0433","subject_id":"P0015","object_id":"P0013","predicate":"家务协作","category":"主仆与职务","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0434","subject_id":"P0059","object_id":"P0015","predicate":"通报薛家案件","category":"帮助与互动","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0435","subject_id":"P0021","object_id":"P0004","predicate":"侍奉","category":"主仆与职务","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0436","subject_id":"P0065","predicate":"出示护官符","object_id":"P0030","category":"主仆与职务","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0437","subject_id":"P0065","predicate":"献徇私判案之计","object_id":"P0030","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0438","subject_id":"P0030","predicate":"发配革逐","object_id":"P0065","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0439","subject_id":"P0006","predicate":"安置亲眷","object_id":"P0020","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0440","subject_id":"P0019","predicate":"姊妹交游","object_id":"P0005","category":"交游与诗社","direction":"symmetric"}
+{"book_id":"hongloumeng","relation_id":"R0441","subject_id":"P0015","predicate":"姊妹照应","object_id":"P0020","category":"亲缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0442","subject_id":"P0059","predicate":"舅甥","object_id":"P0017","category":"亲缘","direction":"subject_to_object"}

@@ -217,6 +217,7 @@ window.NovelGraph = (() => {
       this.edgeLayer=element("g",{class:"force-edge-layer"});
       this.svg.replaceChildren(this.edgeLayer,this.nodeLayer);
       if(this.dense)this.mountCanvas();
+      this.svg.classList.toggle("is-dense",this.dense);
       const pairCount=new Map(),pairIndex=new Map();
       const active=[];
       for(const r of config.links){
@@ -457,6 +458,8 @@ window.NovelGraph = (() => {
       node.elem.setPointerCapture(e.pointerId);
       this.svg.classList.add("is-grabbing");
       node.elem.classList.add("is-dragging");
+      // Raise the grabbed node above crossing edges and overlapping neighbours.
+      this.nodeLayer.appendChild(node.elem);
       this.alpha=Math.max(this.alpha,.55);
       this.run();
     }
@@ -600,6 +603,7 @@ window.NovelGraph = (() => {
       this.active=false;cancelAnimationFrame(this.raf);this.raf=0;
       this.observer?.disconnect();
       this.viewObserver?.disconnect();
+      this.svg.classList.remove("is-dense");
       this.resizeObserver?.disconnect();
       if(this.canvas){this.canvas.remove();this.canvas=null}
       for(const n of this.nodes)previous.set(n.id,{x:n.x,y:n.y});

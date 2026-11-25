@@ -541,3 +541,6 @@
 {"id":"P0541","book_id":"sanguoyanyi","name":"韩莒子","aliases":[],"group":"汉末群雄","status":"draft","mentions":1,"first_chapter":30,"legacy_id":"p_22be92e198","record_note":"旧版名称匹配，待人工消歧"}
 {"id":"P0542","book_id":"sanguoyanyi","name":"高升","aliases":[],"group":"汉末群雄","status":"draft","mentions":1,"first_chapter":2,"legacy_id":"p_e9d0d2643c","record_note":"旧版名称匹配，待人工消歧"}
 {"id":"P0543","book_id":"sanguoyanyi","name":"汉少帝","aliases":["少帝","刘辩"],"group":"汉末群雄","status":"draft","mentions":0,"first_chapter":3,"legacy_id":"p_dc66e048dd","record_note":"旧版名称匹配，待人工消歧"}
+{"id":"P0544","book_id":"sanguoyanyi","name":"张世平","aliases":[],"group":"商贾","status":"draft","first_chapter":1,"record_note":"第一回中山商人，与苏双资助刘备；据本底本第31行"}
+{"id":"P0545","book_id":"sanguoyanyi","name":"苏双","aliases":[],"group":"商贾","status":"draft","first_chapter":1,"record_note":"第一回中山商人，与张世平资助刘备；据本底本第31行"}
+{"id":"P0546","book_id":"sanguoyanyi","name":"左丰","aliases":[],"group":"东汉朝廷","status":"draft","first_chapter":1,"record_note":"第一回黄门，向卢植索贿后进谗；据卢植向刘备的转述，第47行"}

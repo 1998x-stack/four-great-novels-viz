@@ -6,5 +6,13 @@
   "line_start": 1201,
   "line_end": 1220,
   "review_status": "draft",
-  "event_count": 8
+  "event_count": 14,
+  "enrichment": {
+    "status": "partial_paragraph_anchored",
+    "previous_events": 9,
+    "new_events": 5,
+    "total_events": 14,
+    "review_required": true,
+    "review_note": "每回新增5条重点原文行锚点，尚未穷尽全回或人工终审"
+  }
 }

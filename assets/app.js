@@ -40,7 +40,7 @@ if(window.NovelGraph){
   window.NovelGraph.render({
     svg:graph,bookId:state.book?.id||"unknown",nodes:persons,links:r,
     palette,focusId:state.person,selectedId:state.selected,
-    onNode:id=>{state.person=id;state.selected=null;if($("scope").value==="all"){$("scope").value="1";resetView()}render();showPerson(id)},
+    onNode:id=>{state.person=id;state.selected=null;render();showPerson(id)},
     onEdge:relation=>showRelation(relation)
   });
   $("legend").replaceChildren(...groups.map(g=>{

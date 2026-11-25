@@ -6,16 +6,5 @@
   "lexical_character_count": 36,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft",
-  "enrichment": {
-    "status": "paragraph_anchored",
-    "previous_event_count": 9,
-    "event_count": 25,
-    "moved_out_event_ids": [
-      "E0231"
-    ],
-    "moved_to_chapter": 8,
-    "method": "宫花流转、秦钟结交、焦大醉骂逐段核对",
-    "review_note": "第八回秦业收养记事已纠正章回，醉骂为未核实传闻"
-  }
+  "review_status": "draft"
 }

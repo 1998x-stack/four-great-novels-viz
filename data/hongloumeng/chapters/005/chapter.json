@@ -6,12 +6,5 @@
   "lexical_character_count": 28,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft",
-  "enrichment": {
-    "status": "paragraph_anchored",
-    "previous_event_count": 2,
-    "event_count": 33,
-    "method": "梦境叙事与十二钗判词分离，关联人物只作为解释候选",
-    "review_note": "段落已定位，但象征归属及情节仍待人工校勘"
-  }
+  "review_status": "draft"
 }

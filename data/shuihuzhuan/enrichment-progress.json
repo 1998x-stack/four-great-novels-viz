@@ -1,0 +1,10 @@
+{
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "next_event_number": 392,
+  "next_relation_number": 380,
+  "completed_chapters": [
+    1,
+    2
+  ],
+  "method": "模型辅助逐回精标（未人工校勘）"
+}

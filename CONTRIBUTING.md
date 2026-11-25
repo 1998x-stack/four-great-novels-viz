@@ -42,16 +42,3 @@
 ## GitHub Pages
 
 合并到 `main` 后，`.github/workflows/pages.yml` 验证并发布站点。仓库管理员需在 **Settings → Pages → Source** 选择 **GitHub Actions**。CI 校验通过并不自动等同网页部署成功；请在 Actions 查看 Deploy GitHub Pages 结果。
-
-
-## 章回附录与异常阅读顺序
-
-若附录没有独立的整数回数，分配不冲突的稳定整数 `chapter` 标识，并在 `chapter.json` 中设置 `chapter_kind: "appendix"`、`source_chapter_key` 和 `narrative_order`，前端按阅读顺序显示。当前《西游记》附录键 `8a` 映射到 `801`，叙事位置 `8.5`。不要把附录事件写到第八回内或重用第九回编号。
-
-《西游记》`candidates.jsonl` 使用 `C####`、`subject_id`、`object_id`、`status: pending` 与仓库统一的 candidate.schema.json；从候选提升为正式剧情事件时，新建 E/R 记录并保留 `legacy_id` 和复核记录。所有自动匹配证据默认不是人工已核验。
-
-## 第五回等象征文本的维护方式
-
-梦境、判词、仙曲与现实剧情应分开，使用 `event_type=symbolic_foreshadowing` 表示预示，实际经历仍存 `plot`。判词未直接指名时，不可把传统归属人物放进 `participants`，而应使用 `depicted_people_ids` 和 `interpretation_status`；只有真正参与该事件的人才列入 `participants`。网页单独展示这些解释性角色，不把他们显示为参与故事或直接关系。证据等级 `anchored_paragraph` 只是原文定位，必须经过独立语义核验后才能升为 `reviewed`。
-
-`source.excerpt` 记录原文段落的起始摘录，并以 `line_start` / `line_end` 回溯指定附件底本；若摘录为节选，不能假称包含了全部段落。涉及当事人指控、流言或医者论述，应注明转述者、叙事层级，不将指控或医者观点当作已查实事实。原文中有明显文字识别损坏的字，不应在数据里自行偷偷修复。

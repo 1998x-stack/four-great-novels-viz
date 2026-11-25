@@ -50,7 +50,6 @@ def read_book(b):
             validate("event",e)
             check(e["book_id"]==bid and e["chapter"]==n,"Event chapter mismatch")
             check(set(e["participants"])<=ps.keys(),"Unknown participant "+e["event_id"])
-            check(set(e.get("depicted_people_ids", []))<=ps.keys(),"Unknown interpreted person "+e["event_id"])
             check(set(e["relation_ids"])<=rs.keys(),"Unknown relation "+e["event_id"])
             for rid in e["relation_ids"]:
                 rel=rs[rid]

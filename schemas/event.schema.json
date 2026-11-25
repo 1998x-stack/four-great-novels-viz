@@ -96,18 +96,6 @@
     "sequence": {
       "type": "integer",
       "minimum": 0
-    },
-    "depicted_people_ids": {
-      "type": "array",
-      "uniqueItems": true,
-      "items": {
-        "type": "string",
-        "pattern": "^P[0-9]{4,}$"
-      }
-    },
-    "interpretation_status": {
-      "type": "string",
-      "minLength": 1
     }
   },
   "required": [

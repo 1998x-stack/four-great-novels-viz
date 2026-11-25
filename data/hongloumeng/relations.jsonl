@@ -542,3 +542,15 @@
 {"book_id":"hongloumeng","relation_id":"R0542","subject_id":"P0081","predicate":"为孙治丧","object_id":"P0084","category":"亲缘","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0543","subject_id":"P0006","predicate":"吊唁","object_id":"P0084","category":"亲缘","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0544","subject_id":"P0007","predicate":"护送返乡","object_id":"P0005","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0545","subject_id":"P0024","predicate":"梦中告别","object_id":"P0013","category":"神话与因缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0546","subject_id":"P0024","predicate":"梦中警醒","object_id":"P0013","category":"神话与因缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0547","subject_id":"P0024","predicate":"梦中建议置办祭产","object_id":"P0013","category":"神话与因缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0548","subject_id":"P0024","predicate":"梦中预示","object_id":"P0013","category":"神话与因缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0549","subject_id":"P0001","predicate":"哀悼","object_id":"P0024","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0550","subject_id":"P0017","predicate":"赠供棺木","object_id":"P0009","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0551","subject_id":"P0188","predicate":"认作义女守灵","object_id":"P0024","category":"主仆与职务","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0552","subject_id":"P0009","predicate":"委托捐官","object_id":"P0189","category":"主仆与职务","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0553","subject_id":"P0001","predicate":"举荐管理丧务","object_id":"P0009","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0554","subject_id":"P0015","predicate":"准许协理","object_id":"P0013","category":"亲缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0555","subject_id":"P0009","predicate":"授宁府对牌","object_id":"P0013","category":"主仆与职务","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0556","subject_id":"P0013","predicate":"整饬府务","object_id":"P0009","category":"主仆与职务","direction":"subject_to_object"}

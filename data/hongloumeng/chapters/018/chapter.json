@@ -6,5 +6,15 @@
   "lexical_character_count": 21,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "partial_source_truncated",
+    "previous_event_count": 5,
+    "event_count": 21,
+    "unverified_event_ids": [
+      "E0062"
+    ],
+    "method": "对可见正文逐段定位，缺失的元妃命题诗片段保留待核",
+    "review_note": "底本本回于诗句开头截断，不编造黛玉代作《杏帘在望》的原文证据"
+  }
 }

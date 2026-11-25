@@ -381,3 +381,17 @@
 {"relation_id":"R0381","subject_id":"P0115","predicate":"诊治","object_id":"P0023","category":"帮助与互动","direction":"subject_to_object","book_id":"hongloumeng"}
 {"relation_id":"R0382","subject_id":"P0025","predicate":"赠物","object_id":"P0122","category":"帮助与互动","direction":"subject_to_object","book_id":"hongloumeng"}
 {"relation_id":"R0383","subject_id":"P0099","predicate":"主仆","object_id":"P0001","category":"主仆与职务","direction":"subject_to_object","book_id":"hongloumeng"}
+{"book_id":"hongloumeng","relation_id":"R0384","subject_id":"P0031","object_id":"P0355","predicate":"来客与主人","category":"交游与诗社","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0385","subject_id":"P0356","object_id":"P0003","predicate":"乳母与被照料者","category":"主仆与职务","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0386","subject_id":"P0031","object_id":"P0042","predicate":"主仆","category":"主仆与职务","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0387","subject_id":"P0031","object_id":"P0051","predicate":"家主与婢女","category":"主仆与职务","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0388","subject_id":"P0030","object_id":"P0051","predicate":"误认知己","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0389","subject_id":"P0031","object_id":"P0030","predicate":"邻里交游","category":"交游与诗社","direction":"symmetric"}
+{"book_id":"hongloumeng","relation_id":"R0390","subject_id":"P0038","object_id":"P0032","predicate":"下凡挂号","category":"神话与因缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0391","subject_id":"P0032","object_id":"P0041","predicate":"促成还泪因缘","category":"神话与因缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0392","subject_id":"P0039","object_id":"P0031","predicate":"梦中展示宝玉","category":"神话与因缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0393","subject_id":"P0035","object_id":"P0031","predicate":"梦中相见","category":"神话与因缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0394","subject_id":"P0034","object_id":"P0003","predicate":"外祖父与外孙女","category":"亲缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0395","subject_id":"P0034","object_id":"P0031","predicate":"盘剥","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0396","subject_id":"P0039","object_id":"P0003","predicate":"预警命运","category":"神话与因缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0397","subject_id":"P0031","object_id":"P0036","predicate":"离家出走","category":"帮助与互动","direction":"subject_to_object"}

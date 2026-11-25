@@ -6,5 +6,12 @@
   "lexical_character_count": 18,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "method": "逐段语义复核与故事细分",
+    "review_note": "机器辅助逐段比对，未人工校勘；神话、梦境、预言与情节区分",
+    "events": 26,
+    "previous_event_count": 16
+  }
 }

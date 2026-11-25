@@ -98,6 +98,7 @@
       historyItems=[], historyIndex=-1, saved=null, navigating=false, loadingBook=false,
       lastFocused=null;
   let visits=new Map();
+  let inertElements=[];
 
   const el=(tag,cls,text)=>{
     const e=document.createElement(tag);
@@ -363,6 +364,7 @@
     const selection=state.books.find(b=>b.id===id);
     try{
       await selectBook(selection);
+      if(!active){loadingBook=false;return}
       $i("scope").value="1";
       $i("chapter").value="all";
       $i("category").value="";
@@ -401,6 +403,10 @@
     $i("evidence").value="";
     sourcePanel.before(placeholder);
     slot.append(sourcePanel);
+    inertElements=[...document.querySelectorAll("body > .site-header, body > main")].map(element=>({
+      element,wasInert:element.inert
+    }));
+    inertElements.forEach(({element})=>{element.inert=true});
     stage.hidden=false;
     stage.classList.add("is-open");
     document.body.classList.add("immersive-lock");
@@ -428,6 +434,8 @@
     stage.classList.remove("is-open");
     stage.hidden=true;
     document.body.classList.remove("immersive-lock");
+    inertElements.forEach(({element,wasInert})=>{element.inert=wasInert});
+    inertElements=[];
     if(placeholder.parentNode)placeholder.parentNode.insertBefore(sourcePanel,placeholder);
     placeholder.remove();
     if(saved && saved.bookId===state.book?.id){
@@ -447,7 +455,8 @@
     render();showPerson(state.person);
     saved=null;
     if(document.fullscreenElement===stage && document.exitFullscreen){
-      document.exitFullscreen().catch(()=>{});
+      const ending=document.exitFullscreen();
+      ending?.catch?.(()=>{});
     }
     nativeActive=false;
     openButton.focus({preventScroll:true});

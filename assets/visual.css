@@ -281,3 +281,7 @@ footer a{color:#bbc9c3}footer small{display:block;font:9px Georgia,serif;letter-
  .reveal{opacity:1;transform:none}
  #graph .node{opacity:1}
 }
+
+/* Gentle flowing highlights emphasize the real links in the graph. */
+#graph .edge-tracers{pointer-events:none}
+#graph .edge-tracers circle{filter:drop-shadow(0 0 4px #f5dca4);pointer-events:none}

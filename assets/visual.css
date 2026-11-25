@@ -354,3 +354,23 @@ footer a{color:#bbc9c3}footer small{display:block;font:9px Georgia,serif;letter-
  #graph .force-edge-line.is-selected{animation:none;stroke-dasharray:none}
  #graph .force-node,#graph .force-node-label{transition:none!important}
 }
+
+/* Dense-network hybrid renderer: Canvas links + SVG interaction targets.
+   Canvas has zero pointer hit-testing cost; every node remains a true SVG control. */
+.panel.graph .canvas{position:relative}
+.panel.graph .canvas .force-edge-canvas{
+  position:absolute;inset:0;display:block;width:100%;height:100%;
+  pointer-events:none;z-index:0;
+}
+.panel.graph .canvas #graph{
+  position:relative;z-index:1;touch-action:none;user-select:none;
+  -webkit-user-select:none;-webkit-touch-callout:none;
+}
+#graph .force-node,#graph .force-node *{touch-action:none}
+#graph .force-node-hit{
+  fill:transparent!important;stroke:none!important;
+  filter:none!important;opacity:0!important;
+  pointer-events:all!important;cursor:grab;
+}
+#graph .force-node.is-dragging .force-node-hit{cursor:grabbing}
+#graph .force-node.is-dragging{opacity:1!important}

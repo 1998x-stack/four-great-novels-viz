@@ -6,5 +6,12 @@
   "lexical_character_count": 20,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "previous_event_count": 2,
+    "event_count": 25,
+    "method": "袭人赎身试探、劝诫分条；宝黛日常交往与虚构故事分型",
+    "review_note": "耗子精香玉仅为宝玉讲述的虚构笑话，不视为真实人物或事实"
+  }
 }

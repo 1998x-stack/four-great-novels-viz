@@ -8,9 +8,11 @@
   <title>四大名著 · 浮世群像｜人物关系交互图谱</title>
   <link rel="stylesheet" href="assets/style.css">
   <link rel="stylesheet" href="assets/visual.css">
+  <link rel="stylesheet" href="assets/immersive.css">
   <script defer src="assets/force-graph.js"></script>
   <script defer src="assets/app.js"></script>
   <script defer src="assets/visual.js"></script>
+  <script defer src="assets/immersive.js"></script>
 </head>
 <body>
   <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
@@ -96,7 +98,7 @@
           <div id="peopleList" class="scroll"></div>
         </aside>
         <section class="panel graph">
-          <div class="panelhead graph-head"><h3 id="graphTitle">关系图谱</h3><div class="controls"><button id="minus" type="button" aria-label="缩小" title="缩小">−</button><button id="plus" type="button" aria-label="放大" title="放大">＋</button><button id="reset" type="button" title="复原画布缩放与位置">视图复位</button><button id="relayout" type="button" title="重新进行力导向排布">重新排布 ⟳</button></div></div>
+          <div class="panelhead graph-head"><h3 id="graphTitle">关系图谱</h3><div class="controls"><button id="minus" type="button" aria-label="缩小" title="缩小">−</button><button id="plus" type="button" aria-label="放大" title="放大">＋</button><button id="reset" type="button" title="复原画布缩放与位置">视图复位</button><button id="relayout" type="button" title="重新进行力导向排布">重新排布 ⟳</button><button id="fullscreenOpen" type="button" class="graph-fullscreen-button" title="进入全屏人物接力探索"><span aria-hidden="true">⛶</span> 全屏探索</button></div></div>
           <div class="canvas">
             <div class="graph-grid" aria-hidden="true"></div>
             <svg id="graph" viewBox="0 0 900 620" role="group" aria-label="人物关系交互图"></svg>

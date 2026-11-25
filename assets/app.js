@@ -26,7 +26,34 @@ async function loadEvents(){const req=++state.request,token=state.token,root=bas
 function filteredEvents(){const ev=$("evidence").value;return state.events.filter(e=>!ev||e.source.evidence_level===ev)}
 function filteredRelations(){const cat=$("category").value,restrict=$("chapter").value!=="all"||!!$("evidence").value;const ids=new Set(filteredEvents().flatMap(e=>e.relation_ids));return state.relations.filter(r=>(!cat||r.category===cat)&&(!restrict||ids.has(r.relation_id)))}
 function visible(){const r=filteredRelations(),ids=new Set();if($("scope").value==="all"){for(const x of r){ids.add(x.subject_id);ids.add(x.object_id)}if(state.person)ids.add(state.person)}else if(state.person){ids.add(state.person);for(let i=0;i<Number($("scope").value);i++){const prev=new Set(ids);for(const x of r)if(prev.has(x.subject_id)||prev.has(x.object_id)){ids.add(x.subject_id);ids.add(x.object_id)}}}return {ids,r:r.filter(x=>ids.has(x.subject_id)&&ids.has(x.object_id))}}
-function render(){const {ids,r}=visible(),pm=personMap();$("stats").replaceChildren(...[["人物候选",state.people.length],["全书关系",state.relations.length],["当前事件",filteredEvents().length],["已录章回",state.chapters.length]].map(([t,n])=>{let s=create("div",undefined,"stat");s.append(create("b",n),create("small",t));return s}));const q=$("search").value.trim().toLowerCase();let list=state.people.filter(p=>[p.id,p.name,...(p.aliases||[])].some(x=>String(x).toLowerCase().includes(q)));$("personCount").textContent=list.length+" 人";$("peopleList").replaceChildren(...list.map(p=>{let b=btn("",()=>{state.person=p.id;state.selected=null;if($("scope").value==="all")$("scope").value="1";resetView();render();showPerson(p.id)},"person"+(p.id===state.person?" selected":""));b.append(create("b",p.name),create("small",[p.id,p.group].filter(Boolean).join(" · ")));return b}));$("graphTitle").textContent="关系图谱 · "+ids.size+" 人 / "+r.length+" 边";const graph=$("graph");if(!window.NovelGraph)graph.replaceChildren();if(!ids.size){window.NovelGraph?.clear();graph.replaceChildren();graph.append(sv("text",{x:450,y:310,"text-anchor":"middle",fill:"#6c726a","font-size":20},"暂无图谱数据"));$("legend").replaceChildren();return}
+let peopleListCacheKey="";
+function refreshPeopleList(){
+ const q=$("search").value.trim().toLowerCase();
+ const key=(state.book?.id||"none")+"|"+state.people.length+"|"+q;
+ if(peopleListCacheKey!==key){
+   const list=state.people.filter(p=>[p.id,p.name,...(p.aliases||[])]
+     .some(x=>String(x).toLowerCase().includes(q)));
+   $("personCount").textContent=list.length+" 人";
+   const fragment=document.createDocumentFragment();
+   for(const p of list){
+     const button=btn("",()=>{
+       state.person=p.id;state.selected=null;
+       if($("scope").value==="all")$("scope").value="1";
+       resetView();render();showPerson(p.id);
+     },"person");
+     button.dataset.person=p.id;
+     button.append(create("b",p.name),create("small",[p.id,p.group].filter(Boolean).join(" · ")));
+     fragment.append(button);
+   }
+   $("peopleList").replaceChildren(fragment);
+   peopleListCacheKey=key;
+ }
+ // Selecting or dragging a node no longer recreates hundreds of sidebar buttons.
+ for(const button of $("peopleList").querySelectorAll("button.person")){
+   button.classList.toggle("selected",button.dataset.person===state.person);
+ }
+}
+function render(){const {ids,r}=visible(),pm=personMap();$("stats").replaceChildren(...[["人物候选",state.people.length],["全书关系",state.relations.length],["当前事件",filteredEvents().length],["已录章回",state.chapters.length]].map(([t,n])=>{let s=create("div",undefined,"stat");s.append(create("b",n),create("small",t));return s}));refreshPeopleList();$("graphTitle").textContent="关系图谱 · "+ids.size+" 人 / "+r.length+" 边";const graph=$("graph");if(!window.NovelGraph)graph.replaceChildren();if(!ids.size){window.NovelGraph?.clear();graph.replaceChildren();graph.append(sv("text",{x:450,y:310,"text-anchor":"middle",fill:"#6c726a","font-size":20},"暂无图谱数据"));$("legend").replaceChildren();return}
 
 // Physically balanced layout: connected people attract, unrelated nodes repel.
 // Kept separate from data/relationship logic; retains SVG fallback below.
@@ -61,7 +88,7 @@ function showRelation(r){state.selected=r.relation_id;render();const d=$("detail
 
 $("chapter").addEventListener("change",()=>{resetView();persistURL();loadEvents()});
 function stepChapter(delta){const n=$("chapter").value,list=state.chapters;if(!list.length)return;const i=n==="all"?(delta>0?-1:list.length):list.indexOf(Number(n));const next=list[Math.max(0,Math.min(list.length-1,i+delta))];if(next===undefined)return;$("chapter").value=String(next);resetView();persistURL();loadEvents()}
-$("prevChapter").addEventListener("click",()=>stepChapter(-1));$("nextChapter").addEventListener("click",()=>stepChapter(1));for(const id of ["category","scope","evidence"])$(id).addEventListener("change",()=>{state.selected=null;render();showPerson(state.person)});$("search").addEventListener("input",render);$("timeline").addEventListener("click",()=>{const ev=filteredEvents();$("detail").replaceChildren(create("h4","章回事件 / "+ev.length),...eventCards(ev))});$("candidates").addEventListener("click",async()=>{const v=$("chapter").value, d=$("detail");if(v==="all"){d.replaceChildren(create("h4","待核线索"),empty("请先选择具体回目，避免将共现当作人物关系。"));return}const req=state.request,token=state.token;d.replaceChildren(empty("读取候选线索…"));try{const rows=await jsonl(dir(Number(v))+"candidates.jsonl");if(token!==state.token||req!==state.request)return;const pm=personMap();d.replaceChildren(create("h4",chapterLabel(Number(v))+" · 待核线索 / "+rows.length),create("p","文本同段共现不代表真实互动；点击证据展开原文定位。","muted"));for(const c of rows){const item=create("article",undefined,"event"),s=c.source||{};item.append(create("small",c.candidate_id+" · 待核"),create("p",(pm.get(c.subject_id)?.name||c.subject_id)+" × "+(pm.get(c.object_id)?.name||c.object_id)+" · "+(c.kind||"共现")));const detail=create("details");detail.append(create("summary","查看原文与行号"),create("p",s.line_start?"第 "+s.line_start+" 行":"仅回目级线索","muted"),create("div",s.excerpt||c.summary||"无摘录","quote"));item.append(detail);d.append(item)}}catch(e){if(token===state.token&&req===state.request)d.replaceChildren(empty("当前回目暂无线索文件："+e.message))}});
+$("prevChapter").addEventListener("click",()=>stepChapter(-1));$("nextChapter").addEventListener("click",()=>stepChapter(1));for(const id of ["category","scope","evidence"])$(id).addEventListener("change",()=>{state.selected=null;render();showPerson(state.person)});$("search").addEventListener("input",refreshPeopleList);$("timeline").addEventListener("click",()=>{const ev=filteredEvents();$("detail").replaceChildren(create("h4","章回事件 / "+ev.length),...eventCards(ev))});$("candidates").addEventListener("click",async()=>{const v=$("chapter").value, d=$("detail");if(v==="all"){d.replaceChildren(create("h4","待核线索"),empty("请先选择具体回目，避免将共现当作人物关系。"));return}const req=state.request,token=state.token;d.replaceChildren(empty("读取候选线索…"));try{const rows=await jsonl(dir(Number(v))+"candidates.jsonl");if(token!==state.token||req!==state.request)return;const pm=personMap();d.replaceChildren(create("h4",chapterLabel(Number(v))+" · 待核线索 / "+rows.length),create("p","文本同段共现不代表真实互动；点击证据展开原文定位。","muted"));for(const c of rows){const item=create("article",undefined,"event"),s=c.source||{};item.append(create("small",c.candidate_id+" · 待核"),create("p",(pm.get(c.subject_id)?.name||c.subject_id)+" × "+(pm.get(c.object_id)?.name||c.object_id)+" · "+(c.kind||"共现")));const detail=create("details");detail.append(create("summary","查看原文与行号"),create("p",s.line_start?"第 "+s.line_start+" 行":"仅回目级线索","muted"),create("div",s.excerpt||c.summary||"无摘录","quote"));item.append(detail);d.append(item)}}catch(e){if(token===state.token&&req===state.request)d.replaceChildren(empty("当前回目暂无线索文件："+e.message))}});
 $("plus").addEventListener("click",()=>zoom(.8));$("minus").addEventListener("click",()=>zoom(1.25));$("reset").addEventListener("click",resetView);
 $("relayout")?.addEventListener("click",()=>window.NovelGraph?.rearrange());
 const graph=$("graph");let drag=null;graph.addEventListener("pointerdown",e=>{if(e.target.closest(".node,.edge"))return;drag={x:e.clientX,y:e.clientY,view:[...state.view]};graph.setPointerCapture(e.pointerId)});graph.addEventListener("pointermove",e=>{if(!drag)return;const rect=graph.getBoundingClientRect(),s=Math.min(rect.width/drag.view[2],rect.height/drag.view[3]);state.view=[drag.view[0]-(e.clientX-drag.x)/s,drag.view[1]-(e.clientY-drag.y)/s,drag.view[2],drag.view[3]];updateView()});for(const name of ["pointerup","pointercancel","lostpointercapture"])graph.addEventListener(name,()=>{drag=null});init();

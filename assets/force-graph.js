@@ -133,6 +133,7 @@ window.NovelGraph = (() => {
       this.byId=new Map();
       this.edges=[];
       this.springs=[];
+      this.pairs=new Map();
       this.dense=config.links.length>260 || config.nodes.length>145;
       this.canvas=null;
       this.ctx=null;
@@ -231,6 +232,8 @@ window.NovelGraph = (() => {
       const springPairs=new Set();
       for(const item of active){
         if(!springPairs.has(item.key)){springPairs.add(item.key);this.springs.push(item)}
+        if(!this.pairs.has(item.key))this.pairs.set(item.key,[]);
+        this.pairs.get(item.key).push(item.relation);
         const i=pairIndex.get(item.key)||0;pairIndex.set(item.key,i+1);
         const total=pairCount.get(item.key);
         item.offset=(i-(total-1)/2)*Math.min(15,48/Math.max(1,total));
@@ -304,7 +307,12 @@ window.NovelGraph = (() => {
         if(this.dense && this.blankDown && this.blankDown.id===e.pointerId &&
            !this.blankDown.moved && !this.drag){
           const nearest=this.nearestEdge(this.svgPoint(e));
-          if(nearest) this.config.onEdge(nearest.relation);
+          if(nearest){
+            const group=this.pairs.get(nearest.key)||[nearest.relation];
+            if(group.length>1 && typeof this.config.onPair==="function")
+              this.config.onPair(group);
+            else this.config.onEdge(nearest.relation);
+          }
         }
         this.blankDown=null;
         this.pointerUp(e);
@@ -355,6 +363,9 @@ window.NovelGraph = (() => {
       ctx.translate(ox,oy);ctx.scale(scale,scale);ctx.translate(-v.x,-v.y);
       ctx.lineJoin="round";ctx.lineCap="round";
       const focus=this.hoverId?this.byId.get(this.hoverId):null;
+      const selected=this.config.selectedId?
+        this.edges.find(e=>e.relation.relation_id===this.config.selectedId):null;
+      const selectedPair=selected?.key;
       function trace(edge){
         const u=edge.source,v=edge.target;
         if(u===v){
@@ -370,8 +381,8 @@ window.NovelGraph = (() => {
       }
       // Batch ordinary links into one path: thousands of edges, one stroke.
       ctx.beginPath();
-      for(const e of this.edges){
-        if(e.relation.relation_id===this.config.selectedId)continue;
+      for(const e of this.springs){
+        if(e.key===selectedPair)continue;
         if(focus && (e.source===focus||e.target===focus))continue;
         trace(e);
       }
@@ -381,13 +392,13 @@ window.NovelGraph = (() => {
       ctx.lineWidth=Math.max(.95,.82/scale);ctx.stroke();
       if(focus){
         ctx.beginPath();
-        for(const e of this.edges)if(e.source===focus||e.target===focus)trace(e);
+        for(const e of this.springs)if(e.source===focus||e.target===focus)trace(e);
         ctx.strokeStyle="rgba(236,197,131,.86)";
         ctx.lineWidth=1.65;ctx.stroke();
       }
-      if(this.config.selectedId){
+      if(selectedPair){
         ctx.beginPath();
-        for(const e of this.edges)if(e.relation.relation_id===this.config.selectedId)trace(e);
+        for(const e of this.springs)if(e.key===selectedPair)trace(e);
         ctx.strokeStyle="#ffdda1";ctx.lineWidth=2.6;ctx.stroke();
       }
     }
@@ -404,7 +415,7 @@ window.NovelGraph = (() => {
         const ex=ax+t*dx-x,ey=ay+t*dy-y;
         return ex*ex+ey*ey;
       }
-      for(const e of this.edges){
+      for(const e of this.springs){
         const a=e.source,b=e.target;
         if(a===b)continue;
         const dx=b.x-a.x,dy=b.y-a.y,len=Math.hypot(dx,dy)||1;

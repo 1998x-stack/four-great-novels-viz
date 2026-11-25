@@ -1,7 +1,7 @@
 {
   "edition_id": "shuihuzhuan:attachment-v1",
-  "next_event_number": 601,
-  "next_relation_number": 604,
+  "next_event_number": 618,
+  "next_relation_number": 621,
   "completed_chapters": [
     1,
     2,
@@ -18,7 +18,8 @@
     13,
     14,
     15,
-    16
+    16,
+    17
   ],
   "method": "模型辅助逐回精标（未人工校勘）"
 }

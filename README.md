@@ -6,24 +6,35 @@
 
 | 书籍 | ID | 人物 | 关系 | 事件关联记录 | 章回 |
 |---|---|---:|---:|---:|---:|
-| 红楼梦 | hongloumeng | 354 | 383 | 481 | 120 |
+| 红楼梦 | hongloumeng | 364 | 517 | 641 | 120 |
 | 三国演义 | sanguoyanyi | 0 | 0 | 0 | 待录入 |
 | 水浒传 | shuihuzhuan | 487 | 342 | 360 | 楔子 + 120 回 |
 | 西游记 | xiyouji | 310 | 230 | 239 | 100 回 + 附录 |
 
 红楼梦由既有 V2 数据迁移；水浒传由对话中的 V2 逐回数据迁移（360 个独立事件 ID，另有 1,689 条待核线索）。数据按书籍隔离，后续新增三国演义、西游记不会破坏已有格式。全部数据为待校勘草稿，人物候选不保证穷尽。原文定位并不等于语义审核。原始附件未提交，版本指纹见 data/catalog.json。
 
-## 逐回复核进度（V3 增补）
+## 逐回复核进度（V3 前十回批次）
 
-当前《红楼梦》已按原文逐段增补第 1–3 回：人物候选 361、关系 435、事件记录 532；原有 120 回目录全部保留。以下三回的 117 条事件均已附段落出处（机器辅助定位，未人工校勘）。其余 117 回仍为 V2 初稿。
+**《红楼梦》第 1–10 回已完成逐段增补。** 全书当前 364 位人物/人物候选、517 条关系、641 条事件记录；第 1–10 回合计 277 条，已附段落定位，**不是人工审校通过**。原有 120 回目录均保留，其余 **110 回仍主要是 V2 初稿**。
 
-| 章回 | 原事件数 | 增补后 | 状态 |
+| 章回 | V2 原事件数 | V3 当前事件数 | 校勘状态 |
 |---|---:|---:|---|
-| [001](data/hongloumeng/chapters/001/events.jsonl) | 16 | 26 | 段落定位 |
-| [002](data/hongloumeng/chapters/002/events.jsonl) | 38 | 53 | 段落定位 |
-| [003](data/hongloumeng/chapters/003/events.jsonl) | 12 | 38 | 段落定位 |
+| [001](data/hongloumeng/chapters/001/events.jsonl) | 16 | 26 | 段落定位、待人工终审 |
+| [002](data/hongloumeng/chapters/002/events.jsonl) | 38 | 53 | 段落定位、待人工终审 |
+| [003](data/hongloumeng/chapters/003/events.jsonl) | 12 | 38 | 段落定位、待人工终审 |
+| [004](data/hongloumeng/chapters/004/events.jsonl) | 14 | 24 | 段落定位、待人工终审 |
+| [005](data/hongloumeng/chapters/005/events.jsonl) | 2 | 33 | 段落定位、待人工终审 |
+| [006](data/hongloumeng/chapters/006/events.jsonl) | 15 | 27 | 段落定位、待人工终审 |
+| [007](data/hongloumeng/chapters/007/events.jsonl) | 9 | 25 | 段落定位、待人工终审 |
+| [008](data/hongloumeng/chapters/008/events.jsonl) | 3 | 19 | 段落定位、待人工终审 |
+| [009](data/hongloumeng/chapters/009/events.jsonl) | 6 | 17 | 段落定位、待人工终审 |
+| [010](data/hongloumeng/chapters/010/events.jsonl) | 2 | 15 | 段落定位、待人工终审 |
 
-下一回：004 薄命女偏逢薄命郎　葫芦僧乱判葫芦案。后续沿用稳定 ID 与章回独立提交；新增 sequence（章回内叙事顺序）及 event_type（plot/retelling/background/dialogue/dream/myth/prophecy/frame/inference 等）。段落定位不代表事实已经人工校勘；原有事件 ID 保留，重复或推断性条目需进一步复核。
+第七回的 `E0231`（秦业抱养可儿）原归章回错误，现已迁至第八回，保留原 ID；表中 V2 原事件数仍按迁移前计算。第八回 `E0246` 将误写的“酥酪”改为附件实际叙述的“枫露茶”。
+
+**事件规范：** `event_type` 表示剧情、往事转述、对话、人物背景、梦境及象征预示；`sequence` 表示当回显示排序，非史实时间线；`source.evidence_level=anchored_paragraph` 表示人工智能辅助定位到原文段落，**不表示语义人工复核**。第五回判词另用 `depicted_people_ids` 标识传统解释的候选关联人物，`interpretation_status` 标明非原文直接指名，不能当作现实情节或人物亲历。
+
+下一批次可继续第 011–020 回，须延用稳定人物、关系、事件 ID；如出现既有章回归属错误，应在同一 Git 提交内完成旧章删除与新章添加，保证全库引用唯一。
 
 ## 目录
 

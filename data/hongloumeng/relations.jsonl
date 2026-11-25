@@ -458,7 +458,7 @@
 {"book_id":"hongloumeng","relation_id":"R0458","subject_id":"P0072","predicate":"分送宫花","object_id":"P0011","category":"主仆与职务","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0459","subject_id":"P0072","predicate":"分送宫花","object_id":"P0008","category":"主仆与职务","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0460","subject_id":"P0072","predicate":"分送宫花","object_id":"P0010","category":"主仆与职务","direction":"subject_to_object"}
-{"book_id":"hongloumeng","relation_id":"R0461","subject_id":"P0072","predicate":"认作女儿","object_id":"P0363","category":"亲缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0461","subject_id":"P0072","predicate":"母女","object_id":"P0363","category":"亲缘","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0462","subject_id":"P0363","predicate":"夫妻","object_id":"P0048","category":"亲缘","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0463","subject_id":"P0010","predicate":"玩伴","object_id":"P0165","category":"交游与诗社","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0464","subject_id":"P0072","predicate":"探问身世","object_id":"P0003","category":"帮助与互动","direction":"subject_to_object"}

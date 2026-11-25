@@ -537,3 +537,16 @@
 {"book_id":"shuihuzhuan","relation_id":"R0537","subject_id":"P0137","object_id":"P0140","predicate":"商议押送","category":"亲缘","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
 {"book_id":"shuihuzhuan","relation_id":"R0538","subject_id":"P0012","object_id":"P0025","predicate":"同僚巡捕","category":"职务","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
 {"book_id":"shuihuzhuan","relation_id":"R0539","subject_id":"P0025","object_id":"P0021","predicate":"发现拘捕","category":"司法","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0540","subject_id":"P0109","object_id":"P0025","predicate":"招待","category":"交往","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0541","subject_id":"P0109","object_id":"P0021","predicate":"询问来历","category":"救助","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0542","subject_id":"P0021","object_id":"P0109","predicate":"欲献消息","category":"同盟","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0543","subject_id":"P0109","object_id":"P0021","predicate":"假认亲眷施救","category":"救助","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0544","subject_id":"P0021","object_id":"P0109","predicate":"配合假认","category":"合作","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0545","subject_id":"P0025","object_id":"P0021","predicate":"放行","category":"司法","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0546","subject_id":"P0109","object_id":"P0025","predicate":"赠银","category":"人情","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0547","subject_id":"P0109","object_id":"P0021","predicate":"收留议事","category":"同盟","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0548","subject_id":"P0021","object_id":"P0025","predicate":"讨回银两","category":"冲突","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0549","subject_id":"P0021","object_id":"P0025","predicate":"持刀搏斗","category":"冲突","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0550","subject_id":"P0003","object_id":"P0021","predicate":"劝架","category":"调解","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0551","subject_id":"P0021","object_id":"P0109","predicate":"通报生辰纲","category":"同盟","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0552","subject_id":"P0003","object_id":"P0109","predicate":"筹集助力","category":"谋略","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}

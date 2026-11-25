@@ -1,0 +1,80 @@
+{
+  "book_id": "shuihuzhuan",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "batch": "chapters-001-010",
+  "source": "水浒传.txt",
+  "schema_version": "3.0.0",
+  "quality": "model_anchored_unreviewed",
+  "old_event_count": 43,
+  "new_event_count": 188,
+  "added_event_count": 145,
+  "chapter_counts": [
+    {
+      "chapter": 1,
+      "previous": 11,
+      "added": 17,
+      "total": 28
+    },
+    {
+      "chapter": 2,
+      "previous": 6,
+      "added": 14,
+      "total": 20
+    },
+    {
+      "chapter": 3,
+      "previous": 3,
+      "added": 13,
+      "total": 16
+    },
+    {
+      "chapter": 4,
+      "previous": 3,
+      "added": 12,
+      "total": 15
+    },
+    {
+      "chapter": 5,
+      "previous": 4,
+      "added": 13,
+      "total": 17
+    },
+    {
+      "chapter": 6,
+      "previous": 4,
+      "added": 17,
+      "total": 21
+    },
+    {
+      "chapter": 7,
+      "previous": 3,
+      "added": 11,
+      "total": 14
+    },
+    {
+      "chapter": 8,
+      "previous": 3,
+      "added": 13,
+      "total": 16
+    },
+    {
+      "chapter": 9,
+      "previous": 4,
+      "added": 19,
+      "total": 23
+    },
+    {
+      "chapter": 10,
+      "previous": 2,
+      "added": 16,
+      "total": 18
+    }
+  ],
+  "notes": [
+    "已按章节保留旧 E 事件编号，并增加新的 E 编号",
+    "新增关系保留 R 编号，新增人物分配 P 编号",
+    "新增事件包括起因、结果、地点及原文位置，未经人工最终校勘",
+    "楔子和第11-120回未在本批次改动",
+    "待核候选共现数据未升级为正式事实"
+  ]
+}

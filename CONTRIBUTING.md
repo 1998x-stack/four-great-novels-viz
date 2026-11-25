@@ -42,3 +42,9 @@
 ## GitHub Pages
 
 合并到 `main` 后，`.github/workflows/pages.yml` 验证并发布站点。仓库管理员需在 **Settings → Pages → Source** 选择 **GitHub Actions**。CI 校验通过并不自动等同网页部署成功；请在 Actions 查看 Deploy GitHub Pages 结果。
+
+## 第一批逐回精标字段（Schema v3 兼容扩展）
+
+逐回事件可增加 `title`、`event_type`（如 rescue、conspiracy、trial、escape）、`location`、`causes[]`、`outcomes[]`、`story_arc`。`source` 包含底本、行号和摘录，`evidence_level=anchored_paragraph` 仅表示定位过文本，不能标为 reviewed。添加同一人物对的多条关系时，必须复用已有三元组 ID；一个事件可关联多个关系 ID，人物 ID 不可更换。
+
+每批应更新该十回 `chapter.json.enrichment` 中的数量与复核记录，同时生成批次报告。仅在有人逐条阅读证据并核验关系、事件参与者和因果时才允许标记 `reviewed`。

@@ -183,7 +183,8 @@ window.NovelGraph = (() => {
       }
       const ranked=[...config.nodes].sort((a,b)=>
         (degrees.get(b.id)||0)-(degrees.get(a.id)||0)||a.id.localeCompare(b.id));
-      const budget=n<=34?n:n<=85?35:n<=180?28:23;
+      const compact=window.innerWidth<700;
+      const budget=n<=34?n:n<=85?(compact?18:35):n<=180?(compact?15:28):(compact?12:23);
       const featured=new Set(ranked.slice(0,budget).map(v=>v.id));
       const palette=config.palette;
       const radiusOf=(degree,focused)=>{
@@ -374,8 +375,10 @@ window.NovelGraph = (() => {
         if(focus && (e.source===focus||e.target===focus))continue;
         trace(e);
       }
-      ctx.strokeStyle=focus?"rgba(111,163,164,.045)":"rgba(124,178,171,.17)";
-      ctx.lineWidth=.95;ctx.stroke();
+      ctx.strokeStyle=focus?"rgba(111,163,164,.045)":
+        scale<.56?"rgba(124,178,171,.135)":"rgba(124,178,171,.19)";
+      // Subpixel strokes vanished on narrow screens; maintain a visible hairline.
+      ctx.lineWidth=Math.max(.95,.82/scale);ctx.stroke();
       if(focus){
         ctx.beginPath();
         for(const e of this.edges)if(e.source===focus||e.target===focus)trace(e);

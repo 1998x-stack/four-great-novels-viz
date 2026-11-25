@@ -221,7 +221,7 @@ window.NovelGraph = (() => {
       for(const n of this.nodes){
         const g=element("g",{
           class:"node force-node",transform:"translate("+n.x+" "+n.y+")",
-          role:"button",tabindex:n>140&&!n.featured?-1:0,"aria-label":n.name
+          role:"button",tabindex:this.nodes.length>140&&!n.featured?-1:0,"aria-label":n.name
         });
         // Visual.js may add a breathing halo as a separate decorative circle.
         const circle=element("circle",{
@@ -233,7 +233,7 @@ window.NovelGraph = (() => {
         const text=element("text",{
           class:"force-node-label"+(n.featured||n.selected?"":" is-quiet"),
           x:0,y:n.radius+15,"text-anchor":"middle",
-          "font-size":n>150?10:12,
+          "font-size":this.nodes.length>150?10:12,
           "paint-order":"stroke","stroke-linejoin":"round"
         },n.name);
         g.append(circle,text,element("title",{},n.name+" · "+(n.group||"")));

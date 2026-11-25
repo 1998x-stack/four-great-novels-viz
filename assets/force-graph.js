@@ -455,11 +455,11 @@ window.NovelGraph = (() => {
       this.drag={node,id:e.pointerId,startX:e.clientX,startY:e.clientY,
                  dx:node.x-at.x,dy:node.y-at.y,moved:false};
       node.vx=0;node.vy=0;
+      // Move first, then capture: reordering after capture may cancel drag in browsers.
+      this.nodeLayer.appendChild(node.elem);
       node.elem.setPointerCapture(e.pointerId);
       this.svg.classList.add("is-grabbing");
       node.elem.classList.add("is-dragging");
-      // Raise the grabbed node above crossing edges and overlapping neighbours.
-      this.nodeLayer.appendChild(node.elem);
       this.alpha=Math.max(this.alpha,.55);
       this.run();
     }

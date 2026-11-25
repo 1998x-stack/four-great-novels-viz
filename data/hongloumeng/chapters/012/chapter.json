@@ -6,5 +6,12 @@
   "lexical_character_count": 17,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "previous_event_count": 3,
+    "event_count": 14,
+    "method": "逐段细分并区分人间情节与宝鉴幻象",
+    "review_note": "原文中贾瑞欲念与镜中景象不等于真实人际互动"
+  }
 }

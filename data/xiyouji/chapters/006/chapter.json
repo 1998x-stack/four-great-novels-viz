@@ -1,0 +1,27 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 6,
+  "title": "第六回 观音赴会问原因 小圣施威降大圣",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 391,
+  "line_end": 474,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 6,
+  "source_chapter_key": "6",
+  "summary": "荐真君擒猴：观音向玉帝举荐二郎真君，令其赴花果山降伏悟空。；变化斗法：二郎与悟空斗变化，借老君金刚琢及细犬相助将其擒住。；金刚琢助战：老君从天上掷下金刚琢打中悟空，为二郎擒猴创造机会。",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "plot_events": 3,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。",
+    "batch_id": "xiyouji-ch001-010-v3",
+    "method": "chapter-by-chapter source-anchored narrative decomposition",
+    "review_note": "事件摘要由AI辅助阅读并逐行锚定；尚未完成人工语义校勘，不能标为reviewed",
+    "added_events": 18,
+    "previous_event_count": 3,
+    "event_count": 21,
+    "evidence_level_for_new_events": "anchored_paragraph"
+  },
+  "last_enrichment_batch": "xiyouji-ch001-010-v3"
+}

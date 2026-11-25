@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 90,
+  "title": "第九十回 师狮授受同归一 盗道缠禅静九灵山",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 6007,
+  "line_end": 6050,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 90,
+  "source_chapter_key": "90",
+  "summary": "收回九头狮：悟空求得太乙救苦天尊，天尊令狮奴收回下界的九灵元圣。；降妖后谢恩：妖狮被降服，玉华王父子感谢唐僧师徒，继续请三徒传艺。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

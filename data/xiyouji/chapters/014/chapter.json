@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 14,
+  "title": "第十四回 心猿归正 六贼无踪",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 1061,
+  "line_end": 1142,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 14,
+  "source_chapter_key": "14",
+  "summary": "揭帖收徒：唐僧揭去五行山佛帖，悟空脱困，拜唐僧为师护送西行。；赠紧箍咒：悟空因受责离开，观音化身教唐僧紧箍咒，使其能约束悟空。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

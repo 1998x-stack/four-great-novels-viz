@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 27,
+  "title": "第二十七回 尸魔三戏唐三藏 圣僧恨逐美猴王",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 1947,
+  "line_end": 2012,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 27,
+  "source_chapter_key": "27",
+  "summary": "三次变化：白骨精先后变作女子、老妇、老翁，意图接近唐僧取其性命。；三打白骨精：悟空识破三次变化，最终打死尸魔；唐僧误认为他滥杀凡人。；恨逐猴王：唐僧不信悟空辨妖，写下贬书，令其离开取经队伍。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 3,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

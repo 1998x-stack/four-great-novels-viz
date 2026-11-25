@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 51,
+  "title": "第五十一回 心猿空用千般计 水火无功难炼魔",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 3505,
+  "line_end": 3576,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 51,
+  "source_chapter_key": "51",
+  "summary": "天兵助战失宝：哪吒等受悟空邀请降妖，却被妖怪套走兵器。；火攻金兜洞：火德星君奉请助战，火器亦被金刚琢套去。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 92,
+  "title": "第九十二回 三僧大战青龙山 四星挟捉犀牛怪",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 6115,
+  "line_end": 6178,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 92,
+  "source_chapter_key": "92",
+  "summary": "四木禽星降犀：悟空请角木蛟等四木禽星协助追捕三只犀牛精。；青龙山战犀牛：八戒、沙僧与悟空共同对抗三犀牛，诸星相助后妖患解除。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

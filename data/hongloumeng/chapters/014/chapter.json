@@ -6,5 +6,14 @@
   "lexical_character_count": 35,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "previous_event_count": 1,
+    "event_count": 20,
+    "relocated_event_id": "E0252",
+    "relocated_to": 15,
+    "method": "按丧礼行政流程与林如海死讯分层定位",
+    "review_note": "E0252实际对应第15回赠念珠，已修正章回"
+  }
 }

@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 28,
+  "title": "第二十八回 花果山群妖聚义 黑松林三藏逢魔",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 2013,
+  "line_end": 2072,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 28,
+  "source_chapter_key": "28",
+  "summary": "黑松林陷妖洞：唐僧误入波月洞，被黄袍怪擒住。；公主托信：百花羞公主请求黄袍怪放走唐僧，托其带信回宝象国。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

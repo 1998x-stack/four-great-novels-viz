@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 47,
+  "title": "第四十七回 圣僧夜阻通天水 金木垂慈救小童",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 3251,
+  "line_end": 3314,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 47,
+  "source_chapter_key": "47",
+  "summary": "陈家庄诉祭童：陈家兄弟接待师徒，诉说灵感大王要求每年献童男童女。；替童献祭：悟空变作陈关保，八戒变作一秤金，替孩子赴祭降妖。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 5,
+  "title": "第五回 乱蟠桃大圣偷丹 反天宫诸神捉怪",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 327,
+  "line_end": 390,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 5,
+  "source_chapter_key": "5",
+  "summary": "搅乱蟠桃会：悟空得知未受蟠桃会邀请，施法定住仙女，又赴会场偷食仙酒仙肴。；兜率宫偷丹：悟空酒后误入兜率宫，将葫芦中的金丹吃尽，逃回花果山。",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。",
+    "batch_id": "xiyouji-ch001-010-v3",
+    "method": "chapter-by-chapter source-anchored narrative decomposition",
+    "review_note": "事件摘要由AI辅助阅读并逐行锚定；尚未完成人工语义校勘，不能标为reviewed",
+    "added_events": 20,
+    "previous_event_count": 2,
+    "event_count": 22,
+    "evidence_level_for_new_events": "anchored_paragraph"
+  },
+  "last_enrichment_batch": "xiyouji-ch001-010-v3"
+}

@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 11,
+  "title": "第十一回 还受生唐王遵善果 度孤魂萧瑀正空门",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 893,
+  "line_end": 956,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 11,
+  "source_chapter_key": "11",
+  "summary": "地府添寿：崔判官查阅生死簿并为太宗增添阳寿，使其得以还阳。；进瓜还魂：刘全奉命赴阴司进瓜，后还阳与妻重聚，得到太宗恩赏。；进瓜与借尸还魂：刘全赴阴间进瓜，与妻相会；李翠莲借唐王御妹尸身还阳，夫妻归家。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 3,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

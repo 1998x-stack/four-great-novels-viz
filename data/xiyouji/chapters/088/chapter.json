@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 88,
+  "title": "第八十八回 禅到玉华施法会 心猿木母授门人",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 5901,
+  "line_end": 5956,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 88,
+  "source_chapter_key": "88",
+  "summary": "传棍授力：大王子拜悟空为师，悟空授其神力和棍法。；传授钯法：二王子拜八戒为师，学习九齿钯技艺。；传授杖法：三王子拜沙僧为师，学习降妖杖技艺。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 3,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

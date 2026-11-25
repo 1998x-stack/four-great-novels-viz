@@ -6,5 +6,12 @@
   "lexical_character_count": 18,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "previous_event_count": 15,
+    "event_count": 27,
+    "method": "亲族脉络、首次登府流程、物资赠予分别立条",
+    "review_note": "仅为机器辅助逐段定位，未人工终审"
+  }
 }

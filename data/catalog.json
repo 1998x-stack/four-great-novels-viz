@@ -28,7 +28,12 @@
     {
       "id": "xiyouji",
       "title": "西游记",
-      "status": "planned"
+      "status": "draft",
+      "edition_id": "xiyouji:attachment-v1",
+      "expected_chapters": 100,
+      "includes_appendix": true,
+      "source_filename": "西游记.txt",
+      "source_sha256": "3f2bf2164ee63ad7ce3ef88c830e88e860f47719740b13e6c4a1fe4d3be09b80"
     }
   ]
 }

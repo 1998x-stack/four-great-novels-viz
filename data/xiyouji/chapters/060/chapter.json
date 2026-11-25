@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 60,
+  "title": "第六十回 牛魔王罢战赴华筵 孙行者二调芭蕉扇",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 4105,
+  "line_end": 4170,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 60,
+  "source_chapter_key": "60",
+  "summary": "积雷山外室：牛魔王住摩云洞，与玉面公主结为夫妻，悟空前往寻他借扇。；假扮牛魔王：悟空变作牛魔王，从铁扇手中骗得真扇。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

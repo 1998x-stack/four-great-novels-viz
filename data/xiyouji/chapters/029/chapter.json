@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 29,
+  "title": "第二十九回 脱难江流来国土 承恩八戒转山林",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 2073,
+  "line_end": 2118,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 29,
+  "source_chapter_key": "29",
+  "summary": "公主家书：国王得知失踪多年的女儿被妖怪所拘，请取经人设法救回。；递送公主家书：唐僧到宝象国递交百花羞家书，国王托弟子降妖救女。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

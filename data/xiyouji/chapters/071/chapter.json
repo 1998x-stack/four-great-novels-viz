@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 71,
+  "title": "第七十一回 行者假名降怪犼 观音现象伏妖王",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 4785,
+  "line_end": 4834,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 71,
+  "source_chapter_key": "71",
+  "summary": "收金毛犼：观音现身收回逃下界的坐骑金毛犼，悟空救出金圣宫。；仙衣护身：真人曾给金圣宫一件有刺的仙衣，使妖怪不能侵犯她，归国时取回。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

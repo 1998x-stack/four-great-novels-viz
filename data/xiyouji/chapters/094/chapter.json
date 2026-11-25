@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 94,
+  "title": "第九十四回 四僧宴乐御花园 一怪空怀情欲喜",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 6245,
+  "line_end": 6288,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 94,
+  "source_chapter_key": "94",
+  "summary": "宫中议婚：国王款待唐僧师徒并筹备婚事，唐僧无意留下，悟空暗察假公主。；假允婚礼查妖：悟空让唐僧先应承婚事，准备识破假公主的来历。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 7,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

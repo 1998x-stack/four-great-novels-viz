@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 21,
+  "title": "第二十一回 护法设庄留大圣 须弥灵吉定风魔",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 1537,
+  "line_end": 1586,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 21,
+  "source_chapter_key": "21",
+  "summary": "三昧神风：黄风怪吹出神风伤了悟空眼睛，悟空另寻医治及降妖方法。；定风降魔：灵吉携定风宝物及飞龙宝杖相助，收伏黄毛貂鼠。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

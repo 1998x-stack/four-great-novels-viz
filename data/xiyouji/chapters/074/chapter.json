@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 74,
+  "title": "第七十四回 长庚传报魔头狠 行者施为变化能",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 4997,
+  "line_end": 5058,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 74,
+  "source_chapter_key": "74",
+  "summary": "狮驼岭报信：太白金星化为老人，提醒前方狮驼岭三个魔头势大。；变化探山：悟空抓住巡山小妖，变作小钻风混入妖洞探听三魔虚实。；三魔结伙：青狮与白象、大鹏结伙盘踞狮驼岭，合谋阻截取经人。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 3,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

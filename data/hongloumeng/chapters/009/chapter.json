@@ -6,5 +6,12 @@
   "lexical_character_count": 29,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "previous_event_count": 6,
+    "event_count": 17,
+    "method": "学堂交往、谣言、引发冲突及调停独立标记",
+    "review_note": "金荣指责与学堂谣言不作为客观事实录入"
+  }
 }

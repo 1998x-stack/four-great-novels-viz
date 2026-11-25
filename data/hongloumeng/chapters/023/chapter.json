@@ -6,5 +6,12 @@
   "lexical_character_count": 35,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "previous_event_count": 4,
+    "event_count": 19,
+    "method": "入园迁居、访书与共读西厢逐段定位",
+    "review_note": "该附件第18回题诗尾部不完整，第23回以所载勒石叙述为准；非人工终审"
+  }
 }

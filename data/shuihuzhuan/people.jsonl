@@ -490,3 +490,5 @@
 {"id":"P0490","book_id":"shuihuzhuan","name":"李四","aliases":["青草蛇"],"group":"菜园泼皮","status":"原文具名；模型辅助识别待人工复核","first_chapter":6,"mention_chapters":[6]}
 {"id":"P0491","book_id":"shuihuzhuan","name":"沧州差拨","aliases":["沧州牢城差拨"],"group":"沧州牢城","entity_type":"未具名职位人物","status":"按照原文岗位及场景消歧，待人工核验","first_chapter":8,"mention_chapters":[8,9]}
 {"id":"P0492","book_id":"shuihuzhuan","name":"沧州管营","aliases":["沧州牢城管营"],"group":"沧州牢城","entity_type":"未具名职位人物","status":"按照原文岗位及场景消歧，待人工核验","first_chapter":8,"mention_chapters":[8,9]}
+{"id":"P0493","book_id":"shuihuzhuan","name":"李小二妻","aliases":["李小二浑家"],"group":"沧州酒店","entity_type":"未具名角色","status":"按小说场景消歧，待人工核验","first_chapter":9,"mention_chapters":[9]}
+{"id":"P0494","book_id":"shuihuzhuan","name":"草料场老军","aliases":["沧州草料场老军"],"group":"沧州草料场","entity_type":"未具名角色","status":"按小说场景消歧，待人工核验","first_chapter":9,"mention_chapters":[9]}

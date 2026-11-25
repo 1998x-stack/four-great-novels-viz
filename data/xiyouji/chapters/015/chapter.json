@@ -11,9 +11,17 @@
   "source_chapter_key": "15",
   "summary": "鹰愁涧收马：龙子吞了唐僧原来的坐骑，观音使其化为白马，载唐僧西行。；收龙化马：观音说明龙子来历，令其化马承担取经脚力。；西海龙子来历：观音向悟空说明白龙是西海龙王之子，因罪受罚后被救来作取经脚力。",
   "enrichment": {
-    "status": "keyword_anchored",
+    "status": "paragraph_anchored",
     "plot_events": 3,
     "cooccurrence_candidates": 9,
-    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
-  }
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。",
+    "batch_id": "xiyouji-ch011-020-v3",
+    "method": "逐回叙事事件拆解，原文行号与摘录锚定",
+    "previous_event_count": 3,
+    "added_events": 25,
+    "event_count": 28,
+    "evidence_level_for_new_events": "anchored_paragraph",
+    "review_note": "AI辅助结构化和原文字符串定位；尚未经人工语义审核，review_status仍是draft"
+  },
+  "last_enrichment_batch": "xiyouji-ch011-020-v3"
 }

@@ -11,9 +11,17 @@
   "source_chapter_key": "20",
   "summary": "黄风岭被掳：虎先锋掳走唐僧送入黄风洞，黄风怪将他拘在洞中。；半山追敌：八戒随悟空救师，与虎先锋交锋并将其打死。",
   "enrichment": {
-    "status": "keyword_anchored",
+    "status": "paragraph_anchored",
     "plot_events": 2,
     "cooccurrence_candidates": 9,
-    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
-  }
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。",
+    "batch_id": "xiyouji-ch011-020-v3",
+    "method": "逐回叙事事件拆解，原文行号与摘录锚定",
+    "previous_event_count": 2,
+    "added_events": 28,
+    "event_count": 30,
+    "evidence_level_for_new_events": "anchored_paragraph",
+    "review_note": "AI辅助结构化和原文字符串定位；尚未经人工语义审核，review_status仍是draft"
+  },
+  "last_enrichment_batch": "xiyouji-ch011-020-v3"
 }

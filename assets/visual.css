@@ -374,3 +374,21 @@ footer a{color:#bbc9c3}footer small{display:block;font:9px Georgia,serif;letter-
 }
 #graph .force-node.is-dragging .force-node-hit{cursor:grabbing}
 #graph .force-node.is-dragging{opacity:1!important}
+
+/* Thousands of effects become expensive in dense SVG scenes.
+   Keep the idle state crisp and reserve glows for intentional focus. */
+#graph.is-dense .force-node-body{filter:none!important}
+#graph.is-dense .force-node.is-selected .force-node-body,
+#graph.is-dense .force-node.is-dragging .force-node-body,
+#graph.is-dense .force-node.is-hovered .force-node-body{
+  filter:drop-shadow(0 0 5px rgba(237,194,116,.85))!important
+}
+#graph.is-dense .force-node-label{stroke-width:2.8}
+@media(max-width:620px){
+  #graph.is-dense .force-node-label.is-quiet{display:none}
+  #graph.is-dense .force-node.is-neighbour .force-node-label.is-quiet,
+  #graph.is-dense .force-node.is-hovered .force-node-label.is-quiet,
+  #graph.is-dense .force-node.is-selected .force-node-label.is-quiet{
+    display:block
+  }
+}

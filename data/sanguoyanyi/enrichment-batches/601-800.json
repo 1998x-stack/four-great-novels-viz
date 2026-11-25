@@ -1,0 +1,14 @@
+{
+  "book_id": "sanguoyanyi",
+  "batch": "601-800",
+  "events_added": 200,
+  "relations_added": 193,
+  "relationships_reused": 7,
+  "chapters_touched": 87,
+  "event_id_from": "E0601",
+  "event_id_to": "E0800",
+  "source_edition": "sanguoyanyi:attachment-v1",
+  "record_origin": "automatic_explicit_text_rule",
+  "review_status": "draft",
+  "evidence_level": "keyword_match"
+}

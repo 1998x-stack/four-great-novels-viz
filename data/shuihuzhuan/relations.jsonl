@@ -844,3 +844,12 @@
 {"book_id":"shuihuzhuan","relation_id":"R0844","subject_id":"P0014","object_id":"P0102","predicate":"辞别投山","category":"交友","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
 {"book_id":"shuihuzhuan","relation_id":"R0845","subject_id":"P0014","object_id":"P0159","predicate":"发现道人","category":"冲突","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
 {"book_id":"shuihuzhuan","relation_id":"R0846","subject_id":"P0014","object_id":"P0159","predicate":"与道士交锋","category":"冲突","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0847","subject_id":"P0012","object_id":"P0001","predicate":"找到并掩护","category":"恩义","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0848","subject_id":"P0014","object_id":"P0001","predicate":"拜见结识","category":"交友","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0849","subject_id":"P0014","object_id":"P0149","predicate":"奉差暂别","category":"亲缘","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0850","subject_id":"P0152","object_id":"P0150","predicate":"设局邀入茶坊","category":"阴谋","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0851","subject_id":"P0154","object_id":"P0149","predicate":"计划留存遗骨","category":"证据","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0852","subject_id":"P0014","object_id":"P0102","predicate":"拒绝杀差役","category":"义理","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0853","subject_id":"P0085","object_id":"P0014","predicate":"劝养精力","category":"关怀","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0854","subject_id":"P0014","object_id":"P0085","predicate":"要求三碗过望","category":"交友","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0855","subject_id":"P0014","object_id":"P0156","predicate":"诬案获减刑","category":"司法","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}

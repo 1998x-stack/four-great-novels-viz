@@ -34,12 +34,19 @@
     '</header>',
     '<div class="imm-body">',
       '<div class="imm-map">',
-        '<div class="imm-map-top"><span>RELATIONSHIP ATLAS</span>',
+        '<div class="imm-map-top"><div id="imTrail" class="imm-trail" aria-label="人物探索路径">RELATIONSHIP ATLAS</div>',
+        '<div class="imm-map-toolbox">',
         '<div class="imm-scope" role="group" aria-label="图谱关系范围">',
         '<button type="button" data-im-scope="1" aria-pressed="true">一度</button>',
         '<button type="button" data-im-scope="2" aria-pressed="false">二度</button>',
         '<button type="button" data-im-scope="all" aria-pressed="false">全局</button>',
-        '</div></div>',
+        '</div>',
+        '<div class="imm-map-tools" role="group" aria-label="图谱视图控制">',
+          '<button id="imZoomOut" type="button" title="缩小图谱" aria-label="缩小图谱">−</button>',
+          '<button id="imZoomIn" type="button" title="放大图谱" aria-label="放大图谱">＋</button>',
+          '<button id="imReset" type="button" title="视图复位" aria-label="视图复位">◎</button>',
+          '<button id="imRelayout" type="button" title="重新排布人物" aria-label="重新排布">⟳</button>',
+        '</div></div></div>',
         '<div id="imGraphSlot" class="imm-graph-slot"></div>',
         '<div class="imm-map-bottom"><span id="imMapInfo">选择人物开始探索</span>',
         '<span>拖拽人物 · 滚轮缩放 · 点击跳转</span></div>',
@@ -128,6 +135,20 @@
     back.disabled=historyIndex<=0;
     forward.disabled=historyIndex<0||historyIndex>=historyItems.length-1;
     path.textContent="探索路径 · "+(historyIndex+1)+" / "+historyItems.length;
+    const trail=$i("imTrail");
+    trail.replaceChildren();
+    const start=Math.max(0,historyIndex-3);
+    for(let i=start;i<=historyIndex;i++){
+      if(i>start)trail.append(el("span","imm-trail-sep","›"));
+      const button=el("button","imm-trail-link"+(i===historyIndex?" is-current":""),nameOf(historyItems[i]));
+      button.type="button";button.disabled=i===historyIndex;
+      const index=i;
+      button.addEventListener("click",()=>{
+        historyIndex=index;
+        navigate(historyItems[index],{manual:true,recordHistory:false});
+      });
+      trail.append(button);
+    }
   }
   function setProgress(){
     stage.classList.remove("is-playing");
@@ -447,6 +468,10 @@
     if(playing)pause();
     nextHop();
   });
+  $i("imZoomIn").addEventListener("click",()=>zoom(.82));
+  $i("imZoomOut").addEventListener("click",()=>zoom(1.22));
+  $i("imReset").addEventListener("click",resetView);
+  $i("imRelayout").addEventListener("click",()=>window.NovelGraph?.rearrange());
   play.addEventListener("click",()=>playing?pause():begin());
   speed.addEventListener("change",()=>{if(playing)begin()});
   search.addEventListener("input",()=>lookUp(search.value));

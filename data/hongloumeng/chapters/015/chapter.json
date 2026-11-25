@@ -8,8 +8,16 @@
   "edition_id": "hongloumeng:attachment-v1",
   "review_status": "draft",
   "enrichment": {
-    "received_from_chapter_14": [
+    "status": "paragraph_anchored",
+    "previous_event_count": 4,
+    "event_count": 14,
+    "relocated_to_chapter16": [
+      "E0254"
+    ],
+    "received_from_chapter14": [
       "E0252"
-    ]
+    ],
+    "method": "错置事件跨章迁移，人物往来和婚约事件分型",
+    "review_note": "命案结局应在第16回，未提前把预期当成既成事实"
   }
 }

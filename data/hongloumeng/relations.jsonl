@@ -574,3 +574,14 @@
 {"book_id":"hongloumeng","relation_id":"R0574","subject_id":"P0090","predicate":"祭奠","object_id":"P0024","category":"交游与诗社","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0575","subject_id":"P0090","predicate":"世交礼遇","object_id":"P0009","category":"交游与诗社","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0576","subject_id":"P0090","predicate":"召见","object_id":"P0001","category":"交游与诗社","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0577","subject_id":"P0090","predicate":"邀府中求学","object_id":"P0001","category":"交游与诗社","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0578","subject_id":"P0013","predicate":"照看","object_id":"P0001","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0579","subject_id":"P0001","predicate":"邂逅","object_id":"P0365","category":"交游与诗社","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0580","subject_id":"P0001","predicate":"追望","object_id":"P0365","category":"交游与诗社","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0581","subject_id":"P0188","predicate":"为义母守灵","object_id":"P0024","category":"亲缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0582","subject_id":"P0013","predicate":"安排留宿","object_id":"P0075","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0583","subject_id":"P0218","predicate":"激将","object_id":"P0013","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0584","subject_id":"P0013","predicate":"索三千两办事","object_id":"P0218","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0585","subject_id":"P0075","predicate":"请求延住","object_id":"P0001","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0586","subject_id":"P0013","predicate":"托人干预婚约","object_id":"P0366","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0587","subject_id":"P0075","predicate":"依依惜别","object_id":"P0165","category":"婚恋","direction":"subject_to_object"}

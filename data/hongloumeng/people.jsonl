@@ -360,3 +360,5 @@
 {"id":"P0360","book_id":"hongloumeng","name":"林如海早夭之子","aliases":[],"group":"林家","tier":"次要","entity_type":"人物","status":"draft","first_chapter":2,"mention_chapters":[2]}
 {"id":"P0361","book_id":"hongloumeng","name":"张如圭","aliases":[],"group":"外部人物","tier":"次要","entity_type":"人物","status":"draft","first_chapter":3,"mention_chapters":[3]}
 {"id":"P0362","book_id":"hongloumeng","name":"兼美","aliases":["可卿（梦中乳名）"],"group":"神话与叙事","tier":"次要","entity_type":"梦境人物","status":"draft","first_chapter":5,"mention_chapters":[5]}
+{"id":"P0363","book_id":"hongloumeng","name":"周瑞家的女儿","aliases":["冷子兴妻"],"group":"周家","tier":"次要","entity_type":"人物","status":"draft","first_chapter":7,"mention_chapters":[7]}
+{"id":"P0364","book_id":"hongloumeng","name":"赖二","aliases":["宁府大总管赖二"],"group":"宁国府","tier":"次要","entity_type":"人物","status":"draft","first_chapter":7,"mention_chapters":[7]}

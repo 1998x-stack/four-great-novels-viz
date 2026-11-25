@@ -60,7 +60,10 @@
           "minimum": 1
         },
         "excerpt": {
-          "type": "string"
+          "type": [
+            "string",
+            "null"
+          ]
         },
         "match_status": {
           "type": "string",

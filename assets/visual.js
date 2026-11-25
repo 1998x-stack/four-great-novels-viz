@@ -152,6 +152,40 @@
         g.insertBefore(halo,main);
       }
     });
+    // Animate a small sampling of real relationship paths with traveling sparks.
+    // The layer is recreated on each graph render, but never touches interaction targets.
+    if(!reducedMotion.matches && !graph.querySelector(".edge-tracers")){
+      const paths=[...graph.querySelectorAll(":scope > path[stroke-opacity]")];
+      if(paths.length){
+        const layer=document.createElementNS("http://www.w3.org/2000/svg","g");
+        layer.setAttribute("class","edge-tracers");
+        layer.setAttribute("pointer-events","none");
+        const count=Math.min(16,paths.length),step=Math.max(1,Math.floor(paths.length/count));
+        for(let i=0;i<count;i++){
+          const path=paths[Math.min(paths.length-1,i*step)];
+          const d=path.getAttribute("d");
+          if(!d)continue;
+          const spark=document.createElementNS("http://www.w3.org/2000/svg","circle");
+          spark.setAttribute("r",i%4===0?"2.5":"1.6");
+          spark.setAttribute("fill",i%3===0?"#ffdab0":"#b9e3cb");
+          const motion=document.createElementNS("http://www.w3.org/2000/svg","animateMotion");
+          const dur=5+(i%5)*1.5;
+          motion.setAttribute("path",d);
+          motion.setAttribute("dur",dur+"s");
+          motion.setAttribute("begin",(-i*.52)+"s");
+          motion.setAttribute("repeatCount","indefinite");
+          const opacity=document.createElementNS("http://www.w3.org/2000/svg","animate");
+          opacity.setAttribute("attributeName","opacity");
+          opacity.setAttribute("values","0;.9;.9;0");
+          opacity.setAttribute("keyTimes","0;.15;.8;1");
+          opacity.setAttribute("dur",dur+"s");
+          opacity.setAttribute("begin",(-i*.52)+"s");
+          opacity.setAttribute("repeatCount","indefinite");
+          spark.append(motion,opacity);layer.append(spark);
+        }
+        graph.append(layer);
+      }
+    }
   }
   const graphObserver=new MutationObserver(enhanceGraph);
   graphObserver.observe(graph,{childList:true});

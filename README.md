@@ -8,7 +8,7 @@
 |---|---|---:|---:|---:|---:|
 | 红楼梦 | hongloumeng | 364 | 517 | 641 | 120 |
 | 三国演义 | sanguoyanyi | 0 | 0 | 0 | 待录入 |
-| 水浒传 | shuihuzhuan | 494 | 513 | 505 | 楔子 + 120 回（1–10回细化草稿） |
+| 水浒传 | shuihuzhuan | 495 | 855 | 869 | 楔子+120回（1–30回段落锚定草稿） |
 | 西游记 | xiyouji | 310 | 322 | 456 | 100 回 + 附录 |
 
 红楼梦由既有 V2 数据迁移；水浒传由对话中的 V2 逐回数据迁移（360 个独立事件 ID，另有 1,689 条待核线索）。数据按书籍隔离，后续新增三国演义、西游记不会破坏已有格式。全部数据为待校勘草稿，人物候选不保证穷尽。原文定位并不等于语义审核。原始附件未提交，版本指纹见 data/catalog.json。
@@ -87,9 +87,9 @@ book_id 与本地 ID 组成全局唯一键，例如 hongloumeng:P0001。关系�
 
 ## 《水浒传》数据校勘说明
 
-- `data/shuihuzhuan/people.jsonl`：494 位人物/人物候选；前 108 位梁山好汉为石碣名录，其他名称待逐个校勘。
-- `relations.jsonl`：513 条有向或对称关系，保留 V2 `R` 编号；语义尚未逐条人工核验。
-- `chapters/000`（楔子）至 `chapters/120`：每回单独保存事件；`events.jsonl` 共 505 条，保留 `E` 编号与 `relation_ids`。
+- `data/shuihuzhuan/people.jsonl`：495 位人物/人物候选；前 108 位梁山好汉为石碣名录，其他名称待逐个校勘。
+- `relations.jsonl`：855 条有向或对称关系，保留 V2 `R` 编号；语义尚未逐条人工核验。
+- `chapters/000`（楔子）至 `chapters/120`：每回单独保存事件；`events.jsonl` 共 869 条，保留 `E` 编号与 `relation_ids`。
 - `candidates.jsonl`：1,689 条待核原文线索，**不会作为已确认关系展示**；可逐条转化为新增事件。
 - `source.evidence_level=keyword_match` 表示自动匹配的原文定位，不代表人工事实确认。`line_start/line_end` 仅适用于 `shuihuzhuan:attachment-v1` 底本。
 - 在线访问可通过 `?book=shuihuzhuan` 切换作品，后续逐回完善只需编辑对应章节文件与必要的人物、关系文件。
@@ -146,3 +146,32 @@ book_id 与本地 ID 组成全局唯一键，例如 hongloumeng:P0001。关系�
 | 010 | 2 | 16 | 18 |
 
 进度明细见 [`data/shuihuzhuan/reports/chapters-001-010.json`](data/shuihuzhuan/reports/chapters-001-010.json)。第11–120回仍保留现有初稿，待下一批处理。
+
+## 《水浒传》逐回细化批次：第11–30回（2026-11-25）
+
+第一批第1–10回已累计188条事件。第二批第11–20回原33条，**新增175条**，合计208条；第三批第21–30回原33条，**新增189条**，合计222条。全书目前有 **495个人物实体或候选、855条关系、869条事件**；仅第1–30回共618条事件。
+
+| 章回 | 既有事件 | 本批新增 | 目前合计 |
+|---|---:|---:|---:|
+| [011](data/shuihuzhuan/chapters/011/events.jsonl) | 3 | 18 | 21 |
+| [012](data/shuihuzhuan/chapters/012/events.jsonl) | 3 | 13 | 16 |
+| [013](data/shuihuzhuan/chapters/013/events.jsonl) | 3 | 13 | 16 |
+| [014](data/shuihuzhuan/chapters/014/events.jsonl) | 5 | 14 | 19 |
+| [015](data/shuihuzhuan/chapters/015/events.jsonl) | 2 | 20 | 22 |
+| [016](data/shuihuzhuan/chapters/016/events.jsonl) | 4 | 17 | 21 |
+| [017](data/shuihuzhuan/chapters/017/events.jsonl) | 4 | 17 | 21 |
+| [018](data/shuihuzhuan/chapters/018/events.jsonl) | 3 | 18 | 21 |
+| [019](data/shuihuzhuan/chapters/019/events.jsonl) | 3 | 21 | 24 |
+| [020](data/shuihuzhuan/chapters/020/events.jsonl) | 3 | 24 | 27 |
+| [021](data/shuihuzhuan/chapters/021/events.jsonl) | 2 | 12 | 14 |
+| [022](data/shuihuzhuan/chapters/022/events.jsonl) | 3 | 18 | 21 |
+| [023](data/shuihuzhuan/chapters/023/events.jsonl) | 5 | 23 | 28 |
+| [024](data/shuihuzhuan/chapters/024/events.jsonl) | 4 | 17 | 21 |
+| [025](data/shuihuzhuan/chapters/025/events.jsonl) | 4 | 24 | 28 |
+| [026](data/shuihuzhuan/chapters/026/events.jsonl) | 3 | 18 | 21 |
+| [027](data/shuihuzhuan/chapters/027/events.jsonl) | 2 | 15 | 17 |
+| [028](data/shuihuzhuan/chapters/028/events.jsonl) | 3 | 15 | 18 |
+| [029](data/shuihuzhuan/chapters/029/events.jsonl) | 3 | 24 | 27 |
+| [030](data/shuihuzhuan/chapters/030/events.jsonl) | 4 | 23 | 27 |
+
+批次报告：[第11–20回](data/shuihuzhuan/reports/chapters-011-020.json) · [第21–30回](data/shuihuzhuan/reports/chapters-021-030.json)。新增事件保留独立E编号、参与者、关系R编号、原文行号与摘录、章内叙事序号；具备信息时还包括地点、起因、结果和故事线。**机器辅助的原文定位不是人工校勘通过**，原始同段共现候选仍然独立待审。第31–120回尚待分批细化。

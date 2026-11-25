@@ -1,0 +1,83 @@
+{
+  "book_id": "shuihuzhuan",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "schema_version": "3.0.0",
+  "batch": "chapters-021-030",
+  "source_filename": "水浒传.txt",
+  "source_sha256": "aa966dd99d7ecac39f63eb187e5f29f4edb6061dc1adf73e4524eb7fd2345cdc",
+  "original_event_count": 33,
+  "added_event_count": 189,
+  "total_event_count": 222,
+  "chapters": [
+    {
+      "chapter": 21,
+      "original_event_count": 2,
+      "added_event_count": 12,
+      "total_event_count": 14
+    },
+    {
+      "chapter": 22,
+      "original_event_count": 3,
+      "added_event_count": 18,
+      "total_event_count": 21
+    },
+    {
+      "chapter": 23,
+      "original_event_count": 5,
+      "added_event_count": 23,
+      "total_event_count": 28
+    },
+    {
+      "chapter": 24,
+      "original_event_count": 4,
+      "added_event_count": 17,
+      "total_event_count": 21
+    },
+    {
+      "chapter": 25,
+      "original_event_count": 4,
+      "added_event_count": 24,
+      "total_event_count": 28
+    },
+    {
+      "chapter": 26,
+      "original_event_count": 3,
+      "added_event_count": 18,
+      "total_event_count": 21
+    },
+    {
+      "chapter": 27,
+      "original_event_count": 2,
+      "added_event_count": 15,
+      "total_event_count": 17
+    },
+    {
+      "chapter": 28,
+      "original_event_count": 3,
+      "added_event_count": 15,
+      "total_event_count": 18
+    },
+    {
+      "chapter": 29,
+      "original_event_count": 3,
+      "added_event_count": 24,
+      "total_event_count": 27
+    },
+    {
+      "chapter": 30,
+      "original_event_count": 4,
+      "added_event_count": 23,
+      "total_event_count": 27
+    }
+  ],
+  "data_status": "model_anchored_draft",
+  "validation": "GitHub Actions schema/ID/reference checks; not a human textual audit",
+  "review_status": "pending_human_verification",
+  "legacy_event_ids_preserved": true,
+  "explanation": "事件按附件原文段落定位并附人物、关系、起因、结果和故事线，仍需逐条确认实际证据能否支持语义、因果及关系。",
+  "exclusions": [
+    "未将同段共现的候选直接升级为真实关系",
+    "未修改其他作品的原始章回数据"
+  ],
+  "next_batch": "031-040"
+}

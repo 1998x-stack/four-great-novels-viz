@@ -223,7 +223,7 @@ window.NovelGraph = (() => {
         item.offset=(i-(total-1)/2)*Math.min(15,48/Math.max(1,total));
         const line=element("path",{class:"force-edge-line",fill:"none","pointer-events":"none"});
         const hit=element("path",{
-          class:"force-edge-hit",fill:"none",stroke:"transparent",
+          class:"edge force-edge-hit",fill:"none",stroke:"transparent",
           "stroke-width":11,role:"button",tabindex:active.length>180?-1:0,
           "aria-label":item.source.name+" "+item.relation.predicate+" "+item.target.name
         });

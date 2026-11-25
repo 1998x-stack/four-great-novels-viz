@@ -6,5 +6,10 @@
   "lexical_character_count": 21,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "received_from_chapter_14": [
+      "E0252"
+    ]
+  }
 }

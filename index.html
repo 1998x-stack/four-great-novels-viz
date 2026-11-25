@@ -1,9 +1,131 @@
 <!doctype html>
-<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>四大名著 · 人物关系图谱</title><link rel="stylesheet" href="assets/style.css"><script defer src="assets/app.js"></script></head>
-<body><header><div class="brand"><span class="seal">四</span><div><small>FOUR GREAT NOVELS / KNOWLEDGE GRAPH</small><h1>四大名著 · 人物关系图谱</h1></div></div><a class="repo" href="https://github.com/1998x-stack/four-great-novels-viz">GitHub 数据仓库 ↗</a></header>
-<main><nav id="books" aria-label="书籍"></nav><section class="intro"><div><div class="eyebrow">章回知识库 / <span id="edition">—</span></div><h2 id="bookTitle">红楼梦</h2><p id="bookNote">按章回探索人物、关系与故事原文。</p></div><div id="stats" class="stats"></div></section>
-<div class="toolbar"><label>章回<select id="chapter" aria-label="章回"></select></label><button id="prevChapter" class="chapter-nav" aria-label="上一回" title="上一回">← 上一回</button><button id="nextChapter" class="chapter-nav" aria-label="下一回" title="下一回">下一回 →</button><span id="chapterTitle" class="chapter-title" aria-live="polite"></span><label>关系类别<select id="category"><option value="">全部类别</option></select></label><label>视图<select id="scope"><option value="1">一度关系</option><option value="2">二度关系</option><option value="all">全局</option></select></label><label>证据<select id="evidence"><option value="">全部证据</option><option value="reviewed">人工核验</option><option value="anchored_paragraph">段落定位</option><option value="keyword_match">关键词定位</option><option value="chapter_only">章回定位</option></select></label><span id="status" role="status" aria-live="polite"></span></div>
-<section class="workspace"><aside class="panel people"><div class="panelhead"><h3>人物名录</h3><span id="personCount"></span></div><input id="search" type="search" placeholder="姓名 / 别名 / ID" aria-label="搜索人物"><div id="peopleList" class="scroll"></div></aside>
-<section class="panel graph"><div class="panelhead"><h3 id="graphTitle">关系图谱</h3><div class="controls"><button id="minus" aria-label="缩小">−</button><button id="plus" aria-label="放大">＋</button><button id="reset">复位</button></div></div><div class="canvas"><svg id="graph" viewBox="0 0 900 620" role="group" aria-label="人物关系交互图"></svg></div><div class="legend" id="legend"></div><p class="tip">点击节点查看人物，点击连线或关系列表查看故事。拖动画布空白处可平移；使用 ＋/− 缩放。</p></section>
-<aside class="panel detail"><div class="panelhead"><h3>人物与故事</h3><button id="timeline">章回事件</button><button id="candidates" title="仅为待复核的同段称谓线索">待核线索</button></div><div id="detail" class="scroll" aria-live="polite"></div></aside></section>
-<footer>数据状态：整理草稿，尚未全部校勘。关键词匹配不等同于人工核验。<a href="data/catalog.json">数据目录</a> · <a href="https://github.com/1998x-stack/four-great-novels-viz/blob/main/CONTRIBUTING.md">录入指南</a></footer></main></body></html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090f14">
+  <meta name="description" content="在章回与人物关系之间，重新走入中国古典四大名著。交互式知识图谱、原文证据与故事时间线。">
+  <title>四大名著 · 浮世群像｜人物关系交互图谱</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/visual.css">
+  <script defer src="assets/app.js"></script>
+  <script defer src="assets/visual.js"></script>
+</head>
+<body>
+  <div id="readingProgress" class="reading-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="返回页面顶部">
+      <span class="seal">四</span>
+      <span class="brand-copy"><small>FOUR GREAT CLASSICAL NOVELS</small><strong>浮世群像<span class="brand-ornament"> / </span>人物关系图谱</strong></span>
+    </a>
+    <nav class="header-links" aria-label="页面导航">
+      <a href="#collection">四部名著</a>
+      <a href="#explore">交互图谱</a>
+      <a class="repo" href="https://github.com/1998x-stack/four-great-novels-viz" target="_blank" rel="noopener noreferrer">开源项目 <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
+  <main>
+    <section id="top" class="hero" aria-labelledby="heroTitle">
+      <canvas id="heroCanvas" class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="hero-haze" aria-hidden="true"></div>
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <div class="hero-kicker"><span class="kicker-line"></span> AN INTERACTIVE ATLAS OF CLASSICAL CHINESE LITERATURE</div>
+          <p class="hero-issue">中华古典文学 · 数字人文实验</p>
+          <h1 id="heroTitle">一纸千秋<span class="hero-punctuation">，</span><br><em>万象</em>人间<span class="hero-stop">。</span></h1>
+          <p class="hero-lede">从桃园结义到大观园的落花，从梁山聚义到十万八千里的取经路。<br>让千百人物的相遇、羁绊与命运，在眼前交织成图。</p>
+          <div class="hero-actions">
+            <button id="enterExplorer" class="primary-cta" type="button">进入人物宇宙 <span aria-hidden="true">↗</span></button>
+            <a class="secondary-cta" href="#collection">先看看四部名著 <span aria-hidden="true">↓</span></a>
+          </div>
+          <div class="hero-footnote"><span class="live-dot"></span> 基于章回原文持续整理 <span class="footnote-slash">/</span> 关系、事件与证据可溯源</div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="art-rotor art-rotor-outer"></div><div class="art-rotor art-rotor-inner"></div>
+          <div class="art-coordinate art-c1">01 <span>红楼梦</span></div>
+          <div class="art-coordinate art-c2">02 <span>三国演义</span></div>
+          <div class="art-coordinate art-c3">03 <span>水浒传</span></div>
+          <div class="art-coordinate art-c4">04 <span>西游记</span></div>
+          <div class="art-center"><span class="art-center-eyebrow">人间有戏</span><span class="art-center-mark">缘</span><span class="art-center-sub">故事由此相连</span></div>
+          <span class="art-star art-star-1"></span><span class="art-star art-star-2"></span><span class="art-star art-star-3"></span>
+          <div class="art-corner-label">THEATRE OF HUMAN CONNECTIONS <b>·</b> VOL. 01—04</div>
+        </div>
+      </div>
+      <div class="hero-bottom">
+        <span class="hero-volume">卷 · 壹 至 肆</span>
+        <span class="scroll-hint"><span class="scroll-track"><span></span></span> SCROLL TO EXPLORE</span>
+        <span class="hero-corner">以人物为线 · 以故事为经</span>
+      </div>
+    </section>
+
+    <section id="collection" class="collection" aria-labelledby="collectionTitle">
+      <div class="section-heading reveal">
+        <div><div class="section-kicker"><span>01</span> / THE COLLECTION</div><h2 id="collectionTitle">四部名著，<em>四重天地。</em></h2></div>
+        <p>选一部书，进入它的人物世界。<br>每一次选择，都将重绘下方的关系图谱。</p>
+      </div>
+      <nav id="books" class="book-grid" aria-label="选择书籍"></nav>
+      <p class="collection-disclaimer"><span class="notice-mark">※</span> 数据正按章回逐步校勘；《三国演义》目前为待录入。图谱中的候选关系不代表已经完成事实审核。</p>
+    </section>
+
+    <section id="explore" class="explore-section" aria-labelledby="exploreTitle">
+      <div class="section-heading explorer-heading reveal">
+        <div><div class="section-kicker"><span>02</span> / EXPLORE THE CONNECTIONS</div><h2 id="exploreTitle">循着人物，<em>走进故事。</em></h2></div>
+        <p>点击、筛选、缩放、逐回演进。<br>每一条关系背后，都有一段故事。</p>
+      </div>
+
+      <section class="intro" aria-label="当前作品信息">
+        <div class="intro-lead"><div class="eyebrow">正在探索 <span class="eyebrow-divider">/</span> <span id="edition">—</span></div><h2 id="bookTitle">红楼梦</h2><p id="bookNote">按章回探索人物、关系与故事原文。</p></div>
+        <div id="stats" class="stats" aria-label="作品数据概览"></div>
+      </section>
+
+      <div class="toolbar" aria-label="筛选选项">
+        <label>故事章回 <select id="chapter" aria-label="章回"></select></label>
+        <button id="prevChapter" class="chapter-nav" type="button" aria-label="上一回" title="上一回">← 上一回</button>
+        <button id="nextChapter" class="chapter-nav" type="button" aria-label="下一回" title="下一回">下一回 →</button>
+        <span id="chapterTitle" class="chapter-title" aria-live="polite"></span>
+        <label>关系类别 <select id="category"><option value="">全部类别</option></select></label>
+        <label>关系范围 <select id="scope"><option value="1">一度关系</option><option value="2">二度关系</option><option value="all">全局</option></select></label>
+        <label>证据等级 <select id="evidence"><option value="">全部证据</option><option value="reviewed">人工核验</option><option value="anchored_paragraph">段落定位</option><option value="keyword_match">关键词定位</option><option value="chapter_only">章回定位</option></select></label>
+      </div>
+
+      <section class="workspace" aria-label="人物关系探索工作台">
+        <aside class="panel people">
+          <div class="panelhead"><h3><span class="panel-index">A /</span> 人物名录</h3><span id="personCount"></span></div>
+          <div class="search-wrap"><input id="search" type="search" placeholder="搜索姓名、别名或 ID …" aria-label="搜索人物"></div>
+          <div id="peopleList" class="scroll"></div>
+        </aside>
+        <section class="panel graph">
+          <div class="panelhead graph-head"><h3 id="graphTitle">关系图谱</h3><div class="controls"><button id="minus" type="button" aria-label="缩小" title="缩小">−</button><button id="plus" type="button" aria-label="放大" title="放大">＋</button><button id="reset" type="button">复位</button></div></div>
+          <div class="canvas">
+            <div class="graph-grid" aria-hidden="true"></div>
+            <svg id="graph" viewBox="0 0 900 620" role="group" aria-label="人物关系交互图"></svg>
+            <div class="graph-corner graph-tl" aria-hidden="true">GRAPH / RELATIONS</div>
+            <div class="graph-corner graph-br" aria-hidden="true">DRAG · ZOOM · SELECT</div>
+          </div>
+          <div class="playback">
+            <button id="storyPlay" type="button" class="play-control" aria-label="播放章回关系演进" aria-pressed="false"><span id="playIcon" aria-hidden="true">▶</span> <span id="playText">播放章回</span></button>
+            <div class="playback-track" aria-hidden="true"><div id="playProgress"></div></div>
+            <span id="playLabel" class="play-label">按回目观察人物关系的变化</span>
+          </div>
+          <div class="legend" id="legend"></div>
+          <p class="tip">点击人物可查看关系；点击连线可追溯事件与原文。拖动空白区域平移图谱，滚轮或 ＋/− 调整缩放。</p>
+        </section>
+        <aside class="panel detail">
+          <div class="panelhead"><h3><span class="panel-index">B /</span> 人物与故事</h3><div class="detail-actions"><button id="timeline" type="button">章回事件</button><button id="candidates" type="button" title="仅为待复核的同段称谓线索">待核线索</button></div></div>
+          <div id="detail" class="scroll" aria-live="polite"></div>
+        </aside>
+      </section>
+      <div class="workspace-status"><span class="live-dot"></span><span id="status" role="status" aria-live="polite">正在准备图谱…</span><span class="workspace-status-tail">STORIES, NOT JUST NODES.</span></div>
+    </section>
+
+    <section class="closing" aria-label="结语">
+      <div class="closing-rule"></div><p>人因故事相遇，故事因人长存。</p><span>四大名著 · 浮世群像</span>
+    </section>
+    <footer>
+      <p>这是持续完善的开放式文学知识图谱；自动定位的文本证据并不等于人工核验。</p>
+      <div><a href="data/catalog.json">数据目录</a><span>·</span><a href="https://github.com/1998x-stack/four-great-novels-viz/blob/main/CONTRIBUTING.md">参与校勘</a><span>·</span><a href="https://github.com/1998x-stack/four-great-novels-viz">GitHub</a></div>
+      <small>MADE FOR THE LOVE OF STORIES & THE PEOPLE INSIDE THEM.</small>
+    </footer>
+  </main>
+</body>
+</html>

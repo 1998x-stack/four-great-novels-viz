@@ -6,5 +6,13 @@
   "line_start": 1395,
   "line_end": 1414,
   "review_status": "draft",
-  "event_count": 11
+  "event_count": 17,
+  "enrichment": {
+    "status": "partial_paragraph_anchored",
+    "previous_events": 12,
+    "new_events": 5,
+    "total_events": 17,
+    "review_required": true,
+    "review_note": "首轮5个底本重点场景，有行号与原文子串，未穷尽全回或人工语义终审"
+  }
 }

@@ -367,3 +367,4 @@
 {"id":"P0367","book_id":"hongloumeng","name":"云光","aliases":[],"group":"外部人物","tier":"次要","entity_type":"人物","status":"draft","first_chapter":15}
 {"id":"P0368","book_id":"hongloumeng","name":"赵嬷嬷","aliases":[],"group":"外部人物","tier":"次要","entity_type":"人物","status":"draft","first_chapter":16}
 {"id":"P0369","book_id":"hongloumeng","name":"赵天梁","aliases":[],"group":"外部人物","tier":"次要","entity_type":"人物","status":"draft","first_chapter":16}
+{"id":"P0370","book_id":"hongloumeng","name":"云儿","aliases":[],"group":"锦香院","tier":"次要","entity_type":"人物","status":"draft","first_chapter":28,"mention_chapters":[28]}

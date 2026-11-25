@@ -6,5 +6,12 @@
   "lexical_character_count": 13,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "previous_event_count": 2,
+    "event_count": 15,
+    "method": "金荣家务—宁府求医—寿宴筹办—张友士诊脉—处方跟踪",
+    "review_note": "书中医案为历史文学文本，不作为真实医学诊断与用药指南"
+  }
 }

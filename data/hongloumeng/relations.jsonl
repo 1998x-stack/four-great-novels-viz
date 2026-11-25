@@ -515,3 +515,17 @@
 {"book_id":"hongloumeng","relation_id":"R0515","subject_id":"P0009","predicate":"吩咐寿宴","object_id":"P0180","category":"主仆与职务","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0516","subject_id":"P0013","predicate":"时常资助","object_id":"P0178","category":"帮助与互动","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0517","subject_id":"P0022","predicate":"时常资助","object_id":"P0178","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0518","subject_id":"P0009","predicate":"命送寿礼","object_id":"P0043","category":"亲缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0519","subject_id":"P0022","predicate":"宴请","object_id":"P0013","category":"交游与诗社","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0520","subject_id":"P0022","predicate":"报告病情","object_id":"P0015","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0521","subject_id":"P0043","predicate":"代办寿宴","object_id":"P0009","category":"亲缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0522","subject_id":"P0013","predicate":"探病","object_id":"P0024","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0523","subject_id":"P0024","predicate":"诉说病苦","object_id":"P0013","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0524","subject_id":"P0013","predicate":"劝离病榻","object_id":"P0001","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0525","subject_id":"P0013","predicate":"安慰病者","object_id":"P0024","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0526","subject_id":"P0084","predicate":"轻薄纠缠","object_id":"P0013","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0527","subject_id":"P0013","predicate":"假意周旋","object_id":"P0084","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0528","subject_id":"P0022","predicate":"寿宴款待","object_id":"P0013","category":"交游与诗社","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0529","subject_id":"P0004","predicate":"遣人探病","object_id":"P0024","category":"亲缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0530","subject_id":"P0013","predicate":"议丧事","object_id":"P0022","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0531","subject_id":"P0025","predicate":"报告银钱","object_id":"P0013","category":"主仆与职务","direction":"subject_to_object"}

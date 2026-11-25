@@ -469,3 +469,16 @@
 {"book_id":"hongloumeng","relation_id":"R0469","subject_id":"P0013","predicate":"训诫","object_id":"P0001","category":"帮助与互动","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0470","subject_id":"P0363","predicate":"母女","object_id":"P0072","category":"亲缘","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0471","subject_id":"P0077","predicate":"伺候","object_id":"P0015","category":"主仆与职务","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0472","subject_id":"P0001","predicate":"探病","object_id":"P0019","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0473","subject_id":"P0074","predicate":"指出金玉字句相合","object_id":"P0001","category":"神话与因缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0474","subject_id":"P0019","predicate":"劝止莺儿多言","object_id":"P0074","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0475","subject_id":"P0020","predicate":"留客招待","object_id":"P0001","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0476","subject_id":"P0005","predicate":"含酸调侃","object_id":"P0019","category":"交游与诗社","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0477","subject_id":"P0005","predicate":"整理斗笠","object_id":"P0001","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0478","subject_id":"P0019","predicate":"劝温酒","object_id":"P0001","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0479","subject_id":"P0016","predicate":"托送手炉","object_id":"P0056","category":"主仆与职务","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0480","subject_id":"P0001","predicate":"醉后迁怒","object_id":"P0166","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0481","subject_id":"P0075","predicate":"拜访","object_id":"P0004","category":"交游与诗社","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0482","subject_id":"P0004","predicate":"馈赠学业礼物","object_id":"P0075","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0483","subject_id":"P0082","predicate":"安排入家塾","object_id":"P0075","category":"亲缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0484","subject_id":"P0023","predicate":"书写字额","object_id":"P0001","category":"主仆与职务","direction":"subject_to_object"}

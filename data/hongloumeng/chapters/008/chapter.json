@@ -6,5 +6,15 @@
   "lexical_character_count": 28,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "previous_event_count": 3,
+    "received_from_chapter_7": [
+      "E0231"
+    ],
+    "event_count": 19,
+    "method": "对照通灵玉与金锁原文、宝黛三人往来、秦业家世",
+    "review_note": "E0246原‘酥酪’误概括已更正为枫露茶；情节和象征暗示分开"
+  }
 }

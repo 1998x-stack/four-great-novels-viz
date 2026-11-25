@@ -6,5 +6,12 @@
   "lexical_character_count": 29,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "method": "逐段语义复核与故事细分",
+    "review_note": "机器辅助复核，未人工校勘；和尚预言以黛玉转述呈现，贾母哄劝宝玉的话不当作客观事实",
+    "events": 38,
+    "previous_event_count": 12
+  }
 }

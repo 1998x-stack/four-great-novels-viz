@@ -16,6 +16,7 @@
   stage.setAttribute("role", "dialog");
   stage.setAttribute("aria-label", "全屏人物关系探索");
   stage.setAttribute("aria-modal", "true");
+  stage.tabIndex=-1;
   stage.hidden = true;
   stage.innerHTML = [
     '<header class="imm-header">',
@@ -203,6 +204,8 @@
       if(recordHistory)record(id);
       state.person=id;
       state.selected=null;
+      // A click in global view opens this character's own network, not the same whole-book cloud.
+      if($i("scope").value==="all")$i("scope").value="1";
       // Default to a new ego-network; the top controls can switch to 2 hops / global.
       if(resetCamera)resetView();
       render();
@@ -380,6 +383,7 @@
     stage.hidden=false;
     stage.classList.add("is-open");
     document.body.classList.add("immersive-lock");
+    stage.focus({preventScroll:true});
     resetState();
     updateHeader();
     navigate(state.person||state.people[0].id);
@@ -429,6 +433,8 @@
   }
   window.NovelImmersive={
     get active(){return active},
+    inspect:()=>({active,playing,bookId:state.book?.id,person:state.person,
+      history:historyItems.slice(),index:historyIndex,scope:$i("scope").value}),
     openPerson:id=>navigate(id),
     openRelation:inspectRelation,
     close:exit

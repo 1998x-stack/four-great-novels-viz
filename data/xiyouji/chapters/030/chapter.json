@@ -11,9 +11,17 @@
   "source_chapter_key": "30",
   "summary": "变虎蒙冤：黄袍怪化作俊俏男子入朝，诬唐僧为妖并将他变作老虎。；龙马化身救主：白马化作宫娥刺杀黄袍怪不成，负伤后劝八戒请回悟空。",
   "enrichment": {
-    "status": "keyword_anchored",
+    "status": "paragraph_anchored",
     "plot_events": 2,
     "cooccurrence_candidates": 9,
-    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
-  }
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。",
+    "batch_id": "xiyouji-ch021-030-v3",
+    "method": "逐回事件细化与原文字符串精确锚定",
+    "previous_event_count": 2,
+    "added_events": 27,
+    "event_count": 29,
+    "evidence_level_for_new_events": "anchored_paragraph",
+    "review_note": "本批事件为AI辅助结构化，已校验原文字符串匹配，但尚未人工完成文学语义校勘"
+  },
+  "last_enrichment_batch": "xiyouji-ch021-030-v3"
 }

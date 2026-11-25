@@ -1,0 +1,117 @@
+{
+  "batch_id": "xiyouji-ch021-030-v3",
+  "book_id": "xiyouji",
+  "created_on": "2026-11-25",
+  "edition_id": "xiyouji:attachment-v1",
+  "source_sha256": "3f2bf2164ee63ad7ce3ef88c830e88e860f47719740b13e6c4a1fe4d3be09b80",
+  "chapters": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30
+  ],
+  "added_events": 225,
+  "added_relations": 161,
+  "added_people": 9,
+  "added_events_by_chapter": {
+    "021": 20,
+    "022": 23,
+    "023": 22,
+    "024": 22,
+    "025": 26,
+    "026": 22,
+    "027": 23,
+    "028": 21,
+    "029": 19,
+    "030": 27
+  },
+  "new_entity_ids": [
+    "P0326",
+    "P0327",
+    "P0328",
+    "P0329",
+    "P0330",
+    "P0331",
+    "P0332",
+    "P0333",
+    "P0334"
+  ],
+  "new_relation_range": [
+    "R0483",
+    "R0643"
+  ],
+  "new_event_range": [
+    "E12101",
+    "E13027"
+  ],
+  "after_totals": {
+    "people": 334,
+    "relations": 643,
+    "events": 931,
+    "pending_text_cooccurrence_candidates": 873
+  },
+  "narrative_arcs": [
+    {
+      "arc": "yellow-wind",
+      "chapters": [
+        21
+      ],
+      "theme": "黄风怪与灵吉降魔"
+    },
+    {
+      "arc": "flowing-sand",
+      "chapters": [
+        22
+      ],
+      "theme": "沙悟净归顺"
+    },
+    {
+      "arc": "four-saints-test",
+      "chapters": [
+        23,
+        24
+      ],
+      "theme": "试禅心与八戒受缚"
+    },
+    {
+      "arc": "ginseng-tree",
+      "chapters": [
+        24,
+        25,
+        26
+      ],
+      "theme": "五庄观盗果、毁树、求方与和解"
+    },
+    {
+      "arc": "white-bone",
+      "chapters": [
+        27
+      ],
+      "theme": "白骨精三次变化与悟空被逐"
+    },
+    {
+      "arc": "yellow-robed",
+      "chapters": [
+        28,
+        29,
+        30,
+        31
+      ],
+      "theme": "宝象国黄袍怪与悟空离队危机；第31回待下一批扩展"
+    }
+  ],
+  "evidence_level_for_new_events": "anchored_paragraph",
+  "review_status": "draft",
+  "quality_notes": [
+    "AI辅助叙事拆解，尚未经过人工逐句事实审核",
+    "精确字符串定位不等同于人物真实互动关系的自动证明",
+    "故事线保留跨回延续性，第31回事件不提前录入"
+  ],
+  "next_batch_recommendation": "chapters 031–040"
+}

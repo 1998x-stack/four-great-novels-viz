@@ -11,9 +11,17 @@
   "source_chapter_key": "25",
   "summary": "袖里乾坤擒师徒：镇元子得知果树被毁，追上取经人，以袖里乾坤将他们收回观中。；追究毁树：明月与清风发现果子被偷、树被毁，向唐僧等追责。",
   "enrichment": {
-    "status": "keyword_anchored",
+    "status": "paragraph_anchored",
     "plot_events": 2,
     "cooccurrence_candidates": 9,
-    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
-  }
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。",
+    "batch_id": "xiyouji-ch021-030-v3",
+    "method": "逐回事件细化与原文字符串精确锚定",
+    "previous_event_count": 2,
+    "added_events": 26,
+    "event_count": 28,
+    "evidence_level_for_new_events": "anchored_paragraph",
+    "review_note": "本批事件为AI辅助结构化，已校验原文字符串匹配，但尚未人工完成文学语义校勘"
+  },
+  "last_enrichment_batch": "xiyouji-ch021-030-v3"
 }

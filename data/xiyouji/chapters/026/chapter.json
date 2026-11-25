@@ -11,9 +11,17 @@
   "source_chapter_key": "26",
   "summary": "甘泉活树：悟空四处求医树之法，观音携净瓶甘露救活人参果树。；人参果会结义：果树复活后，镇元子依约与悟空结为兄弟，设果会款待。",
   "enrichment": {
-    "status": "keyword_anchored",
+    "status": "paragraph_anchored",
     "plot_events": 2,
     "cooccurrence_candidates": 9,
-    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
-  }
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。",
+    "batch_id": "xiyouji-ch021-030-v3",
+    "method": "逐回事件细化与原文字符串精确锚定",
+    "previous_event_count": 2,
+    "added_events": 22,
+    "event_count": 24,
+    "evidence_level_for_new_events": "anchored_paragraph",
+    "review_note": "本批事件为AI辅助结构化，已校验原文字符串匹配，但尚未人工完成文学语义校勘"
+  },
+  "last_enrichment_batch": "xiyouji-ch021-030-v3"
 }

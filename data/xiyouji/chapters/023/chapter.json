@@ -11,9 +11,17 @@
   "source_chapter_key": "23",
   "summary": "四圣试禅心：黎山老母与三位菩萨化作母女试探取经众人，八戒贪恋婚配而中计。；四圣设庄：观音、普贤与黎山老母、文殊共同设庄考验取经人的禅心。",
   "enrichment": {
-    "status": "keyword_anchored",
+    "status": "paragraph_anchored",
     "plot_events": 2,
     "cooccurrence_candidates": 9,
-    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
-  }
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。",
+    "batch_id": "xiyouji-ch021-030-v3",
+    "method": "逐回事件细化与原文字符串精确锚定",
+    "previous_event_count": 2,
+    "added_events": 22,
+    "event_count": 24,
+    "evidence_level_for_new_events": "anchored_paragraph",
+    "review_note": "本批事件为AI辅助结构化，已校验原文字符串匹配，但尚未人工完成文学语义校勘"
+  },
+  "last_enrichment_batch": "xiyouji-ch021-030-v3"
 }

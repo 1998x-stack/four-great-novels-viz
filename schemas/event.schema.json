@@ -1,0 +1,109 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "event",
+  "type": "object",
+  "properties": {
+    "book_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "event_id": {
+      "type": "string",
+      "pattern": "^E[0-9]{4,}$"
+    },
+    "chapter": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "summary": {
+      "type": "string",
+      "minLength": 1
+    },
+    "participants": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^P[0-9]{4,}$"
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "relation_ids": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "pattern": "^R[0-9]{4,}$"
+      },
+      "uniqueItems": true
+    },
+    "source": {
+      "type": "object",
+      "properties": {
+        "chapter": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "chapter_title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "edition_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "line_start": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "line_end": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "excerpt": {
+          "type": "string"
+        },
+        "match_status": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_level": {
+          "enum": [
+            "keyword_match",
+            "chapter_only",
+            "anchored_paragraph",
+            "reviewed"
+          ]
+        }
+      },
+      "required": [
+        "chapter",
+        "edition_id",
+        "evidence_level"
+      ],
+      "additionalProperties": true
+    },
+    "record_origin": {
+      "type": "string",
+      "minLength": 1
+    },
+    "event_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 0
+    }
+  },
+  "required": [
+    "book_id",
+    "event_id",
+    "chapter",
+    "summary",
+    "participants",
+    "relation_ids",
+    "source",
+    "record_origin"
+  ],
+  "additionalProperties": true
+}

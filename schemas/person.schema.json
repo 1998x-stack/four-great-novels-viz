@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "person",
+  "type": "object",
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^P[0-9]{4,}$"
+    },
+    "book_id": {
+      "type": "string",
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "aliases": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "group": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tier": {
+      "type": "string",
+      "minLength": 1
+    },
+    "entity_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mentions": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "first_chapter": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "mention_chapters": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "id",
+    "book_id",
+    "name",
+    "aliases"
+  ],
+  "additionalProperties": true
+}

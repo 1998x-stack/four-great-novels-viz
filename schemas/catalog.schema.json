@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "catalog",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "3.0.0"
+    },
+    "books": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "title": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "enum": [
+              "draft",
+              "reviewed",
+              "planned"
+            ]
+          },
+          "edition_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "expected_chapters": {
+            "type": "integer",
+            "minimum": 0
+          },
+          "source_filename": {
+            "type": "string",
+            "minLength": 1
+          },
+          "source_sha256": {
+            "type": "string",
+            "pattern": "^[a-f0-9]{64}$"
+          }
+        },
+        "required": [
+          "id",
+          "title",
+          "status"
+        ],
+        "additionalProperties": true
+      },
+      "uniqueItems": true
+    }
+  },
+  "required": [
+    "schema_version",
+    "books"
+  ],
+  "additionalProperties": true
+}

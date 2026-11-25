@@ -89,7 +89,10 @@ window.NovelGraph = (() => {
     for(const c of cell.children)if(c)applyRepulsion(node,c,power);
   }
   function collisions(nodes,space){
-    const cellSize=space*1.2;
+    // The search radius must cover the *whole* collision diameter, including
+    // large hub nodes; 1.2*space missed peers two hash buckets away.
+    const cellSize=Math.max(42,space+32);
+    const pinned=activeDrag();
     const grid=new Map();
     function key(a,b){return a+","+b}
     for(let i=0;i<nodes.length;i++){
@@ -112,8 +115,8 @@ window.NovelGraph = (() => {
           if(d<.01){dx=1;dy=.5;d=Math.hypot(dx,dy)}
           const overlap=(gap-d)*.43;
           const nx=dx/d*overlap,ny=dy/d*overlap;
-          if(a!==activeDrag()) {a.x-=nx;a.y-=ny}
-          if(b!==activeDrag()) {b.x+=nx;b.y+=ny}
+          if(a!==pinned) {a.x-=nx;a.y-=ny}
+          if(b!==pinned) {b.x+=nx;b.y+=ny}
         }
       }
     }
@@ -130,6 +133,13 @@ window.NovelGraph = (() => {
       this.byId=new Map();
       this.edges=[];
       this.springs=[];
+      this.dense=config.links.length>260 || config.nodes.length>145;
+      this.canvas=null;
+      this.ctx=null;
+      this.blankDown=null;
+      this.edgeHover=null;
+      this.hoverId=null;
+      this.canvasFrame=0;
       this.raf=0;
       this.drag=null;
       this.alpha=.95;
@@ -206,6 +216,7 @@ window.NovelGraph = (() => {
       this.nodeLayer=element("g",{class:"force-node-layer"});
       this.edgeLayer=element("g",{class:"force-edge-layer"});
       this.svg.replaceChildren(this.edgeLayer,this.nodeLayer);
+      if(this.dense)this.mountCanvas();
       const pairCount=new Map(),pairIndex=new Map();
       const active=[];
       for(const r of config.links){
@@ -221,20 +232,22 @@ window.NovelGraph = (() => {
         const i=pairIndex.get(item.key)||0;pairIndex.set(item.key,i+1);
         const total=pairCount.get(item.key);
         item.offset=(i-(total-1)/2)*Math.min(15,48/Math.max(1,total));
-        const line=element("path",{class:"force-edge-line",fill:"none","pointer-events":"none"});
-        const hit=element("path",{
-          class:"edge force-edge-hit",fill:"none",stroke:"transparent",
-          "stroke-width":11,role:"button",tabindex:active.length>180?-1:0,
-          "aria-label":item.source.name+" "+item.relation.predicate+" "+item.target.name
-        });
-        const tip=element("title",{},item.source.name+" · "+item.relation.predicate+" · "+item.target.name);
-        hit.append(tip);
-        this.listen(hit,"click",()=>this.config.onEdge(item.relation));
-        this.listen(hit,"keydown",e=>{
-          if(e.key==="Enter"||e.key===" "){e.preventDefault();this.config.onEdge(item.relation)}
-        });
-        this.edgeLayer.append(line,hit);
-        item.line=line;item.hit=hit;
+        if(!this.dense){
+          const line=element("path",{class:"force-edge-line",fill:"none","pointer-events":"none"});
+          const hit=element("path",{
+            class:"edge force-edge-hit",fill:"none",stroke:"transparent",
+            "stroke-width":11,role:"button",tabindex:0,
+            "aria-label":item.source.name+" "+item.relation.predicate+" "+item.target.name
+          });
+          const tip=element("title",{},item.source.name+" · "+item.relation.predicate+" · "+item.target.name);
+          hit.append(tip);
+          this.listen(hit,"click",()=>this.config.onEdge(item.relation));
+          this.listen(hit,"keydown",e=>{
+            if(e.key==="Enter"||e.key===" "){e.preventDefault();this.config.onEdge(item.relation)}
+          });
+          this.edgeLayer.append(line,hit);
+          item.line=line;item.hit=hit;
+        }
         this.edges.push(item);
       }
       for(const n of this.nodes){
@@ -255,7 +268,14 @@ window.NovelGraph = (() => {
           "font-size":this.nodes.length>150?10:12,
           "paint-order":"stroke","stroke-linejoin":"round"
         },n.name);
-        g.append(circle,text,element("title",{},n.name+" · "+(n.group||"")));
+        // A separate transparent hit area stays easy to grab on mobile and in full-book graphs.
+        const hitRadius=Math.max(15,n.radius+7);
+        const hit=element("circle",{
+          class:"force-node-hit",r:hitRadius,fill:"transparent",
+          "pointer-events":"all","aria-hidden":"true"
+        });
+        g.append(circle,hit,text,element("title",{},n.name+" · "+(n.group||"")));
+        n.hit=hit;
         this.nodeLayer.append(g);
         n.elem=g;n.text=text;n.body=circle;
         this.listen(g,"pointerdown",e=>this.pointerDown(e,n));
@@ -267,12 +287,135 @@ window.NovelGraph = (() => {
           }
         });
       }
-      this.listen(this.svg,"pointermove",e=>this.pointerMove(e));
-      this.listen(this.svg,"pointerup",e=>this.pointerUp(e));
-      this.listen(this.svg,"pointercancel",e=>this.pointerUp(e));
-      this.listen(this.svg,"lostpointercapture",e=>this.pointerUp(e));
+      this.listen(this.svg,"pointerdown",e=>{
+        if(this.dense && e.target===this.svg && e.isPrimary && e.button===0){
+          this.blankDown={id:e.pointerId,x:e.clientX,y:e.clientY,moved:false};
+        }
+      },true);
+      this.listen(this.svg,"pointermove",e=>{
+        this.pointerMove(e);
+        if(this.blankDown && this.blankDown.id===e.pointerId &&
+           Math.hypot(e.clientX-this.blankDown.x,e.clientY-this.blankDown.y)>5)
+          this.blankDown.moved=true;
+      });
+      this.listen(this.svg,"pointerup",e=>{
+        if(this.dense && this.blankDown && this.blankDown.id===e.pointerId &&
+           !this.blankDown.moved && !this.drag){
+          const nearest=this.nearestEdge(this.svgPoint(e));
+          if(nearest) this.config.onEdge(nearest.relation);
+        }
+        this.blankDown=null;
+        this.pointerUp(e);
+      });
+      this.listen(this.svg,"pointercancel",e=>{this.blankDown=null;this.pointerUp(e)});
+      this.listen(this.svg,"lostpointercapture",e=>{this.blankDown=null;this.pointerUp(e)});
       this.updateSelection(config);
       this.draw();
+    }
+    mountCanvas(){
+      const host=this.svg.parentElement;
+      if(!host)return;
+      const canvas=document.createElement("canvas");
+      canvas.className="force-edge-canvas";
+      canvas.setAttribute("aria-hidden","true");
+      host.insertBefore(canvas,this.svg);
+      this.canvas=canvas;
+      this.ctx=canvas.getContext("2d",{alpha:true});
+      if(!this.ctx){
+        canvas.remove();this.canvas=null;
+        this.dense=false;
+        return;
+      }
+      // Respond to both responsive container changes and pan/zoom viewBox changes.
+      if("ResizeObserver" in window){
+        this.resizeObserver=new ResizeObserver(()=>this.drawCanvas());
+        this.resizeObserver.observe(this.svg);
+      }else this.listen(window,"resize",()=>this.drawCanvas());
+      this.viewObserver=new MutationObserver(()=>this.drawCanvas());
+      this.viewObserver.observe(this.svg,{attributes:true,attributeFilter:["viewBox"]});
+    }
+    drawCanvas(){
+      if(!this.canvas||!this.ctx||!this.active)return;
+      const rect=this.svg.getBoundingClientRect();
+      const width=rect.width,height=rect.height;
+      if(width<2||height<2)return;
+      const ratio=Math.min(2,window.devicePixelRatio||1);
+      const pw=Math.max(1,Math.round(width*ratio)),ph=Math.max(1,Math.round(height*ratio));
+      if(this.canvas.width!==pw||this.canvas.height!==ph){
+        this.canvas.width=pw;this.canvas.height=ph;
+      }
+      const ctx=this.ctx;
+      ctx.setTransform(ratio,0,0,ratio,0,0);
+      ctx.clearRect(0,0,width,height);
+      const v=this.svg.viewBox.baseVal;
+      const scale=Math.min(width/v.width,height/v.height);
+      const ox=(width-v.width*scale)/2,oy=(height-v.height*scale)/2;
+      ctx.translate(ox,oy);ctx.scale(scale,scale);ctx.translate(-v.x,-v.y);
+      ctx.lineJoin="round";ctx.lineCap="round";
+      const focus=this.hoverId?this.byId.get(this.hoverId):null;
+      function trace(edge){
+        const u=edge.source,v=edge.target;
+        if(u===v){
+          const r=u.radius+19;
+          ctx.moveTo(u.x,u.y-r/2);
+          ctx.bezierCurveTo(u.x+r*2,u.y-r*2,u.x+r*2,u.y+r*2,u.x,u.y+r/2);
+        }else{
+          const dx=v.x-u.x,dy=v.y-u.y,len=Math.hypot(dx,dy)||1;
+          ctx.moveTo(u.x,u.y);
+          ctx.quadraticCurveTo((u.x+v.x)/2-dy/len*edge.offset,
+                               (u.y+v.y)/2+dx/len*edge.offset,v.x,v.y);
+        }
+      }
+      // Batch ordinary links into one path: thousands of edges, one stroke.
+      ctx.beginPath();
+      for(const e of this.edges){
+        if(e.relation.relation_id===this.config.selectedId)continue;
+        if(focus && (e.source===focus||e.target===focus))continue;
+        trace(e);
+      }
+      ctx.strokeStyle=focus?"rgba(111,163,164,.045)":"rgba(124,178,171,.17)";
+      ctx.lineWidth=.95;ctx.stroke();
+      if(focus){
+        ctx.beginPath();
+        for(const e of this.edges)if(e.source===focus||e.target===focus)trace(e);
+        ctx.strokeStyle="rgba(236,197,131,.86)";
+        ctx.lineWidth=1.65;ctx.stroke();
+      }
+      if(this.config.selectedId){
+        ctx.beginPath();
+        for(const e of this.edges)if(e.relation.relation_id===this.config.selectedId)trace(e);
+        ctx.strokeStyle="#ffdda1";ctx.lineWidth=2.6;ctx.stroke();
+      }
+    }
+    nearestEdge(p){
+      // Hit test only on pointer-up, never during continuous simulation frames.
+      // Approximate quadratic curves with short line segments and a zoom-aware radius.
+      const rect=this.svg.getBoundingClientRect(),v=this.svg.viewBox.baseVal;
+      const pxPerUnit=Math.min(rect.width/v.width,rect.height/v.height);
+      const threshold=Math.min(13,8/Math.max(.3,pxPerUnit));
+      let best=null,bestD=threshold*threshold;
+      function distance2(ax,ay,bx,by,x,y){
+        const dx=bx-ax,dy=by-ay,m=dx*dx+dy*dy||1;
+        const t=clamp(((x-ax)*dx+(y-ay)*dy)/m,0,1);
+        const ex=ax+t*dx-x,ey=ay+t*dy-y;
+        return ex*ex+ey*ey;
+      }
+      for(const e of this.edges){
+        const a=e.source,b=e.target;
+        if(a===b)continue;
+        const dx=b.x-a.x,dy=b.y-a.y,len=Math.hypot(dx,dy)||1;
+        const cx=(a.x+b.x)/2-dy/len*e.offset,cy=(a.y+b.y)/2+dx/len*e.offset;
+        let ox=a.x,oy=a.y;
+        for(let i=1;i<=5;i++){
+          const t=i/5,mt=1-t;
+          const x=mt*mt*a.x+2*mt*t*cx+t*t*b.x;
+          const y=mt*mt*a.y+2*mt*t*cy+t*t*b.y;
+          const d=distance2(ox,oy,x,y,p.x,p.y);
+          if(d<bestD){bestD=d;best=e}
+          ox=x;oy=y;
+        }
+      }
+      return best;
     }
     updateSelection(config){
       this.config=config;
@@ -280,6 +423,7 @@ window.NovelGraph = (() => {
         n.selected=n.id===config.focusId;
         n.radius=this.radiusOf(n.degree,n.selected);
         n.body.setAttribute("r",String(n.radius));
+        n.hit.setAttribute("r",String(Math.max(15,n.radius+7)));
         n.body.setAttribute("stroke",n.selected?"#f1d39b":"#d2e2dc");
         n.body.setAttribute("stroke-width",n.selected?"2.5":"1");
         n.text.setAttribute("y",String(n.radius+15));
@@ -288,10 +432,11 @@ window.NovelGraph = (() => {
       }
       for(const edge of this.edges){
         const selected=edge.relation.relation_id===config.selectedId;
-        edge.line.classList.toggle("is-selected",selected);
-        edge.hit.classList.toggle("is-selected",selected);
+        edge.line?.classList.toggle("is-selected",selected);
+        edge.hit?.classList.toggle("is-selected",selected);
       }
       this.hover(null);
+      if(this.dense)this.drawCanvas();
     }
     svgPoint(e){
       const pt=this.svg.createSVGPoint();
@@ -309,7 +454,7 @@ window.NovelGraph = (() => {
       this.drag={node,id:e.pointerId,startX:e.clientX,startY:e.clientY,
                  dx:node.x-at.x,dy:node.y-at.y,moved:false};
       node.vx=0;node.vy=0;
-      this.svg.setPointerCapture(e.pointerId);
+      node.elem.setPointerCapture(e.pointerId);
       this.svg.classList.add("is-grabbing");
       node.elem.classList.add("is-dragging");
       this.alpha=Math.max(this.alpha,.55);
@@ -331,7 +476,8 @@ window.NovelGraph = (() => {
       this.drag=null;
       drag.node.elem.classList.remove("is-dragging");
       this.svg.classList.remove("is-grabbing");
-      if(this.svg.hasPointerCapture(e.pointerId))this.svg.releasePointerCapture(e.pointerId);
+      if(drag.node.elem.hasPointerCapture(e.pointerId))
+        drag.node.elem.releasePointerCapture(e.pointerId);
       if(!drag.moved)this.config.onNode(drag.node.id);
       else{
         this.alpha=Math.max(.7,this.alpha);
@@ -339,6 +485,7 @@ window.NovelGraph = (() => {
       }
     }
     hover(id){
+      this.hoverId=id;
       const node=id?this.byId.get(id):null;
       const linked=new Set(node?[id]:[]);
       if(node)for(const e of this.edges)if(e.source===node||e.target===node){
@@ -352,10 +499,11 @@ window.NovelGraph = (() => {
       }
       for(const e of this.edges){
         const related=!!node&&(e.source===node||e.target===node);
-        e.line.classList.toggle("is-muted",!!node&&!related);
-        e.line.classList.toggle("is-neighbour",related);
-        e.hit.classList.toggle("is-neighbour",related);
+        e.line?.classList.toggle("is-muted",!!node&&!related);
+        e.line?.classList.toggle("is-neighbour",related);
+        e.hit?.classList.toggle("is-neighbour",related);
       }
+      if(this.dense)this.drawCanvas();
     }
     tick(){
       const n=this.nodes.length;if(!n)return;
@@ -400,6 +548,7 @@ window.NovelGraph = (() => {
       for(const n of this.nodes){
         n.elem.setAttribute("transform","translate("+n.x.toFixed(2)+" "+n.y.toFixed(2)+")");
       }
+      if(this.dense){this.drawCanvas();return}
       for(const edge of this.edges){
         const u=edge.source,v=edge.target;
         let d;
@@ -450,11 +599,15 @@ window.NovelGraph = (() => {
     destroy(){
       this.active=false;cancelAnimationFrame(this.raf);this.raf=0;
       this.observer?.disconnect();
+      this.viewObserver?.disconnect();
+      this.resizeObserver?.disconnect();
+      if(this.canvas){this.canvas.remove();this.canvas=null}
       for(const n of this.nodes)previous.set(n.id,{x:n.x,y:n.y});
       for(const cleanup of this.cleanups)cleanup();
       this.cleanups=[];
       if(this.drag){
-        try{if(this.svg.hasPointerCapture(this.drag.id))this.svg.releasePointerCapture(this.drag.id)}catch{}
+        try{if(this.drag.node.elem.hasPointerCapture(this.drag.id))
+          this.drag.node.elem.releasePointerCapture(this.drag.id)}catch{}
       }
       this.drag=null;
     }

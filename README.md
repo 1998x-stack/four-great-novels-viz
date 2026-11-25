@@ -9,7 +9,7 @@
 | 红楼梦 | hongloumeng | 354 | 383 | 481 | 120 |
 | 三国演义 | sanguoyanyi | 0 | 0 | 0 | 待录入 |
 | 水浒传 | shuihuzhuan | 487 | 342 | 360 | 楔子 + 120 回 |
-| 西游记 | xiyouji | 0 | 0 | 0 | 待录入 |
+| 西游记 | xiyouji | 310 | 230 | 239 | 100 回 + 附录 |
 
 红楼梦由既有 V2 数据迁移；水浒传由对话中的 V2 逐回数据迁移（360 个独立事件 ID，另有 1,689 条待核线索）。数据按书籍隔离，后续新增三国演义、西游记不会破坏已有格式。全部数据为待校勘草稿，人物候选不保证穷尽。原文定位并不等于语义审核。原始附件未提交，版本指纹见 data/catalog.json。
 
@@ -82,3 +82,14 @@ book_id 与本地 ID 组成全局唯一键，例如 hongloumeng:P0001。关系�
 - `candidates.jsonl`：1,689 条待核原文线索，**不会作为已确认关系展示**；可逐条转化为新增事件。
 - `source.evidence_level=keyword_match` 表示自动匹配的原文定位，不代表人工事实确认。`line_start/line_end` 仅适用于 `shuihuzhuan:attachment-v1` 底本。
 - 在线访问可通过 `?book=shuihuzhuan` 切换作品，后续逐回完善只需编辑对应章节文件与必要的人物、关系文件。
+
+
+## 《西游记》逐回迁移（2026-11-25）
+
+- **310** 个独立人物/群体档案：`data/xiyouji/people.jsonl`。
+- **230** 条剧情语义关系：`data/xiyouji/relations.jsonl`，保留 V2 R 编号。
+- **239** 条剧情事件：分散在各回 `events.jsonl`，事件 ID 由 EV00001 映射为 E00001，旧 ID 保存在 `legacy_id`。
+- **873** 条待核同段线索：每回 `candidates.jsonl`，不是已确认关系；原始 **248** 条文本共现边不进入正式关系图。
+- **100 回 + 第八回后的附录**：附录使用内部整数索引 `801`，元数据注明 `source_chapter_key: "8a"` 和 `narrative_order: 8.5`；页面按正文位置排序。
+- **证据等级**：机器匹配的摘录最高只记 `keyword_match`，不标为人工审核 `reviewed`。行号依据 `xiyouji:attachment-v1`，更换底本不可直接沿用。
+- 作品入口：`?book=xiyouji`；选择具体回目后，可以查看独立的待核线索队列。详情见 [西游记数据说明](data/xiyouji/README.md)。

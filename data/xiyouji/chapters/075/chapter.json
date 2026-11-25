@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 75,
+  "title": "第七十五回 心猿钻透阴阳窍 魔王还归大道真",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 5059,
+  "line_end": 5116,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 75,
+  "source_chapter_key": "75",
+  "summary": "钻入青狮腹中：青狮将悟空吞入腹中，悟空在其腹内施展本领迫其求饶。；八戒助战青狮：悟空与青狮魔王空中交战，八戒见状跳起举钯相助，魔王一度败走，后来又吞下悟空。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

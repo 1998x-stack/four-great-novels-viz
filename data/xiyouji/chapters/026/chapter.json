@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 26,
+  "title": "第二十六回 孙悟空三岛求方 观世音甘泉活树",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 1889,
+  "line_end": 1946,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 26,
+  "source_chapter_key": "26",
+  "summary": "甘泉活树：悟空四处求医树之法，观音携净瓶甘露救活人参果树。；人参果会结义：果树复活后，镇元子依约与悟空结为兄弟，设果会款待。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

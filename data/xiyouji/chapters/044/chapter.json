@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 44,
+  "title": "第四十四回 法身元运逢车力 心正妖邪度脊关",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 3049,
+  "line_end": 3110,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 44,
+  "source_chapter_key": "44",
+  "summary": "解救苦役僧：悟空发现众僧被迫服役，为他们除去监工威胁并许诺救助。；车迟崇道抑佛：国王因三位大仙曾祈雨救旱而尊崇他们，使佛门僧众受苦。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

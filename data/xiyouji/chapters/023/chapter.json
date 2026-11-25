@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 23,
+  "title": "第二十三回 三藏不忘本 四圣试禅心",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 1671,
+  "line_end": 1744,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 23,
+  "source_chapter_key": "23",
+  "summary": "四圣试禅心：黎山老母与三位菩萨化作母女试探取经众人，八戒贪恋婚配而中计。；四圣设庄：观音、普贤与黎山老母、文殊共同设庄考验取经人的禅心。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

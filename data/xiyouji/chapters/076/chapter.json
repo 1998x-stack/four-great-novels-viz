@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 76,
+  "title": "第七十六回 心神居舍魔归性 木母同降怪体真",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 5117,
+  "line_end": 5176,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 76,
+  "source_chapter_key": "76",
+  "summary": "象鼻卷猴：白象用长鼻卷住悟空，悟空反制迫其求饶；随后妖怪又设局。；合力战三魔：悟空与八戒等尝试突围降妖，却因三魔设谋而再陷困境。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

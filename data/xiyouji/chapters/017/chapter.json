@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 17,
+  "title": "第十七回 孙行者大闹黑风山 观世音收伏熊罴怪",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 1283,
+  "line_end": 1374,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 17,
+  "source_chapter_key": "17",
+  "summary": "黑风山寻袈裟：悟空到黑风山追索袈裟，与黑熊精交锋未能轻易取胜。；降熊归南海：观音与悟空设计使黑熊精吞下化身悟空的仙丹，收伏为守山大神。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

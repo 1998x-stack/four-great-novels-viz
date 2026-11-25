@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 98,
+  "title": "第九十八回 猿熟马驯方脱壳 功成行满见真如",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 6483,
+  "line_end": 6540,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 98,
+  "source_chapter_key": "98",
+  "summary": "凌云渡脱胎：接引佛祖驾无底船渡师徒过凌云渡，唐僧脱去凡胎。；无字经与真经：阿傩、伽叶索人事，先给无字经，后收紫金钵盂，传有字真经。；揭示无字经：燃灯发现取经人得了无字经，遣白雄尊者追赶揭露，使其回去求经。；收钵传经：伽叶与阿傩向唐僧索取人事，后将有字经卷交给取经人。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 4,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

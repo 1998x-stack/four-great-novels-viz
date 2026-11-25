@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 42,
+  "title": "第四十二回 大圣殷勤拜南海 观音慈善缚红孩",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 2911,
+  "line_end": 2968,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 42,
+  "source_chapter_key": "42",
+  "summary": "收为善财童子：观音用莲台、金箍等降伏红孩儿，收为善财童子。；借刀降圣婴：木叉奉观音之命向李天王借天罡刀，助菩萨布置降妖。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

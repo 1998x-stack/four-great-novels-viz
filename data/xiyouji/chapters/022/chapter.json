@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 22,
+  "title": "第二十二回 八戒大战流沙河 木叉奉法收悟净",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 1587,
+  "line_end": 1670,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 22,
+  "source_chapter_key": "22",
+  "summary": "流沙河斗妖：八戒入流沙河与妖怪水战，悟空难以在岸上助战。；奉法收悟净：木叉奉观音之命唤出悟净，令其归唐僧门下，并助取经人渡河。；流沙河拜师：悟净归顺取经人，成为唐僧弟子，与师兄同往西天。；流沙河同门：沙悟净拜唐僧为师，与八戒成为同门师兄弟。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 4,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

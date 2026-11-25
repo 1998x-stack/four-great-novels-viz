@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 58,
+  "title": "第五十八回 二心搅乱大乾坤 一体难修真寂灭",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 4011,
+  "line_end": 4050,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 58,
+  "source_chapter_key": "58",
+  "summary": "辨真假美猴王：两猴遍访诸神仍难辨别，如来揭明假猴是六耳猕猴，以金钵罩住。；一体归真：六耳猕猴被如来识破后，悟空将其打死，随后归唐僧处。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

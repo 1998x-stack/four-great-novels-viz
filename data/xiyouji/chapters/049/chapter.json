@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 49,
+  "title": "第四十九回 三藏有灾沉水宅 观音救难现鱼篮",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 3375,
+  "line_end": 3452,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 49,
+  "source_chapter_key": "49",
+  "summary": "鱼篮收金鱼：观音提鱼篮收回逃下界的金鱼精，解救唐僧。；驮过通天河：老鼋驮师徒过河，并托唐僧向佛祖询问寿数与何时得人身。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

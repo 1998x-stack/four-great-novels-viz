@@ -42,3 +42,10 @@
 ## GitHub Pages
 
 合并到 `main` 后，`.github/workflows/pages.yml` 验证并发布站点。仓库管理员需在 **Settings → Pages → Source** 选择 **GitHub Actions**。CI 校验通过并不自动等同网页部署成功；请在 Actions 查看 Deploy GitHub Pages 结果。
+
+
+## 章回附录与异常阅读顺序
+
+若附录没有独立的整数回数，分配不冲突的稳定整数 `chapter` 标识，并在 `chapter.json` 中设置 `chapter_kind: "appendix"`、`source_chapter_key` 和 `narrative_order`，前端按阅读顺序显示。当前《西游记》附录键 `8a` 映射到 `801`，叙事位置 `8.5`。不要把附录事件写到第八回内或重用第九回编号。
+
+《西游记》`candidates.jsonl` 使用 `C####`、`subject_id`、`object_id`、`status: pending` 与仓库统一的 candidate.schema.json；从候选提升为正式剧情事件时，新建 E/R 记录并保留 `legacy_id` 和复核记录。所有自动匹配证据默认不是人工已核验。

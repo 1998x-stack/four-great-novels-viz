@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 73,
+  "title": "第七十三回 情因旧恨生灾毒 心主遭魔幸破光",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 4921,
+  "line_end": 4996,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 73,
+  "source_chapter_key": "73",
+  "summary": "黄花观报仇：七蜘蛛精投奔师兄百眼魔君，诉说与取经弟子的仇怨，妖道设毒茶。；绣花针破金光：毗蓝婆以针破妖道金光，收伏蜈蚣精，救出中毒的师徒。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

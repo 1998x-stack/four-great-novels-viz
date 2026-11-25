@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 56,
+  "title": "第五十六回 神狂诛草寇 道昧放心猿",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 3893,
+  "line_end": 3958,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 56,
+  "source_chapter_key": "56",
+  "summary": "再逐悟空：悟空杀死拦路强盗，唐僧念咒责罚并将其再次逐走。；路遇强盗：悟空对抗拦路强盗，因杀伤凡人引发与师父的冲突。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

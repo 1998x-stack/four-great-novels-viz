@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 24,
+  "title": "第二十四回 万寿山大仙留故友 五庄观行者窃人参",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 1745,
+  "line_end": 1814,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 24,
+  "source_chapter_key": "24",
+  "summary": "五庄观留故友：镇元子因昔日金蝉子与其有旧，临行嘱童子以人参果招待唐僧。；人参果争执：悟空偷摘人参果与师弟分食，遭清风、明月责骂后推倒果树。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 99,
+  "title": "第九十九回 九九数完魔灭尽 三三行满道归根",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 6541,
+  "line_end": 6564,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 99,
+  "source_chapter_key": "99",
+  "summary": "忘问寿数落水：老鼋发现唐僧未向佛祖问其寿数，负气将师徒及经书沉入水中。；补足九九难：观音查看难簿，发现尚缺一难，令护法安排补足，师徒遭遇通天河落水。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 7,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

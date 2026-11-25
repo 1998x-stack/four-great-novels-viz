@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 65,
+  "title": "第六十五回 妖邪假设小雷音 四众皆遭大厄难",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 4429,
+  "line_end": 4482,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 65,
+  "source_chapter_key": "65",
+  "summary": "假雷音寺：黄眉设小雷音寺假冒佛祖，拘禁唐僧和众弟子。；金铙困悟空：黄眉用金铙困住悟空，悟空后获诸神协助脱身。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

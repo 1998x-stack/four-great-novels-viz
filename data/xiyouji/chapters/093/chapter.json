@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 93,
+  "title": "第九十三回 给孤园问古谈因 天竺国朝王遇偶",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 6179,
+  "line_end": 6244,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 93,
+  "source_chapter_key": "93",
+  "summary": "寺中保护真公主：老僧向唐僧说明曾收留来历异常的女子，暗中照顾以免其受害。；绣球招亲：假公主抛绣球选中唐僧，国王据此招其为驸马。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 2,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

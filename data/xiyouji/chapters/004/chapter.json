@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 4,
+  "title": "第四回 官封弼马心何足 名注齐天意未宁",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 265,
+  "line_end": 326,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 4,
+  "source_chapter_key": "4",
+  "summary": "首次招安：金星建议玉帝授官安抚猴王，并下界引悟空入天庭。；弼马温与齐天大圣：悟空先任弼马温，因嫌官小反下天宫，后来天庭承认齐天大圣名号。；花果山交锋：哪吒奉命随李天王讨伐猴王，与悟空变化相斗后败回。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 3,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

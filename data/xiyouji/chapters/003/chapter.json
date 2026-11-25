@@ -1,0 +1,19 @@
+{
+  "book_id": "xiyouji",
+  "chapter": 3,
+  "title": "第三回 四海千山皆拱伏 九幽十类尽除名",
+  "edition_id": "xiyouji:attachment-v1",
+  "line_start": 215,
+  "line_end": 264,
+  "review_status": "draft",
+  "chapter_kind": "main",
+  "narrative_order": 3,
+  "source_chapter_key": "3",
+  "summary": "东海求兵器：悟空入龙宫寻兵器，取走如意金箍棒，并要求龙王筹办披挂。；七大王相交：悟空遍访豪杰，与牛魔王等六位妖王结交为兄弟。；勾销生死簿：悟空被勾魂至幽冥，大闹地府，将猴属名字从生死簿勾去。；四海龙王会集：东海龙王敖广召来南海敖钦、北海敖顺和西海敖闰，合议为悟空凑齐披挂。",
+  "enrichment": {
+    "status": "keyword_anchored",
+    "plot_events": 4,
+    "cooccurrence_candidates": 9,
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+  }
+}

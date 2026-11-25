@@ -6,5 +6,12 @@
   "lexical_character_count": 24,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "previous_event_count": 3,
+    "event_count": 22,
+    "method": "分离小红帕事、薛蟠设局、宝黛误会等叙事线索",
+    "review_note": "晴雯不认出黛玉造成误会，并非宝玉有意拒客"
+  }
 }

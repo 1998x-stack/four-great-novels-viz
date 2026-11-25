@@ -485,3 +485,6 @@
 {"id":"P0485","book_id":"shuihuzhuan","name":"李逵母亲","aliases":["老娘","李逵的娘","娘道"],"group":"其他人物","status":"章回补录·称谓或原文姓名","rank":null,"mentions":0,"first_chapter":null,"mention_chapters":[],"source_name":"李逵母亲","roster_chapter":null}
 {"id":"P0486","book_id":"shuihuzhuan","name":"娇秀","aliases":["娇秀"],"group":"朝廷与神仙","status":"章回补录·称谓或原文姓名","rank":null,"mentions":13,"first_chapter":101,"mention_chapters":[101,102,104],"source_name":"娇秀","roster_chapter":null}
 {"id":"P0487","book_id":"shuihuzhuan","name":"唐斌","aliases":["唐斌"],"group":"田虎势力","status":"章回补录·称谓或原文姓名","rank":null,"mentions":63,"first_chapter":94,"mention_chapters":[94,95,97,98,99,100,105,106,108],"source_name":"唐斌","roster_chapter":null}
+{"id":"P0488","book_id":"shuihuzhuan","name":"智清禅师","aliases":["智清长老","清长老"],"group":"大相国寺","status":"原文具名；模型辅助识别待人工复核","first_chapter":5,"mention_chapters":[5]}
+{"id":"P0489","book_id":"shuihuzhuan","name":"张三","aliases":["过街老鼠"],"group":"菜园泼皮","status":"原文具名；模型辅助识别待人工复核","first_chapter":6,"mention_chapters":[6]}
+{"id":"P0490","book_id":"shuihuzhuan","name":"李四","aliases":["青草蛇"],"group":"菜园泼皮","status":"原文具名；模型辅助识别待人工复核","first_chapter":6,"mention_chapters":[6]}

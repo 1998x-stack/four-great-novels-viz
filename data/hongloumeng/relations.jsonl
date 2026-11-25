@@ -841,3 +841,15 @@
 {"book_id":"hongloumeng","relation_id":"R0841","subject_id":"P0014","predicate":"责送汗巾","object_id":"P0001","category":"帮助与互动","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0842","subject_id":"P0012","predicate":"赏端午节礼","object_id":"P0001","category":"帮助与互动","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0843","subject_id":"P0005","predicate":"借金玉取笑","object_id":"P0001","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0844","subject_id":"P0005","predicate":"甩帕误中","object_id":"P0001","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0845","subject_id":"P0013","predicate":"邀出游观戏","object_id":"P0019","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0846","subject_id":"P0004","predicate":"答应赴观","object_id":"P0013","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0847","subject_id":"P0013","predicate":"掌掴","object_id":"P0371","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0848","subject_id":"P0004","predicate":"保护小道士","object_id":"P0371","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0849","subject_id":"P0009","predicate":"吩咐人手","object_id":"P0094","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0850","subject_id":"P0009","predicate":"敬请入见","object_id":"P0251","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0851","subject_id":"P0251","predicate":"回忆国公相似","object_id":"P0001","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0852","subject_id":"P0251","predicate":"为宝玉议亲","object_id":"P0004","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0853","subject_id":"P0013","predicate":"戏谑取符","object_id":"P0251","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0854","subject_id":"P0251","predicate":"借观通灵玉","object_id":"P0001","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0855","subject_id":"P0251","predicate":"归还通灵玉","object_id":"P0001","category":"帮助与互动","direction":"subject_to_object"}

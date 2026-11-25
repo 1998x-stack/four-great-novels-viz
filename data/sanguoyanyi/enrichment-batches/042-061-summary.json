@@ -1,0 +1,115 @@
+{
+  "batch_id": "sanguoyanyi-ch042-061-pass1",
+  "edition_id": "sanguoyanyi:attachment-v1",
+  "source_filename": "三国演义.txt",
+  "source_sha256": "48922aa73c07e0b9c6e23a9cf5cf61f1779dd33e11947a1eaac364f1c50f65c4",
+  "chapter_range": [
+    42,
+    61
+  ],
+  "chapters_touched": 20,
+  "added_events": 100,
+  "added_people": 3,
+  "added_relations": 85,
+  "new_people": [
+    "刘贤",
+    "邢道荣",
+    "钟进"
+  ],
+  "status": "partial_paragraph_anchored",
+  "review_status": "draft",
+  "review_required": true,
+  "human_review_complete": false,
+  "legacy_ids_preserved": true,
+  "source_anchor_exact_substring_verified": true,
+  "scene_selection": "5 notable source paragraphs per chapter; not comprehensive",
+  "totals_after": {
+    "people": 558,
+    "relations": 958,
+    "events": 1115,
+    "chapters": 120
+  },
+  "chapters": [
+    {
+      "chapter": 42,
+      "new_events": 5
+    },
+    {
+      "chapter": 43,
+      "new_events": 5
+    },
+    {
+      "chapter": 44,
+      "new_events": 5
+    },
+    {
+      "chapter": 45,
+      "new_events": 5
+    },
+    {
+      "chapter": 46,
+      "new_events": 5
+    },
+    {
+      "chapter": 47,
+      "new_events": 5
+    },
+    {
+      "chapter": 48,
+      "new_events": 5
+    },
+    {
+      "chapter": 49,
+      "new_events": 5
+    },
+    {
+      "chapter": 50,
+      "new_events": 5
+    },
+    {
+      "chapter": 51,
+      "new_events": 5
+    },
+    {
+      "chapter": 52,
+      "new_events": 5
+    },
+    {
+      "chapter": 53,
+      "new_events": 5
+    },
+    {
+      "chapter": 54,
+      "new_events": 5
+    },
+    {
+      "chapter": 55,
+      "new_events": 5
+    },
+    {
+      "chapter": 56,
+      "new_events": 5
+    },
+    {
+      "chapter": 57,
+      "new_events": 5
+    },
+    {
+      "chapter": 58,
+      "new_events": 5
+    },
+    {
+      "chapter": 59,
+      "new_events": 5
+    },
+    {
+      "chapter": 60,
+      "new_events": 5
+    },
+    {
+      "chapter": 61,
+      "new_events": 5
+    }
+  ],
+  "notes": "根据用户上传的《三国演义》底本选取20回共100个不同段落，按上传底本逐条核对原文行号与摘录；关系与场景摘要仍属机器辅助解读，待人工文学事实终审"
+}

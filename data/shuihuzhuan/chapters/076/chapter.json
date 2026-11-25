@@ -1,0 +1,16 @@
+{
+  "book_id": "shuihuzhuan",
+  "chapter": 76,
+  "title": "第七十六回　吴加亮布四斗五方旗　宋公明排九宫八卦阵",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "line_start": 11089,
+  "line_end": 11222,
+  "review_status": "draft",
+  "extraction": {
+    "source": "水浒传_V2/章回索引.json",
+    "event_count": 2,
+    "lexical_character_count": 73,
+    "candidate_count": 12,
+    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  }
+}

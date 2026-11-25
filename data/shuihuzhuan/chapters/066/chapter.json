@@ -1,0 +1,16 @@
+{
+  "book_id": "shuihuzhuan",
+  "chapter": 66,
+  "title": "第六十六回 宋江赏步三军 关胜降水火二将",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "line_start": 10069,
+  "line_end": 10106,
+  "review_status": "draft",
+  "extraction": {
+    "source": "水浒传_V2/章回索引.json",
+    "event_count": 3,
+    "lexical_character_count": 42,
+    "candidate_count": 18,
+    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  }
+}

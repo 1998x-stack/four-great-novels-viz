@@ -1,0 +1,16 @@
+{
+  "book_id": "shuihuzhuan",
+  "chapter": 30,
+  "title": "第三十回　　张都监血溅鸳鸯楼　武行者夜走蜈蚣岭",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "line_start": 9077,
+  "line_end": 9184,
+  "review_status": "draft",
+  "extraction": {
+    "source": "水浒传_V2/章回索引.json",
+    "event_count": 4,
+    "lexical_character_count": 10,
+    "candidate_count": 12,
+    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  }
+}

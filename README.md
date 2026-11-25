@@ -8,10 +8,10 @@
 |---|---|---:|---:|---:|---:|
 | 红楼梦 | hongloumeng | 354 | 383 | 481 | 120 |
 | 三国演义 | sanguoyanyi | 0 | 0 | 0 | 待录入 |
-| 水浒传 | shuihuzhuan | 0 | 0 | 0 | 待录入 |
+| 水浒传 | shuihuzhuan | 487 | 342 | 360 | 楔子 + 120 回 |
 | 西游记 | xiyouji | 0 | 0 | 0 | 待录入 |
 
-红楼梦由对话中的 V2 JSONL 迁移；481 是关联事件记录，不代表 481 个独立故事。全部数据为待校勘草稿，人物候选不保证穷尽。原文定位并不等于语义审核。原始附件未提交，版本指纹见 data/catalog.json。
+红楼梦由既有 V2 数据迁移；水浒传由对话中的 V2 逐回数据迁移（360 个独立事件 ID，另有 1,689 条待核线索）。数据按书籍隔离，后续新增三国演义、西游记不会破坏已有格式。全部数据为待校勘草稿，人物候选不保证穷尽。原文定位并不等于语义审核。原始附件未提交，版本指纹见 data/catalog.json。
 
 ## 逐回复核进度（V3 增补）
 
@@ -35,6 +35,10 @@ data/
     relations.jsonl
     chapters/
       index.json
+      000/                 # 楔子（如果该版本有）
+        chapter.json
+        events.jsonl
+        candidates.jsonl     # 可选；尚未认定为真实关系
       001/
         chapter.json
         events.jsonl
@@ -50,7 +54,8 @@ CONTRIBUTING.md        # 章回增量录入指南
 ```bash
 python -m pip install -r requirements.txt
 python scripts/validate.py
-python scripts/export.py hongloumeng --output graph.json
+python scripts/validate_candidates.py
+python scripts/export.py shuihuzhuan --output graph.json
 python -m http.server 8000
 ```
 
@@ -58,7 +63,8 @@ python -m http.server 8000
 
 ## GitHub Pages
 
-进入 Settings → Pages → Build and deployment → Source: Deploy from a branch → main / (root) → Save。
+进入 Settings → Pages → Build and deployment → **Source: GitHub Actions**。
+主分支的 `.github/workflows/pages.yml` 将先校验全书数据再上传静态站点；若仓库尚未开启 Pages，需要在设置中手动启用此发布源。
 预期网址：https://1998x-stack.github.io/four-great-novels-viz/
 页面直接读取 data 目录，使用相对路径，无需 npm、数据库服务或 CDN。新增章回后自动反映已提交的数据；请同步维护章节索引。
 
@@ -67,3 +73,12 @@ python -m http.server 8000
 book_id 与本地 ID 组成全局唯一键，例如 hongloumeng:P0001。关系端点引用本书人物，事件引用多个关系及参与者，章回文件按三位最小宽度命名（000 为楔子，001 为第一回）。事件 ID 不随章回移动而改变。原文证据保存附件版本、摘录及行号。
 
 详细维护规则见 [CONTRIBUTING.md](CONTRIBUTING.md)。数据 Schema 版本 3.0.0；内容版本以 Git 提交记录为准。
+
+## 《水浒传》数据校勘说明
+
+- `data/shuihuzhuan/people.jsonl`：487 位人物/人物候选；前 108 位梁山好汉为石碣名录，其他名称待逐个校勘。
+- `relations.jsonl`：342 条有向或对称关系，保留 V2 `R` 编号；语义尚未逐条人工核验。
+- `chapters/000`（楔子）至 `chapters/120`：每回单独保存事件；`events.jsonl` 共 360 条，保留 `E` 编号与 `relation_ids`。
+- `candidates.jsonl`：1,689 条待核原文线索，**不会作为已确认关系展示**；可逐条转化为新增事件。
+- `source.evidence_level=keyword_match` 表示自动匹配的原文定位，不代表人工事实确认。`line_start/line_end` 仅适用于 `shuihuzhuan:attachment-v1` 底本。
+- 在线访问可通过 `?book=shuihuzhuan` 切换作品，后续逐回完善只需编辑对应章节文件与必要的人物、关系文件。

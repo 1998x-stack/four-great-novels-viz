@@ -1,0 +1,16 @@
+{
+  "book_id": "shuihuzhuan",
+  "chapter": 111,
+  "title": "第一百一十一回  张顺夜伏金山寺 宋江智取润州城",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "line_start": 13417,
+  "line_end": 13526,
+  "review_status": "draft",
+  "extraction": {
+    "source": "水浒传_V2/章回索引.json",
+    "event_count": 2,
+    "lexical_character_count": 92,
+    "candidate_count": 17,
+    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  }
+}

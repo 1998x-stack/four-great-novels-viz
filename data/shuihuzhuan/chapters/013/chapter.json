@@ -1,0 +1,16 @@
+{
+  "book_id": "shuihuzhuan",
+  "chapter": 13,
+  "title": "第十三回　赤发鬼醉卧灵官殿　晁天王认义东溪村",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "line_start": 5037,
+  "line_end": 5300,
+  "review_status": "draft",
+  "extraction": {
+    "source": "水浒传_V2/章回索引.json",
+    "event_count": 3,
+    "lexical_character_count": 6,
+    "candidate_count": 8,
+    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "book_id": "shuihuzhuan",
+  "chapter": 58,
+  "title": "第五十八回 吴用赚金铃吊挂 宋江闹西岳华山",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "line_start": 9909,
+  "line_end": 9918,
+  "review_status": "draft",
+  "extraction": {
+    "source": "水浒传_V2/章回索引.json",
+    "event_count": 4,
+    "lexical_character_count": 38,
+    "candidate_count": 18,
+    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  }
+}

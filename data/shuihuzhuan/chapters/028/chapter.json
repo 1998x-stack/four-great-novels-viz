@@ -1,0 +1,16 @@
+{
+  "book_id": "shuihuzhuan",
+  "chapter": 28,
+  "title": "第二十八回　　施恩重霸孟州道　武松醉打蒋门神",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "line_start": 8899,
+  "line_end": 8964,
+  "review_status": "draft",
+  "extraction": {
+    "source": "水浒传_V2/章回索引.json",
+    "event_count": 3,
+    "lexical_character_count": 5,
+    "candidate_count": 5,
+    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  }
+}

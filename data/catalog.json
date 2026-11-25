@@ -18,7 +18,12 @@
     {
       "id": "shuihuzhuan",
       "title": "水浒传",
-      "status": "planned"
+      "status": "draft",
+      "edition_id": "shuihuzhuan:attachment-v1",
+      "expected_chapters": 120,
+      "includes_prologue": true,
+      "source_filename": "水浒传.txt",
+      "source_sha256": "aa966dd99d7ecac39f63eb187e5f29f4edb6061dc1adf73e4524eb7fd2345cdc"
     },
     {
       "id": "xiyouji",

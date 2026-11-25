@@ -1,0 +1,16 @@
+{
+  "book_id": "shuihuzhuan",
+  "chapter": 2,
+  "title": "第二回　史大郎夜走华阴县　鲁提辖拳打镇关西",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "line_start": 815,
+  "line_end": 1234,
+  "review_status": "draft",
+  "extraction": {
+    "source": "水浒传_V2/章回索引.json",
+    "event_count": 6,
+    "lexical_character_count": 15,
+    "candidate_count": 8,
+    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  }
+}

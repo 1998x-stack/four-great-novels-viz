@@ -1,0 +1,16 @@
+{
+  "book_id": "shuihuzhuan",
+  "chapter": 71,
+  "title": "第七十一回　梁山泊英雄排座次　宋公明慷慨话宿愿",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "line_start": 10599,
+  "line_end": 10824,
+  "review_status": "draft",
+  "extraction": {
+    "source": "水浒传_V2/章回索引.json",
+    "event_count": 2,
+    "lexical_character_count": 112,
+    "candidate_count": 7,
+    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  }
+}

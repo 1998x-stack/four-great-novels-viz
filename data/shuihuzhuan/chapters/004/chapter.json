@@ -1,0 +1,16 @@
+{
+  "book_id": "shuihuzhuan",
+  "chapter": 4,
+  "title": "第四回　小霸王醉入销金帐　花和尚大闹桃花村",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "line_start": 1899,
+  "line_end": 2318,
+  "review_status": "draft",
+  "extraction": {
+    "source": "水浒传_V2/章回索引.json",
+    "event_count": 3,
+    "lexical_character_count": 10,
+    "candidate_count": 10,
+    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  }
+}

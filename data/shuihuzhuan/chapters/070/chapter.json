@@ -1,0 +1,16 @@
+{
+  "book_id": "shuihuzhuan",
+  "chapter": 70,
+  "title": "第七十回　忠义堂石碣受天文　梁山泊英雄惊恶梦",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "line_start": 10365,
+  "line_end": 10598,
+  "review_status": "draft",
+  "extraction": {
+    "source": "水浒传_V2/章回索引.json",
+    "event_count": 2,
+    "lexical_character_count": 111,
+    "candidate_count": 10,
+    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  }
+}

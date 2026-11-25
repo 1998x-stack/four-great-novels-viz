@@ -1,0 +1,16 @@
+{
+  "book_id": "shuihuzhuan",
+  "chapter": 1,
+  "title": "第一回　王教头私走延安府　九纹龙大闹史家村",
+  "edition_id": "shuihuzhuan:attachment-v1",
+  "line_start": 73,
+  "line_end": 814,
+  "review_status": "draft",
+  "extraction": {
+    "source": "水浒传_V2/章回索引.json",
+    "event_count": 11,
+    "lexical_character_count": 22,
+    "candidate_count": 18,
+    "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  }
+}

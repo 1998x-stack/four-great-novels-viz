@@ -12,5 +12,15 @@
     "lexical_character_count": 13,
     "candidate_count": 11,
     "method": "人工情节概括 + 程序化原文定位，未逐条人工复核"
+  },
+  "enrichment": {
+    "batch": "011-020",
+    "status": "model_anchored_draft",
+    "method": "原文逐段定位 + 模型辅助事件分解；尚未人工逐条核验",
+    "original_events": 3,
+    "added_events": 18,
+    "total_events": 21,
+    "review_status": "draft",
+    "candidate_review_status": "pending"
   }
 }

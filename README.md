@@ -13,6 +13,18 @@
 
 红楼梦由对话中的 V2 JSONL 迁移；481 是关联事件记录，不代表 481 个独立故事。全部数据为待校勘草稿，人物候选不保证穷尽。原文定位并不等于语义审核。原始附件未提交，版本指纹见 data/catalog.json。
 
+## 逐回复核进度（V3 增补）
+
+当前《红楼梦》已按原文逐段增补第 1–3 回：人物候选 361、关系 435、事件记录 532；原有 120 回目录全部保留。以下三回的 117 条事件均已附段落出处（机器辅助定位，未人工校勘）。其余 117 回仍为 V2 初稿。
+
+| 章回 | 原事件数 | 增补后 | 状态 |
+|---|---:|---:|---|
+| [001](data/hongloumeng/chapters/001/events.jsonl) | 16 | 26 | 段落定位 |
+| [002](data/hongloumeng/chapters/002/events.jsonl) | 38 | 53 | 段落定位 |
+| [003](data/hongloumeng/chapters/003/events.jsonl) | 12 | 38 | 段落定位 |
+
+下一回：004 薄命女偏逢薄命郎　葫芦僧乱判葫芦案。后续沿用稳定 ID 与章回独立提交；新增 sequence（章回内叙事顺序）及 event_type（plot/retelling/background/dialogue/dream/myth/prophecy/frame/inference 等）。段落定位不代表事实已经人工校勘；原有事件 ID 保留，重复或推断性条目需进一步复核。
+
 ## 目录
 
 ```

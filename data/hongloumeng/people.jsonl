@@ -43,7 +43,7 @@
 {"name":"贾蓉","group":"宁国府","tier":"重点","aliases":["蓉哥儿","蓉大爷"],"mentions":239,"first_chapter":2,"source_line":120,"id":"P0043","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[2,5,6,7,8,9,10,11,12,13,15,16,29,42,47,53,54,58,63,64,65,67,68,69,75,83,101,102,105,106,107,110,112,115,116,120],"book_id":"hongloumeng"}
 {"name":"贾赦","group":"荣国府","tier":"重点","aliases":["赦老爷","恩侯"],"mentions":190,"first_chapter":2,"source_line":120,"id":"P0044","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[2,3,4,12,13,14,15,16,18,24,25,46,47,53,55,64,69,71,75,76,79,83,84,85,93,94,95,102,105,106,107,108,110,116,119,120],"book_id":"hongloumeng"}
 {"name":"贾敬","group":"宁国府","tier":"重点","aliases":["敬老爹"],"mentions":19,"first_chapter":2,"source_line":120,"id":"P0045","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[2,11,13,53,63,64],"book_id":"hongloumeng"}
-{"name":"林如海","group":"林家","tier":"重点","aliases":["林老爷"],"mentions":10,"first_chapter":2,"source_line":108,"id":"P0046","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[2,3,12,16,19],"book_id":"hongloumeng"}
+{"name":"林如海","group":"林家","tier":"重点","aliases":["林老爷","林海"],"mentions":10,"first_chapter":2,"source_line":108,"id":"P0046","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[2,3,12,16,19],"book_id":"hongloumeng"}
 {"name":"贾珠","group":"荣国府","tier":"重点","aliases":["珠大爷"],"mentions":11,"first_chapter":2,"source_line":120,"id":"P0047","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[2,3,4,23,33,34,39,88],"book_id":"hongloumeng"}
 {"name":"冷子兴","group":"外部人物","tier":"重点","aliases":[],"mentions":8,"first_chapter":2,"source_line":116,"id":"P0048","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[2,3,7,104],"book_id":"hongloumeng"}
 {"name":"贾源","group":"荣国府","tier":"重点","aliases":["荣国公","荣公"],"mentions":8,"first_chapter":2,"source_line":120,"id":"P0049","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[2,3,16,53,107],"book_id":"hongloumeng"}
@@ -147,7 +147,7 @@
 {"name":"甄宝玉","group":"外部人物","tier":"重点","aliases":[],"mentions":36,"first_chapter":114,"source_line":5344,"id":"P0147","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[114,115,118,119],"book_id":"hongloumeng"}
 {"name":"曹雪芹","group":"神话与叙事","tier":"次要","aliases":["雪芹先生"],"mentions":5,"first_chapter":1,"source_line":26,"id":"P0148","entity_type":"神话/叙事","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[1,120],"book_id":"hongloumeng"}
 {"name":"东鲁孔梅溪","group":"神话与叙事","tier":"次要","aliases":["孔梅溪"],"mentions":1,"first_chapter":1,"source_line":26,"id":"P0149","entity_type":"神话/叙事","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[1],"book_id":"hongloumeng"}
-{"name":"智通","group":"外部人物","tier":"次要","aliases":[],"mentions":3,"first_chapter":2,"source_line":112,"id":"P0150","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[2,77],"book_id":"hongloumeng"}
+{"name":"智通","group":"外部人物","tier":"次要","aliases":[],"mentions":3,"first_chapter":2,"source_line":112,"id":"P0150","entity_type":"人物","status":"疑似误抽取：智通寺为地名，保留旧ID待复核，不与智通寺老僧合并","mention_chapters":[2,77],"book_id":"hongloumeng"}
 {"name":"鹦鹉","group":"荣府丫鬟仆役","tier":"次要","aliases":[],"mentions":6,"first_chapter":3,"source_line":148,"id":"P0151","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[3,23,29,78,89],"book_id":"hongloumeng"}
 {"name":"翡翠","group":"荣府丫鬟仆役","tier":"次要","aliases":[],"mentions":5,"first_chapter":3,"source_line":156,"id":"P0152","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[3,40,48,50,59],"book_id":"hongloumeng"}
 {"name":"李二","group":"外部人物","tier":"次要","aliases":[],"mentions":4,"first_chapter":3,"source_line":172,"id":"P0153","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[3,86],"book_id":"hongloumeng"}
@@ -354,3 +354,7 @@
 {"id":"P0354","name":"李德","aliases":[],"group":"荣府丫鬟仆役","tier":"次要","entity_type":"人物","mentions":1,"first_chapter":93,"source_line":4656,"status":"称谓字面命中（可能同名/歧义）","mention_chapters":[93],"book_id":"hongloumeng"}
 {"id":"P0355","book_id":"hongloumeng","name":"严老爷","aliases":[],"group":"外部人物","tier":"次要","entity_type":"人物","status":"draft","first_chapter":1,"mention_chapters":[1]}
 {"id":"P0356","book_id":"hongloumeng","name":"英莲乳母","aliases":["奶母（第一回）"],"group":"甄家","tier":"次要","entity_type":"人物","status":"draft","first_chapter":1,"mention_chapters":[1]}
+{"id":"P0357","book_id":"hongloumeng","name":"智通寺老僧","aliases":["龙钟老僧"],"group":"外部人物","tier":"次要","entity_type":"人物","status":"draft","first_chapter":2,"mention_chapters":[2]}
+{"id":"P0358","book_id":"hongloumeng","name":"贾雨村原配","aliases":["雨村嫡妻"],"group":"外部人物","tier":"次要","entity_type":"人物","status":"draft","first_chapter":2,"mention_chapters":[2]}
+{"id":"P0359","book_id":"hongloumeng","name":"娇杏之子","aliases":["贾雨村与娇杏之子"],"group":"外部人物","tier":"次要","entity_type":"人物","status":"draft","first_chapter":2,"mention_chapters":[2]}
+{"id":"P0360","book_id":"hongloumeng","name":"林如海早夭之子","aliases":[],"group":"林家","tier":"次要","entity_type":"人物","status":"draft","first_chapter":2,"mention_chapters":[2]}

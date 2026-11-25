@@ -395,3 +395,16 @@
 {"book_id":"hongloumeng","relation_id":"R0395","subject_id":"P0034","object_id":"P0031","predicate":"盘剥","category":"冲突","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0396","subject_id":"P0039","object_id":"P0003","predicate":"预警命运","category":"神话与因缘","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0397","subject_id":"P0031","object_id":"P0036","predicate":"离家出走","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0398","subject_id":"P0030","object_id":"P0036","predicate":"答谢旧恩","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0399","subject_id":"P0030","object_id":"P0034","predicate":"询问旧友下落","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0400","subject_id":"P0030","object_id":"P0358","predicate":"夫妻","category":"亲缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0401","subject_id":"P0030","object_id":"P0359","predicate":"父子","category":"亲缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0402","subject_id":"P0051","object_id":"P0359","predicate":"母子","category":"亲缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0403","subject_id":"P0030","object_id":"P0357","predicate":"问答","category":"交游与诗社","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0404","subject_id":"P0046","object_id":"P0360","predicate":"父子","category":"亲缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0405","subject_id":"P0030","object_id":"P0147","predicate":"曾任塾师","category":"交游与诗社","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0406","subject_id":"P0044","object_id":"P0053","predicate":"兄妹","category":"亲缘","direction":"symmetric"}
+{"book_id":"hongloumeng","relation_id":"R0407","subject_id":"P0006","object_id":"P0053","predicate":"兄妹","category":"亲缘","direction":"symmetric"}
+{"book_id":"hongloumeng","relation_id":"R0408","subject_id":"P0004","object_id":"P0010","predicate":"教养晚辈","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0409","subject_id":"P0048","object_id":"P0001","predicate":"评说家世","category":"交游与诗社","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0410","subject_id":"P0030","object_id":"P0001","predicate":"评价性情","category":"交游与诗社","direction":"subject_to_object"}

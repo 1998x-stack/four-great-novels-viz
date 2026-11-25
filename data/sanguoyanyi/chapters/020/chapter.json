@@ -6,5 +6,13 @@
   "line_start": 607,
   "line_end": 628,
   "review_status": "draft",
-  "event_count": 4
+  "event_count": 9,
+  "enrichment": {
+    "status": "partial_paragraph_anchored",
+    "previous_events": 4,
+    "new_events": 5,
+    "total_events": 9,
+    "review_required": true,
+    "review_note": "每回5处原文重点剧情，旧事件保留；待后续进一步抽取及人工终审"
+  }
 }

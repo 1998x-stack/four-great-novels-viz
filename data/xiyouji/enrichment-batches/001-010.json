@@ -1,0 +1,50 @@
+{
+  "batch_id": "xiyouji-ch001-010-v3",
+  "book_id": "xiyouji",
+  "created_on": "2026-11-25",
+  "edition_id": "xiyouji:attachment-v1",
+  "source_sha256": "3f2bf2164ee63ad7ce3ef88c830e88e860f47719740b13e6c4a1fe4d3be09b80",
+  "chapters": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    801,
+    9,
+    10
+  ],
+  "main_chapters": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10
+  ],
+  "appendix": {
+    "chapter_id": 801,
+    "source_key": "8a",
+    "narrative_order": 8.5
+  },
+  "added_events": 217,
+  "added_relations": 92,
+  "totals_after": {
+    "people": 310,
+    "relations": 322,
+    "events": 456,
+    "unverified_cooccurrence_candidates": 873
+  },
+  "new_event_id_policy": "E10{chapter-number-padded}xx (chapter-specific), appendix E180xx; keep stable",
+  "review_status": "draft",
+  "evidence_level": "anchored_paragraph",
+  "note": "AI-assisted decomposition and exact source-line anchoring; no claim of human semantic verification",
+  "next_batch_recommendation": "chapters 011–020"
+}

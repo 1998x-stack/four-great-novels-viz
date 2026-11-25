@@ -21,3 +21,16 @@ V2 源键 `8a` 存在于第八回和第九回之间。为了兼容仓库统一�
 ## 后续扩展
 
 新增人物只追加 P ID；新增关系复用稳定 R ID；新增事件只修改对应章节的 `events.jsonl`；补充待核证据修改 `candidates.jsonl`，通过人工审核后再纳入正式事件。提交前运行 `python scripts/validate.py && python scripts/validate_candidates.py`。
+
+
+## V3：首批第 1–10 回逐回细化
+
+- 批次标识：`xiyouji-ch001-010-v3`，包括第八回后附录（内部键 801）。
+- 新增 217 条细分事件、92 条正式语义关系；原有 V2 事件和 R/P/E ID 全部保留。
+- 全书累计 310 人物、322 正式关系、456 剧情事件、873 待核共现线索。
+- 新增事件具备 `sequence`、`event_type`、`source.line_start`、`source.line_end`、`source.excerpt`、`source.anchor_text`。一个事件可同时引用多个关系；只有真实语义的关系才会成为图谱边。
+- `anchored_paragraph` 表示可追溯的文本行定位，**不是人工核验完成**；未来逐条复核需在审校记录中说明依据。
+- 回目数据由原有 `events.jsonl` 追加；新批次追加新的 ID，不覆盖已有事件。
+- 第十回阴司游历的后续（还魂后事）发生在第十一回，不提前并入本批。
+
+详见 [批次清单](enrichment-batches/001-010.json)。

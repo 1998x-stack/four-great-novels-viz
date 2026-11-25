@@ -6,5 +6,13 @@
   "line_start": 303,
   "line_end": 324,
   "review_status": "draft",
-  "event_count": 3
+  "event_count": 10,
+  "enrichment": {
+    "status": "partial_paragraph_anchored",
+    "previous_events": 5,
+    "new_events": 5,
+    "total_events": 10,
+    "review_required": true,
+    "review_note": "每回重点5个场景，原文引文匹配但未穷尽全回；待人工语义终审"
+  }
 }

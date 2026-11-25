@@ -1,0 +1,19 @@
+{
+  "batch_id": "sanguoyanyi-ch002-021-pass1",
+  "edition_id": "sanguoyanyi:attachment-v1",
+  "source_sha256": "48922aa73c07e0b9c6e23a9cf5cf61f1779dd33e11947a1eaac364f1c50f65c4",
+  "chapter_range": [
+    2,
+    21
+  ],
+  "chapters_touched": 20,
+  "new_events": 100,
+  "new_people": 2,
+  "new_relations": 75,
+  "scene_selection": "每回抽取5个有确切原文子串及行号的重点节点；未按段落穷尽",
+  "review_status": "draft",
+  "human_review_complete": false,
+  "legacy_events_preserved": true,
+  "sequence_note": "旧事件 ID 不变；旧事件按既有或章节来源行号调整 sequence，新事件顺序按底本行号",
+  "notes": "基于随项目上传《三国演义》底本；锚点精确匹配已在本地文本复核。人物关系与场景标题仍属机辅解读，需人工语义终审。"
+}

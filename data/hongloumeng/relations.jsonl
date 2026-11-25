@@ -447,3 +447,10 @@
 {"book_id":"hongloumeng","relation_id":"R0447","subject_id":"P0001","predicate":"言语和解","object_id":"P0005","category":"帮助与互动","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0448","subject_id":"P0022","predicate":"赏花邀宴","object_id":"P0004","category":"帮助与互动","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0449","subject_id":"P0001","predicate":"梦醒呼唤","object_id":"P0024","category":"神话与因缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0450","subject_id":"P0001","predicate":"亲密侍奉","object_id":"P0014","category":"主仆与职务","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0451","subject_id":"P0072","predicate":"顾念旧恩","object_id":"P0026","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0452","subject_id":"P0013","predicate":"借玻璃炕屏","object_id":"P0043","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0453","subject_id":"P0025","predicate":"传递银钱","object_id":"P0026","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0454","subject_id":"P0069","predicate":"旧族连宗","object_id":"P0015","category":"亲缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0455","subject_id":"P0026","predicate":"携同求助","object_id":"P0073","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0456","subject_id":"P0013","predicate":"安置招待","object_id":"P0026","category":"帮助与互动","direction":"subject_to_object"}

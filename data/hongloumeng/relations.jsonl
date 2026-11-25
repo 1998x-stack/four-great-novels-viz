@@ -529,3 +529,16 @@
 {"book_id":"hongloumeng","relation_id":"R0529","subject_id":"P0004","predicate":"遣人探病","object_id":"P0024","category":"亲缘","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0530","subject_id":"P0013","predicate":"议丧事","object_id":"P0022","category":"帮助与互动","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0531","subject_id":"P0025","predicate":"报告银钱","object_id":"P0013","category":"主仆与职务","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0532","subject_id":"P0013","predicate":"设局周旋","object_id":"P0084","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0533","subject_id":"P0013","predicate":"诱赴穿堂","object_id":"P0084","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0534","subject_id":"P0013","predicate":"设计使其受冻","object_id":"P0084","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0535","subject_id":"P0081","predicate":"责罚","object_id":"P0084","category":"亲缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0536","subject_id":"P0013","predicate":"再次设局","object_id":"P0084","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0537","subject_id":"P0043","predicate":"假扮诱捕","object_id":"P0084","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0538","subject_id":"P0085","predicate":"勒索欠契","object_id":"P0084","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0539","subject_id":"P0085","predicate":"设计戏弄","object_id":"P0084","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0540","subject_id":"P0013","predicate":"敷衍求参","object_id":"P0081","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0541","subject_id":"P0084","predicate":"迷恋镜中幻影","object_id":"P0013","category":"神话与因缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0542","subject_id":"P0081","predicate":"为孙治丧","object_id":"P0084","category":"亲缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0543","subject_id":"P0006","predicate":"吊唁","object_id":"P0084","category":"亲缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0544","subject_id":"P0007","predicate":"护送返乡","object_id":"P0005","category":"帮助与互动","direction":"subject_to_object"}

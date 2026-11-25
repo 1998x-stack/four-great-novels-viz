@@ -29,3 +29,16 @@
 ```
 
 先校验后合并；通过结构验证不代表文学事实准确。
+
+## 待核线索（可选数据集）
+
+`chapters/NNN/candidates.jsonl` 记录人工复核的工作队列，与 `events.jsonl` 严格分开：
+
+- 共现、相邻词、动作词命中**不能直接推出人物关系**。
+- 逐条核对原文后：可以新增 E 事件、关联已存在或新建的 R 关系，并保留原始 candidate_id 作为 `reviewed_from_candidate`。
+- 不应将 `source.evidence_level` 直接改成 `reviewed`，除非有明确的人工语义核验记录。
+- `python scripts/validate_candidates.py` 校验候选 ID、人物引用与底本行号。
+
+## GitHub Pages
+
+合并到 `main` 后，`.github/workflows/pages.yml` 验证并发布站点。仓库管理员需在 **Settings → Pages → Source** 选择 **GitHub Actions**。CI 校验通过并不自动等同网页部署成功；请在 Actions 查看 Deploy GitHub Pages 结果。

@@ -219,3 +219,53 @@ body.immersive-lock{overflow:hidden!important}
  }
  .imm-progress{display:none}
 }
+/* Route breadcrumbs and touch-friendly graph controls */
+.graph-fullscreen-button{
+  border-color:#b99b66!important;color:#f2d9a9!important;
+  background:linear-gradient(105deg,#443b2e,#242d31)!important;
+  font-weight:600;letter-spacing:.6px;padding:4px 11px!important;
+  white-space:nowrap
+}
+.graph-fullscreen-button:hover{
+  background:#e5c68d!important;border-color:#f0d19d!important;color:#101c22!important
+}
+.graph-fullscreen-button span{margin-right:4px;font-size:16px;vertical-align:-1px}
+.imm-map-toolbox{display:flex;gap:8px;align-items:center;pointer-events:auto;min-width:0}
+.imm-trail{display:flex;align-items:center;min-width:0;gap:6px;
+ overflow:hidden;white-space:nowrap;pointer-events:auto;
+ padding:5px 8px;border:1px solid #40565a99;border-radius:3px;
+ background:#0c1a22b8}
+.imm-trail-link{
+  border:0!important;background:transparent!important;
+  padding:3px 3px!important;color:#91a5a5!important;
+  font:11px "Noto Sans SC",sans-serif!important;
+  overflow:hidden;text-overflow:ellipsis;max-width:110px;white-space:nowrap
+}
+.imm-trail-link:not(:disabled):hover{color:#f0d19a!important}
+.imm-trail-link.is-current{color:#f6dba7!important;font-weight:700!important;opacity:1!important}
+.imm-trail-sep{font-size:15px;color:#6e8685;flex:0 0 auto}
+.imm-map-tools{display:flex;gap:2px;border:1px solid #36474b;border-radius:3px;background:#0e1c25db;padding:3px}
+.imm-map-tools button{font-size:15px;border:0!important;border-radius:2px;
+ width:27px;height:27px;padding:1px!important;background:transparent!important;
+ color:#c6d0c4!important;line-height:1}
+.imm-map-tools button:hover{background:#c9ac7e!important;color:#112129!important}
+@media(max-width:1050px){
+ .imm-trail-link{max-width:75px}
+ .imm-map-toolbox{gap:4px}
+ .imm-map-tools button{width:25px}
+}
+@media(max-width:760px){
+ .imm-trail{max-width:39%;padding:3px 5px}
+ .imm-trail-link{max-width:55px;font-size:10px!important}
+ .imm-map-toolbox{gap:4px}
+ .imm-scope{margin-left:0}
+ .imm-map-tools{padding:2px}
+ .imm-map-tools button{width:23px;height:25px;font-size:13px}
+}
+@media(max-width:430px){
+ .imm-trail{max-width:28%;gap:2px}
+ .imm-trail-link:not(.is-current){display:none}
+ .imm-trail-sep{display:none}
+ .imm-scope button{min-width:35px;padding:4px 6px}
+ .imm-map-tools button{width:22px}
+}

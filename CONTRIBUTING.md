@@ -59,3 +59,7 @@
 ## 所附底本不完整时的处理（第十八回案例）
 
 原文缺章、缺段、截断时不能从回目、常识或其他版本默默补齐段落证据。无法逐段确认的旧条目保留 ID，并标记 `event_type=legacy_unverified`、`review_required=true`，`source.evidence_level=chapter_only`，将 `source.excerpt` 设为 `null`，在 `source.match_status` 说明缺失原因。禁止将其标为 `anchored_paragraph` 或 `reviewed`。如后续补充不同底本，应登记新 `edition_id` 并保留旧版定位，避免跨版本行号混淆。
+
+## 021–030 回增补中的证据边界
+
+本项目以本仓库 catalog 指定的附件底本为默认来源。若回内正文缺失（如第29回），须给未经本底本确认的旧事件设置 `review_required=true`、`event_type=legacy_unverified`、`source.evidence_level=chapter_only`、`source.excerpt=null`，不能为其虚构行号、补写引文。若某人物仅由回目而非本段正文确定（如第30回“龄官划蔷”），应注明 `identity_evidence=chapter_title` 并使用 `interpretation_status` 解释推断边界。完整人物终审仍需要单独核验。

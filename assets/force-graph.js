@@ -140,6 +140,8 @@ window.NovelGraph = (() => {
       this.blankDown=null;
       this.edgeHover=null;
       this.hoverId=null;
+      this.hoverPair=null;
+      this.lastEdgeProbe=0;
       this.canvasFrame=0;
       this.raf=0;
       this.drag=null;
@@ -302,7 +304,18 @@ window.NovelGraph = (() => {
         if(this.blankDown && this.blankDown.id===e.pointerId &&
            Math.hypot(e.clientX-this.blankDown.x,e.clientY-this.blankDown.y)>5)
           this.blankDown.moved=true;
+        if(this.dense && !this.drag && !this.blankDown){
+          if(e.target===this.svg && !e.buttons){
+            const now=Date.now();
+            if(now-this.lastEdgeProbe>70){
+              this.lastEdgeProbe=now;
+              const near=this.nearestEdge(this.svgPoint(e));
+              this.setHoveredEdge(near?.key||null);
+            }
+          }else this.setHoveredEdge(null);
+        }
       });
+      this.listen(this.svg,"pointerleave",()=>this.setHoveredEdge(null));
       this.listen(this.svg,"pointerup",e=>{
         if(this.dense && this.blankDown && this.blankDown.id===e.pointerId &&
            !this.blankDown.moved && !this.drag){
@@ -321,6 +334,12 @@ window.NovelGraph = (() => {
       this.listen(this.svg,"lostpointercapture",e=>{this.blankDown=null;this.pointerUp(e)});
       this.updateSelection(config);
       this.draw();
+    }
+    setHoveredEdge(pair){
+      if(!this.dense||this.hoverPair===pair)return;
+      this.hoverPair=pair;
+      this.svg.style.cursor=pair?"pointer":"";
+      this.drawCanvas();
     }
     mountCanvas(){
       const host=this.svg.parentElement;
@@ -382,7 +401,7 @@ window.NovelGraph = (() => {
       // Batch ordinary links into one path: thousands of edges, one stroke.
       ctx.beginPath();
       for(const e of this.springs){
-        if(e.key===selectedPair)continue;
+        if(e.key===selectedPair||e.key===this.hoverPair)continue;
         if(focus && (e.source===focus||e.target===focus))continue;
         trace(e);
       }
@@ -395,6 +414,11 @@ window.NovelGraph = (() => {
         for(const e of this.springs)if(e.source===focus||e.target===focus)trace(e);
         ctx.strokeStyle="rgba(236,197,131,.86)";
         ctx.lineWidth=1.65;ctx.stroke();
+      }
+      if(this.hoverPair && this.hoverPair!==selectedPair){
+        ctx.beginPath();
+        for(const e of this.springs)if(e.key===this.hoverPair)trace(e);
+        ctx.strokeStyle="#e8c888";ctx.lineWidth=2;ctx.stroke();
       }
       if(selectedPair){
         ctx.beginPath();
@@ -618,6 +642,7 @@ window.NovelGraph = (() => {
       this.observer?.disconnect();
       this.viewObserver?.disconnect();
       this.svg.classList.remove("is-dense");
+      this.svg.style.cursor="";
       this.resizeObserver?.disconnect();
       if(this.canvas){this.canvas.remove();this.canvas=null}
       for(const n of this.nodes)previous.set(n.id,{x:n.x,y:n.y});

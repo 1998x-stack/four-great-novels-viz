@@ -67,8 +67,14 @@ if(window.NovelGraph){
   window.NovelGraph.render({
     svg:graph,bookId:state.book?.id||"unknown",nodes:persons,links:r,
     palette,focusId:state.person,selectedId:state.selected,
-    onNode:id=>{state.person=id;state.selected=null;render();showPerson(id)},
-    onEdge:relation=>showRelation(relation)
+    onNode:id=>{
+      if(window.NovelImmersive?.active)window.NovelImmersive.openPerson(id);
+      else{state.person=id;state.selected=null;render();showPerson(id)}
+    },
+    onEdge:relation=>{
+      if(window.NovelImmersive?.active)window.NovelImmersive.openRelation(relation);
+      else showRelation(relation)
+    }
   });
   $("legend").replaceChildren(...groups.map(g=>{
     const span=create("span"),dot=create("i",undefined,"dot");

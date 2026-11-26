@@ -6,5 +6,13 @@
   "line_start": 3373,
   "line_end": 3398,
   "review_status": "draft",
-  "event_count": 3
+  "event_count": 10,
+  "enrichment": {
+    "status": "partial_paragraph_anchored",
+    "previous_events": 5,
+    "new_events": 5,
+    "total_events": 10,
+    "review_required": true,
+    "review_note": "5个原文精确行号锚点；首轮机器辅助场景，非全回穷尽或人工语义终审"
+  }
 }

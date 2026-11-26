@@ -1,0 +1,146 @@
+{
+  "batch_id": "sanguoyanyi-ch082-101-pass1",
+  "book_id": "sanguoyanyi",
+  "edition_id": "sanguoyanyi:attachment-v1",
+  "source_filename": "三国演义.txt",
+  "source_sha256": "48922aa73c07e0b9c6e23a9cf5cf61f1779dd33e11947a1eaac364f1c50f65c4",
+  "chapter_range": [
+    82,
+    101
+  ],
+  "chapters_touched": 20,
+  "new_events": 100,
+  "new_people": 6,
+  "new_relations": 90,
+  "new_people_names": [
+    "马遵",
+    "申仪",
+    "申耽",
+    "靳祥",
+    "孙礼",
+    "苟安"
+  ],
+  "status": "partial_paragraph_anchored",
+  "review_status": "draft",
+  "review_required": true,
+  "human_review_complete": false,
+  "legacy_ids_preserved": true,
+  "source_anchor_exact_substring_verified": true,
+  "source_anchor_check": "100 excerpts extracted from respective original attachment paragraph lines; individually validated against source string and chapter range",
+  "scene_selection": "5 notable source-anchored events per chapter, not comprehensive",
+  "totals_after": {
+    "people": 578,
+    "relations": 1137,
+    "events": 1315,
+    "chapters": 120
+  },
+  "special_handling": {
+    "legendary_and_dream_narratives": [
+      {
+        "chapter": 83,
+        "line": 2527
+      },
+      {
+        "chapter": 85,
+        "line": 2581
+      },
+      {
+        "chapter": 89,
+        "line": 2683
+      }
+    ],
+    "battlefield_disguise": [
+      {
+        "chapter": 101,
+        "line": 3039
+      }
+    ]
+  },
+  "chapters": [
+    {
+      "chapter": 82,
+      "added_events": 5
+    },
+    {
+      "chapter": 83,
+      "added_events": 5
+    },
+    {
+      "chapter": 84,
+      "added_events": 5
+    },
+    {
+      "chapter": 85,
+      "added_events": 5
+    },
+    {
+      "chapter": 86,
+      "added_events": 5
+    },
+    {
+      "chapter": 87,
+      "added_events": 5
+    },
+    {
+      "chapter": 88,
+      "added_events": 5
+    },
+    {
+      "chapter": 89,
+      "added_events": 5
+    },
+    {
+      "chapter": 90,
+      "added_events": 5
+    },
+    {
+      "chapter": 91,
+      "added_events": 5
+    },
+    {
+      "chapter": 92,
+      "added_events": 5
+    },
+    {
+      "chapter": 93,
+      "added_events": 5
+    },
+    {
+      "chapter": 94,
+      "added_events": 5
+    },
+    {
+      "chapter": 95,
+      "added_events": 5
+    },
+    {
+      "chapter": 96,
+      "added_events": 5
+    },
+    {
+      "chapter": 97,
+      "added_events": 5
+    },
+    {
+      "chapter": 98,
+      "added_events": 5
+    },
+    {
+      "chapter": 99,
+      "added_events": 5
+    },
+    {
+      "chapter": 100,
+      "added_events": 5
+    },
+    {
+      "chapter": 101,
+      "added_events": 5
+    }
+  ],
+  "next_batch": [
+    102,
+    120
+  ],
+  "notes": "按用户上传底本精确行号摘录并标注回次、人物参与及关系；机器辅助剧情摘要与语义关系仍待人工逐条校核，不能作历史事实证据"
+}

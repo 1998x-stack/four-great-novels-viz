@@ -1,0 +1,11 @@
+{
+  "batch_id": "sanguoyanyi-062-081",
+  "chapter_range": [
+    62,
+    81
+  ],
+  "candidate_count": 100,
+  "source_sha256": "48922aa73c07e0b9c6e23a9cf5cf61f1779dd33e11947a1eaac364f1c50f65c4",
+  "review_status": "draft",
+  "notes": "Worklist for first-pass anchored narrative scenes. References are hypotheses pending per-line evidence verification and automated data CI."
+}

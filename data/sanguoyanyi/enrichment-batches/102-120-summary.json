@@ -1,0 +1,160 @@
+{
+  "batch_id": "sanguoyanyi-ch102-120-pass1",
+  "book_id": "sanguoyanyi",
+  "edition_id": "sanguoyanyi:attachment-v1",
+  "source_filename": "三国演义.txt",
+  "source_sha256": "48922aa73c07e0b9c6e23a9cf5cf61f1779dd33e11947a1eaac364f1c50f65c4",
+  "chapter_range": [
+    102,
+    120
+  ],
+  "chapters_touched": 19,
+  "new_events": 95,
+  "new_people": 12,
+  "new_relations": 0,
+  "new_people_names": [
+    "郑文",
+    "夏侯令女",
+    "徐质",
+    "全祎",
+    "全纪",
+    "薛珝",
+    "贾充",
+    "王经",
+    "王瓘",
+    "卫瓘",
+    "周旨",
+    "傅佥"
+  ],
+  "status": "partial_paragraph_anchored",
+  "review_status": "draft",
+  "review_required": true,
+  "human_review_complete": false,
+  "legacy_ids_preserved": true,
+  "source_anchor_exact_substring_verified": true,
+  "selection": "5 significant source-anchored plot scenes per chapter; not comprehensive",
+  "relation_policy": "No new semantic relations until reviewed; relation_ids empty for new standalone scenes",
+  "totals_after": {
+    "people": 590,
+    "relations": 1137,
+    "events": 1410,
+    "chapters": 120
+  },
+  "chapters": [
+    {
+      "chapter": 102,
+      "previous_events": 8,
+      "new_events": 5,
+      "total_events": 13
+    },
+    {
+      "chapter": 103,
+      "previous_events": 7,
+      "new_events": 5,
+      "total_events": 12
+    },
+    {
+      "chapter": 104,
+      "previous_events": 2,
+      "new_events": 5,
+      "total_events": 7
+    },
+    {
+      "chapter": 105,
+      "previous_events": 4,
+      "new_events": 5,
+      "total_events": 9
+    },
+    {
+      "chapter": 106,
+      "previous_events": 4,
+      "new_events": 5,
+      "total_events": 9
+    },
+    {
+      "chapter": 107,
+      "previous_events": 3,
+      "new_events": 5,
+      "total_events": 8
+    },
+    {
+      "chapter": 108,
+      "previous_events": 3,
+      "new_events": 5,
+      "total_events": 8
+    },
+    {
+      "chapter": 109,
+      "previous_events": 4,
+      "new_events": 5,
+      "total_events": 9
+    },
+    {
+      "chapter": 110,
+      "previous_events": 3,
+      "new_events": 5,
+      "total_events": 8
+    },
+    {
+      "chapter": 111,
+      "previous_events": 2,
+      "new_events": 5,
+      "total_events": 7
+    },
+    {
+      "chapter": 112,
+      "previous_events": 5,
+      "new_events": 5,
+      "total_events": 10
+    },
+    {
+      "chapter": 113,
+      "previous_events": 1,
+      "new_events": 5,
+      "total_events": 6
+    },
+    {
+      "chapter": 114,
+      "previous_events": 3,
+      "new_events": 5,
+      "total_events": 8
+    },
+    {
+      "chapter": 115,
+      "previous_events": 4,
+      "new_events": 5,
+      "total_events": 9
+    },
+    {
+      "chapter": 116,
+      "previous_events": 2,
+      "new_events": 5,
+      "total_events": 7
+    },
+    {
+      "chapter": 117,
+      "previous_events": 3,
+      "new_events": 5,
+      "total_events": 8
+    },
+    {
+      "chapter": 118,
+      "previous_events": 3,
+      "new_events": 5,
+      "total_events": 8
+    },
+    {
+      "chapter": 119,
+      "previous_events": 5,
+      "new_events": 5,
+      "total_events": 10
+    },
+    {
+      "chapter": 120,
+      "previous_events": 3,
+      "new_events": 5,
+      "total_events": 8
+    }
+  ],
+  "notes": "Full source SHA verified against user-uploaded TXT; anchor_text/excerpt drawn from exact numbered source paragraph; story summaries are draft and need human review."
+}

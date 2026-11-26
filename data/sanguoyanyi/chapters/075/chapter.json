@@ -6,5 +6,13 @@
   "line_start": 2279,
   "line_end": 2308,
   "review_status": "draft",
-  "event_count": 5
+  "event_count": 11,
+  "enrichment": {
+    "status": "partial_paragraph_anchored",
+    "previous_events": 6,
+    "new_events": 5,
+    "total_events": 11,
+    "review_required": true,
+    "review_note": "五处可按本底本行号回溯的重点场景，仍为机辅首轮草稿，未全回穷尽或人工校勘"
+  }
 }

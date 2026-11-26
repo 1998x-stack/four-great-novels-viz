@@ -570,3 +570,9 @@
 {"id":"P0570","book_id":"sanguoyanyi","name":"曹后","aliases":["曹皇后"],"group":"东汉宫廷","status":"draft","first_chapter":80,"record_note":"据附件《三国演义》原文人物补录；首次出现回次按底本检索，人物消歧待人工终审"}
 {"id":"P0571","book_id":"sanguoyanyi","name":"范疆","aliases":["范强"],"group":"蜀汉军","status":"draft","first_chapter":81,"record_note":"据附件《三国演义》原文人物补录；首次出现回次按底本检索，人物消歧待人工终审"}
 {"id":"P0572","book_id":"sanguoyanyi","name":"张达","aliases":[],"group":"蜀汉军","status":"draft","first_chapter":81,"record_note":"据附件《三国演义》原文人物补录；首次出现回次按底本检索，人物消歧待人工终审"}
+{"id":"P0573","book_id":"sanguoyanyi","name":"马遵","aliases":[],"group":"曹魏","status":"draft","first_chapter":92,"record_note":"用户上传《三国演义》原文逐字检索确认首次出现回目；首轮人物消歧草稿，待人工审校"}
+{"id":"P0574","book_id":"sanguoyanyi","name":"申仪","aliases":[],"group":"曹魏","status":"draft","first_chapter":79,"record_note":"用户上传《三国演义》原文逐字检索确认首次出现回目；首轮人物消歧草稿，待人工审校"}
+{"id":"P0575","book_id":"sanguoyanyi","name":"申耽","aliases":[],"group":"曹魏","status":"draft","first_chapter":73,"record_note":"用户上传《三国演义》原文逐字检索确认首次出现回目；首轮人物消歧草稿，待人工审校"}
+{"id":"P0576","book_id":"sanguoyanyi","name":"靳祥","aliases":[],"group":"蜀汉","status":"draft","first_chapter":97,"record_note":"用户上传《三国演义》原文逐字检索确认首次出现回目；首轮人物消歧草稿，待人工审校"}
+{"id":"P0577","book_id":"sanguoyanyi","name":"孙礼","aliases":[],"group":"曹魏","status":"draft","first_chapter":95,"record_note":"用户上传《三国演义》原文逐字检索确认首次出现回目；首轮人物消歧草稿，待人工审校"}
+{"id":"P0578","book_id":"sanguoyanyi","name":"苟安","aliases":[],"group":"蜀汉","status":"draft","first_chapter":100,"record_note":"用户上传《三国演义》原文逐字检索确认首次出现回目；首轮人物消歧草稿，待人工审校"}

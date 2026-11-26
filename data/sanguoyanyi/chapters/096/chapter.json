@@ -6,5 +6,13 @@
   "line_start": 2871,
   "line_end": 2892,
   "review_status": "draft",
-  "event_count": 5
+  "event_count": 10,
+  "enrichment": {
+    "status": "partial_paragraph_anchored",
+    "previous_events": 5,
+    "new_events": 5,
+    "total_events": 10,
+    "review_required": true,
+    "review_note": "本回五处底本原文行号锚定重点剧情；机器辅助解析，非全回穷尽或人工终审"
+  }
 }

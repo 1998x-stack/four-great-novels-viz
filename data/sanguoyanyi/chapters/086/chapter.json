@@ -6,5 +6,13 @@
   "line_start": 2595,
   "line_end": 2616,
   "review_status": "draft",
-  "event_count": 3
+  "event_count": 9,
+  "enrichment": {
+    "status": "partial_paragraph_anchored",
+    "previous_events": 4,
+    "new_events": 5,
+    "total_events": 9,
+    "review_required": true,
+    "review_note": "每回5个原文精确行号重点场景；机器辅助草稿，非全回穷尽或人工文学事实终审"
+  }
 }

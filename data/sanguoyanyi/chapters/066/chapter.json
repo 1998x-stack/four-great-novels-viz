@@ -6,5 +6,13 @@
   "line_start": 2041,
   "line_end": 2074,
   "review_status": "draft",
-  "event_count": 6
+  "event_count": 12,
+  "enrichment": {
+    "status": "partial_paragraph_anchored",
+    "previous_events": 7,
+    "new_events": 5,
+    "total_events": 12,
+    "review_required": true,
+    "review_note": "本回新增五处底本精确行号与原文片段的重点剧情；仅首轮，不代表全回穷尽或人工终审"
+  }
 }

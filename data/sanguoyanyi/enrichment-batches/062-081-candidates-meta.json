@@ -1,0 +1,14 @@
+{
+  "batch_id": "sanguoyanyi-062-081",
+  "chapter_range": [
+    62,
+    81
+  ],
+  "candidate_count": 100,
+  "source_sha256": "48922aa73c07e0b9c6e23a9cf5cf61f1779dd33e11947a1eaac364f1c50f65c4",
+  "review_status": "draft",
+  "notes": "All 100 selected source-line excerpts matched original attachment; narrative interpretation remains draft and is not exhaustive.",
+  "status": "partial_paragraph_anchored",
+  "source_anchor_verified": true,
+  "batch_summary": "062-081-summary.json"
+}

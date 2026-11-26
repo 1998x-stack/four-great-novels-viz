@@ -1,0 +1,157 @@
+{
+  "batch_id": "sanguoyanyi-ch062-081-pass1",
+  "book_id": "sanguoyanyi",
+  "edition_id": "sanguoyanyi:attachment-v1",
+  "source_filename": "三国演义.txt",
+  "source_sha256": "48922aa73c07e0b9c6e23a9cf5cf61f1779dd33e11947a1eaac364f1c50f65c4",
+  "chapter_range": [
+    62,
+    81
+  ],
+  "chapters_touched": 20,
+  "new_events": 100,
+  "new_people": 14,
+  "new_relations": 89,
+  "new_people_names": [
+    "张肃",
+    "泠苞",
+    "姜叙",
+    "伏皇后",
+    "许芝",
+    "耿纪",
+    "韦晃",
+    "金祎",
+    "夏侯德",
+    "张著",
+    "普净",
+    "曹后",
+    "范疆",
+    "张达"
+  ],
+  "status": "partial_paragraph_anchored",
+  "review_status": "draft",
+  "human_review_complete": false,
+  "review_required": true,
+  "legacy_ids_preserved": true,
+  "source_anchor_exact_substring_verified": true,
+  "source_anchor_check": "100 exact excerpts mapped to source paragraph lines in the user-provided 三國演義 attachment SHA-256",
+  "scene_selection": "5 notable anchored events per chapter; not exhaustive",
+  "totals_after": {
+    "people": 572,
+    "relations": 1047,
+    "events": 1215,
+    "chapters": 120
+  },
+  "special_handling": {
+    "supernatural_narratives": [
+      {
+        "chapter": 68,
+        "line": 2119,
+        "kind": "左慈幻术"
+      },
+      {
+        "chapter": 69,
+        "line": 2133,
+        "kind": "管辂占验"
+      },
+      {
+        "chapter": 77,
+        "line": 2359,
+        "kind": "关公显圣"
+      },
+      {
+        "chapter": 78,
+        "line": 2385,
+        "kind": "神木梦幻"
+      }
+    ],
+    "identity_disambiguation": "曹后 separate from first-chapter eunuch 曹节; 单福 reused 徐庶 alias in earlier batch"
+  },
+  "chapters": [
+    {
+      "chapter": 62,
+      "added_events": 5
+    },
+    {
+      "chapter": 63,
+      "added_events": 5
+    },
+    {
+      "chapter": 64,
+      "added_events": 5
+    },
+    {
+      "chapter": 65,
+      "added_events": 5
+    },
+    {
+      "chapter": 66,
+      "added_events": 5
+    },
+    {
+      "chapter": 67,
+      "added_events": 5
+    },
+    {
+      "chapter": 68,
+      "added_events": 5
+    },
+    {
+      "chapter": 69,
+      "added_events": 5
+    },
+    {
+      "chapter": 70,
+      "added_events": 5
+    },
+    {
+      "chapter": 71,
+      "added_events": 5
+    },
+    {
+      "chapter": 72,
+      "added_events": 5
+    },
+    {
+      "chapter": 73,
+      "added_events": 5
+    },
+    {
+      "chapter": 74,
+      "added_events": 5
+    },
+    {
+      "chapter": 75,
+      "added_events": 5
+    },
+    {
+      "chapter": 76,
+      "added_events": 5
+    },
+    {
+      "chapter": 77,
+      "added_events": 5
+    },
+    {
+      "chapter": 78,
+      "added_events": 5
+    },
+    {
+      "chapter": 79,
+      "added_events": 5
+    },
+    {
+      "chapter": 80,
+      "added_events": 5
+    },
+    {
+      "chapter": 81,
+      "added_events": 5
+    }
+  ],
+  "next_batch": [
+    82,
+    101
+  ],
+  "notes": "保留旧事件，按源行号组织新增剧情。机器辅助叙事关系有解释误差的可能，人工语义终审另行跟踪。"
+}

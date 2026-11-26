@@ -6,5 +6,13 @@
   "line_start": 2101,
   "line_end": 2126,
   "review_status": "draft",
-  "event_count": 6
+  "event_count": 11,
+  "enrichment": {
+    "status": "partial_paragraph_anchored",
+    "previous_events": 6,
+    "new_events": 5,
+    "total_events": 11,
+    "review_required": true,
+    "review_note": "五处上传原文精确段落锚点，机辅草稿；神异与占验为小说叙事，未作史实核验"
+  }
 }

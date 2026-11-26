@@ -6,5 +6,13 @@
   "line_start": 2617,
   "line_end": 2644,
   "review_status": "draft",
-  "event_count": 7
+  "event_count": 12,
+  "enrichment": {
+    "status": "partial_paragraph_anchored",
+    "previous_events": 7,
+    "new_events": 5,
+    "total_events": 12,
+    "review_required": true,
+    "review_note": "逐回五处底本原文精确段落锚点，保留小说神异与南中叙事视角；未全回穷尽或人工终审"
+  }
 }

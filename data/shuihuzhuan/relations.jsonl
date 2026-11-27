@@ -853,3 +853,8 @@
 {"book_id":"shuihuzhuan","relation_id":"R0853","subject_id":"P0085","object_id":"P0014","predicate":"劝养精力","category":"关怀","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
 {"book_id":"shuihuzhuan","relation_id":"R0854","subject_id":"P0014","object_id":"P0085","predicate":"要求三碗过望","category":"交友","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
 {"book_id":"shuihuzhuan","relation_id":"R0855","subject_id":"P0014","object_id":"P0156","predicate":"诬案获减刑","category":"司法","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0856","subject_id":"P0063","predicate":"赔礼并归还行囊","object_id":"P0014","category":"调解","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0857","subject_id":"P0009","predicate":"率兵解救","object_id":"P0001","category":"救助","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0858","subject_id":"P0001","predicate":"用伪装破坏归路","object_id":"P0007","category":"计策","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0859","subject_id":"P0009","predicate":"箭断画戟绒线解围","object_id":"P0054","category":"帮助","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0860","subject_id":"P0003","predicate":"荐识戴宗","object_id":"P0001","category":"交友","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}

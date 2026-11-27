@@ -858,3 +858,8 @@
 {"book_id":"shuihuzhuan","relation_id":"R0858","subject_id":"P0001","predicate":"用伪装破坏归路","object_id":"P0007","category":"计策","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
 {"book_id":"shuihuzhuan","relation_id":"R0859","subject_id":"P0009","predicate":"箭断画戟绒线解围","object_id":"P0054","category":"帮助","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
 {"book_id":"shuihuzhuan","relation_id":"R0860","subject_id":"P0003","predicate":"荐识戴宗","object_id":"P0001","category":"交友","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0861","subject_id":"P0026","predicate":"舟上解救","object_id":"P0001","category":"救助","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0862","subject_id":"P0001","predicate":"借赠十两银","object_id":"P0022","category":"帮助","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0863","subject_id":"P0030","predicate":"购止泻药","object_id":"P0001","category":"救助","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0864","subject_id":"P0481","predicate":"揭穿伪书","object_id":"P0475","category":"消息","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0865","subject_id":"P0026","predicate":"擒获罪臣","object_id":"P0481","category":"冲突","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}

@@ -863,3 +863,8 @@
 {"book_id":"shuihuzhuan","relation_id":"R0863","subject_id":"P0030","predicate":"购止泻药","object_id":"P0001","category":"救助","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
 {"book_id":"shuihuzhuan","relation_id":"R0864","subject_id":"P0481","predicate":"揭穿伪书","object_id":"P0475","category":"消息","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
 {"book_id":"shuihuzhuan","relation_id":"R0865","subject_id":"P0026","predicate":"擒获罪臣","object_id":"P0481","category":"冲突","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0866","subject_id":"P0109","predicate":"同意返乡接父","object_id":"P0001","category":"帮助","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0867","subject_id":"P0022","predicate":"揭穿冒名剪径","object_id":"P0162","category":"冲突","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0868","subject_id":"P0093","predicate":"调停与李云之争","object_id":"P0022","category":"调解","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0869","subject_id":"P0165","predicate":"与之商议秘密往来","object_id":"P0166","category":"情感纠葛","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0870","subject_id":"P0033","predicate":"提议翠屏山对质","object_id":"P0032","category":"计策","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}

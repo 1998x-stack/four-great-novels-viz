@@ -11,9 +11,13 @@
   "source_chapter_key": "55",
   "summary": "琵琶洞逼婚：蝎子精掳唐僧到毒敌山琵琶洞，欲与其成婚，唐僧拒绝。；星官克蝎：悟空经观音指点求昴日星官相助，星官现出公鸡本相降伏蝎精。",
   "enrichment": {
-    "status": "keyword_anchored",
+    "status": "paragraph_anchored",
     "plot_events": 2,
     "cooccurrence_candidates": 9,
-    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。",
+    "previous_event_count": 2,
+    "event_count": 7,
+    "method": "每回五个明确原文段落锚点的代表性事件",
+    "review_note": "新增为机辅草稿；非全回穷尽、非人工文学终审，旧事件保留"
   }
 }

@@ -11,9 +11,13 @@
   "source_chapter_key": "62",
   "summary": "扫塔辨冤：唐僧到金光寺见僧众被冤枉偷宝，夜间与悟空扫塔查案。；塔上擒小妖：悟空在塔上捉住奔波儿灞和灞波儿奔，查明佛宝为龙宫妖怪所盗。",
   "enrichment": {
-    "status": "keyword_anchored",
+    "status": "paragraph_anchored",
     "plot_events": 2,
     "cooccurrence_candidates": 9,
-    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。",
+    "previous_event_count": 2,
+    "event_count": 7,
+    "method": "每回五个明确原文段落锚点的代表性事件",
+    "review_note": "新增为机辅草稿；非全回穷尽、非人工文学终审，旧事件保留"
   }
 }

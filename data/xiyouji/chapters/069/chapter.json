@@ -11,9 +11,13 @@
   "source_chapter_key": "69",
   "summary": "乌金丹治病：悟空配药使国王服下，国王病愈并说明金圣宫被掳始末。；麒麟山掳后：妖怪将金圣宫掳到獬豸洞，因仙衣护身不能近身。",
   "enrichment": {
-    "status": "keyword_anchored",
+    "status": "paragraph_anchored",
     "plot_events": 2,
     "cooccurrence_candidates": 9,
-    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。",
+    "previous_event_count": 2,
+    "event_count": 7,
+    "method": "每回五个明确原文段落锚点的代表性事件",
+    "review_note": "新增为机辅草稿；非全回穷尽、非人工文学终审，旧事件保留"
   }
 }

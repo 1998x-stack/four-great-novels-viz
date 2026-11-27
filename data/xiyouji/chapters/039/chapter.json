@@ -11,9 +11,13 @@
   "source_chapter_key": "39",
   "summary": "赐还魂丹：悟空上天求得九转还魂丹，使乌鸡国国王复生。；辨妖归主：文殊现身说明青狮下界的缘由，收回坐骑，真国王复位。",
   "enrichment": {
-    "status": "keyword_anchored",
+    "status": "paragraph_anchored",
     "plot_events": 2,
     "cooccurrence_candidates": 9,
-    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。",
+    "previous_event_count": 2,
+    "event_count": 7,
+    "method": "每回新增五条原文锚定重点事件（机辅草稿）",
+    "review_note": "保留旧事件；旧V2事件和共现候选仍待校勘，非全回穷尽"
   }
 }

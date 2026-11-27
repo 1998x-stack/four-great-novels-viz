@@ -11,9 +11,13 @@
   "source_chapter_key": "38",
   "summary": "问母辨真假：太子向母后询问近年夫妻情状，确认宫中父王异样。；井中背尸：悟空诱八戒下井寻宝，八戒找到真国王尸身并背出。",
   "enrichment": {
-    "status": "keyword_anchored",
+    "status": "paragraph_anchored",
     "plot_events": 2,
     "cooccurrence_candidates": 9,
-    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。"
+    "note": "段落位置由机器辅助提取；剧情语义尚未逐一人工校勘。共现线索并非已核实的人物关系。",
+    "previous_event_count": 2,
+    "event_count": 7,
+    "method": "每回新增五条原文锚定重点事件（机辅草稿）",
+    "review_note": "保留旧事件；旧V2事件和共现候选仍待校勘，非全回穷尽"
   }
 }

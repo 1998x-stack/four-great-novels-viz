@@ -656,3 +656,8 @@
 {"relation_id":"R0656","book_id":"xiyouji","subject_id":"P0024","predicate":"派令擒妖","object_id":"P0172","category":"差遣／协作","direction":"subject_to_object","review_status":"draft","record_origin":"第31—50回原文互动增补，待人工语义审校"}
 {"relation_id":"R0657","book_id":"xiyouji","subject_id":"P0001","predicate":"破车解救并赐毫毛","object_id":"P0176","category":"救助／护持","direction":"subject_to_object","review_status":"draft","record_origin":"第31—50回原文互动增补，待人工语义审校"}
 {"relation_id":"R0658","book_id":"xiyouji","subject_id":"P0001","predicate":"登坛助师求雨","object_id":"P0002","category":"救助／护持","direction":"subject_to_object","review_status":"draft","record_origin":"第31—50回原文互动增补，待人工语义审校"}
+{"relation_id":"R0659","book_id":"xiyouji","subject_id":"P0001","predicate":"变虫护持坐禅","object_id":"P0002","category":"救助／护持","direction":"subject_to_object","review_status":"draft","record_origin":"第31—50回原文互动增补，待人工语义审校"}
+{"relation_id":"R0660","book_id":"xiyouji","subject_id":"P0001","predicate":"邀扮童女救陈家儿女","object_id":"P0003","category":"计策／协作","direction":"subject_to_object","review_status":"draft","record_origin":"第31—50回原文互动增补，待人工语义审校"}
+{"relation_id":"R0661","book_id":"xiyouji","subject_id":"P0190","predicate":"裂冰下河掳掠","object_id":"P0002","category":"冲突／对抗","direction":"subject_to_object","review_status":"draft","record_origin":"第31—50回原文互动增补，待人工语义审校"}
+{"relation_id":"R0662","book_id":"xiyouji","subject_id":"P0003","predicate":"从石匣救师","object_id":"P0002","category":"救助／护持","direction":"subject_to_object","review_status":"draft","record_origin":"第31—50回原文互动增补，待人工语义审校"}
+{"relation_id":"R0663","book_id":"xiyouji","subject_id":"P0192","predicate":"金刚琢套夺金箍棒","object_id":"P0001","category":"冲突／对抗","direction":"subject_to_object","review_status":"draft","record_origin":"第31—50回原文互动增补，待人工语义审校"}

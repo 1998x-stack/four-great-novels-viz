@@ -881,3 +881,13 @@
 {"book_id":"hongloumeng","relation_id":"R0881","subject_id":"P0028","predicate":"设蟹宴款待","object_id":"P0004","category":"交游与诗社","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0882","subject_id":"P0025","predicate":"透露月例实情","object_id":"P0014","category":"帮助与互动","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0883","subject_id":"P0004","predicate":"带同游大观园","object_id":"P0026","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0884","subject_id":"P0027","predicate":"奉老君眉茶","object_id":"P0004","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0885","subject_id":"P0026","predicate":"为其取乳名","object_id":"P0029","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0886","subject_id":"P0004","predicate":"倡议为其凑份庆寿","object_id":"P0013","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0887","subject_id":"P0013","predicate":"酒怒迁打","object_id":"P0025","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0888","subject_id":"P0019","predicate":"问病劝调养","object_id":"P0005","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0889","subject_id":"P0002","predicate":"誓不接受纳妾","object_id":"P0044","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0890","subject_id":"P0119","predicate":"诱至苇塘痛打","object_id":"P0017","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0891","subject_id":"P0005","predicate":"教授诗法","object_id":"P0003","category":"交游与诗社","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0892","subject_id":"P0015","predicate":"收作干女儿","object_id":"P0120","category":"亲缘","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0893","subject_id":"P0021","predicate":"罚令折红梅","object_id":"P0001","category":"交游与诗社","direction":"subject_to_object"}

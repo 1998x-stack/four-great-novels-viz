@@ -370,3 +370,4 @@
 {"id":"P0370","book_id":"hongloumeng","name":"云儿","aliases":[],"group":"锦香院","tier":"次要","entity_type":"人物","status":"draft","first_chapter":28,"mention_chapters":[28]}
 {"id":"P0371","book_id":"hongloumeng","name":"清虚观小道士","aliases":["未具名小道士（第29回）"],"group":"清虚观","tier":"次要","entity_type":"匿名人物","status":"draft","first_chapter":29,"mention_chapters":[29]}
 {"id":"P0372","book_id":"hongloumeng","name":"靛儿","aliases":[],"group":"大观园丫鬟","tier":"次要","entity_type":"人物","status":"draft","first_chapter":30,"mention_chapters":[30]}
+{"book_id":"hongloumeng","id":"P0373","name":"嫣红","aliases":[],"group":"荣国府","tier":"次要","entity_type":"人物","status":"第47回原文第2604行明确指名；机辅草稿待审","mentions":1,"first_chapter":47,"source_line":2604,"mention_chapters":[47]}

@@ -493,3 +493,4 @@
 {"id":"P0493","book_id":"shuihuzhuan","name":"李小二妻","aliases":["李小二浑家"],"group":"沧州酒店","entity_type":"未具名角色","status":"按小说场景消歧，待人工核验","first_chapter":9,"mention_chapters":[9]}
 {"id":"P0494","book_id":"shuihuzhuan","name":"草料场老军","aliases":["沧州草料场老军"],"group":"沧州草料场","entity_type":"未具名角色","status":"按小说场景消歧，待人工核验","first_chapter":9,"mention_chapters":[9]}
 {"id":"P0495","book_id":"shuihuzhuan","name":"老都管","aliases":["都管","谢都管"],"group":"大名府押纲队","entity_type":"未具名职务人物","status":"原文角色称谓，需进一步消歧","first_chapter":15,"mention_chapters":[15,16]}
+{"id":"P0496","book_id":"shuihuzhuan","name":"宋玉莲","aliases":["玉莲"],"group":"江州民间","tier":"次要","entity_type":"人物","status":"第38回第9549行宋姓老妇人明言女儿小字玉莲；姓名合并为宋玉莲，待审","first_chapter":38,"source_line":9549,"mention_chapters":[38],"mentions":1}

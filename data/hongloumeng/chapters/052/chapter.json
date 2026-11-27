@@ -6,5 +6,12 @@
   "lexical_character_count": 42,
   "book_id": "hongloumeng",
   "edition_id": "hongloumeng:attachment-v1",
-  "review_status": "draft"
+  "review_status": "draft",
+  "enrichment": {
+    "status": "paragraph_anchored",
+    "previous_event_count": 4,
+    "event_count": 9,
+    "method": "每回五个原文精确锚定的代表性情节",
+    "review_note": "机辅草稿非逐段穷尽、非人工文学终审；旧数据及ID完整保留"
+  }
 }

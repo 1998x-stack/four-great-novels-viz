@@ -871,3 +871,13 @@
 {"book_id":"hongloumeng","relation_id":"R0871","subject_id":"P0014","predicate":"开门迎归","object_id":"P0001","category":"帮助与互动","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0872","subject_id":"P0001","predicate":"误踢致伤","object_id":"P0014","category":"帮助与互动","direction":"subject_to_object"}
 {"book_id":"hongloumeng","relation_id":"R0873","subject_id":"P0001","predicate":"夜间探伤","object_id":"P0014","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0874","subject_id":"P0001","predicate":"为伤势问医","object_id":"P0014","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0875","subject_id":"P0001","predicate":"倾诉放心之意","object_id":"P0005","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0876","subject_id":"P0006","predicate":"痛加责打","object_id":"P0001","category":"冲突","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0877","subject_id":"P0001","predicate":"托人送旧帕","object_id":"P0005","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0878","subject_id":"P0001","predicate":"问候其母近况","object_id":"P0109","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0879","subject_id":"P0085","predicate":"挂念身体病况","object_id":"P0259","category":"婚恋","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0880","subject_id":"P0008","predicate":"邀约筹议诗社","object_id":"P0001","category":"交游与诗社","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0881","subject_id":"P0028","predicate":"设蟹宴款待","object_id":"P0004","category":"交游与诗社","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0882","subject_id":"P0025","predicate":"透露月例实情","object_id":"P0014","category":"帮助与互动","direction":"subject_to_object"}
+{"book_id":"hongloumeng","relation_id":"R0883","subject_id":"P0004","predicate":"带同游大观园","object_id":"P0026","category":"帮助与互动","direction":"subject_to_object"}

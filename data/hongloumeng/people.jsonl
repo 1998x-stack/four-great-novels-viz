@@ -276,7 +276,7 @@
 {"name":"李婶娘","group":"外部人物","tier":"次要","aliases":["李婶"],"mentions":31,"first_chapter":49,"source_line":2698,"id":"P0276","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[49,50,52,53,54,58,94,99,108,110,118,119],"book_id":"hongloumeng"}
 {"name":"李三","group":"外部人物","tier":"次要","aliases":[],"mentions":1,"first_chapter":50,"source_line":2912,"id":"P0277","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[50],"book_id":"hongloumeng"}
 {"name":"翠翘","group":"荣府丫鬟仆役","tier":"次要","aliases":[],"mentions":1,"first_chapter":50,"source_line":2892,"id":"P0278","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[50],"book_id":"hongloumeng"}
-{"name":"胡太医","group":"外部人物","tier":"次要","aliases":["胡庸医"],"mentions":1,"first_chapter":69,"source_line":3772,"id":"P0279","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[69],"book_id":"hongloumeng"}
+{"name":"胡太医","group":"外部人物","tier":"次要","aliases":["胡庸医","胡君荣"],"mentions":1,"first_chapter":69,"source_line":3772,"id":"P0279","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[69],"book_id":"hongloumeng"}
 {"name":"小螺","group":"荣府丫鬟仆役","tier":"次要","aliases":[],"mentions":7,"first_chapter":52,"source_line":3094,"id":"P0280","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[52,62],"book_id":"hongloumeng"}
 {"name":"钱启","group":"外部人物","tier":"次要","aliases":[],"mentions":4,"first_chapter":52,"source_line":3114,"id":"P0281","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[52],"book_id":"hongloumeng"}
 {"name":"张若锦","group":"荣府丫鬟仆役","tier":"次要","aliases":[],"mentions":2,"first_chapter":52,"source_line":3114,"id":"P0282","entity_type":"人物","status":"称谓字面命中（可能同名/歧义）","mention_chapters":[52],"book_id":"hongloumeng"}

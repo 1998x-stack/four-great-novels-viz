@@ -868,3 +868,8 @@
 {"book_id":"shuihuzhuan","relation_id":"R0868","subject_id":"P0093","predicate":"调停与李云之争","object_id":"P0022","category":"调解","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
 {"book_id":"shuihuzhuan","relation_id":"R0869","subject_id":"P0165","predicate":"与之商议秘密往来","object_id":"P0166","category":"情感纠葛","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
 {"book_id":"shuihuzhuan","relation_id":"R0870","subject_id":"P0033","predicate":"提议翠屏山对质","object_id":"P0032","category":"计策","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0871","subject_id":"P0089","predicate":"答应帮忙救时迁","object_id":"P0032","category":"帮助","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0872","subject_id":"P0059","predicate":"阵前生擒","object_id":"P0058","category":"冲突","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0873","subject_id":"P0101","predicate":"托病邀助劫牢","object_id":"P0039","category":"计策","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0874","subject_id":"P0174","predicate":"迎接并信任","object_id":"P0039","category":"交友","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}
+{"book_id":"shuihuzhuan","relation_id":"R0875","subject_id":"P0012","predicate":"冒罪私放","object_id":"P0025","category":"救助","direction":"subject_to_object","review_status":"model_anchored_unreviewed"}

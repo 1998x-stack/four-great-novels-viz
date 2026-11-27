@@ -651,3 +651,8 @@
 {"relation_id":"R0651","book_id":"xiyouji","subject_id":"P0001","predicate":"劝潜御园井寻遗体","object_id":"P0003","category":"计策／协作","direction":"subject_to_object","review_status":"draft","record_origin":"第31—50回原文互动增补，待人工语义审校"}
 {"relation_id":"R0652","book_id":"xiyouji","subject_id":"P0050","predicate":"赐还魂金丹","object_id":"P0001","category":"救助／护持","direction":"subject_to_object","review_status":"draft","record_origin":"第31—50回原文互动增补，待人工语义审校"}
 {"relation_id":"R0653","book_id":"xiyouji","subject_id":"P0169","predicate":"化作童子诱骗","object_id":"P0002","category":"计策／欺骗","direction":"subject_to_object","review_status":"draft","record_origin":"第31—50回原文互动增补，待人工语义审校"}
+{"relation_id":"R0654","book_id":"xiyouji","subject_id":"P0001","predicate":"求借雨水灭妖火","object_id":"P0021","category":"求助／协作","direction":"subject_to_object","review_status":"draft","record_origin":"第31—50回原文互动增补，待人工语义审校"}
+{"relation_id":"R0655","book_id":"xiyouji","subject_id":"P0061","predicate":"施金箍收伏","object_id":"P0169","category":"降伏／劝化","direction":"subject_to_object","review_status":"draft","record_origin":"第31—50回原文互动增补，待人工语义审校"}
+{"relation_id":"R0656","book_id":"xiyouji","subject_id":"P0024","predicate":"派令擒妖","object_id":"P0172","category":"差遣／协作","direction":"subject_to_object","review_status":"draft","record_origin":"第31—50回原文互动增补，待人工语义审校"}
+{"relation_id":"R0657","book_id":"xiyouji","subject_id":"P0001","predicate":"破车解救并赐毫毛","object_id":"P0176","category":"救助／护持","direction":"subject_to_object","review_status":"draft","record_origin":"第31—50回原文互动增补，待人工语义审校"}
+{"relation_id":"R0658","book_id":"xiyouji","subject_id":"P0001","predicate":"登坛助师求雨","object_id":"P0002","category":"救助／护持","direction":"subject_to_object","review_status":"draft","record_origin":"第31—50回原文互动增补，待人工语义审校"}
